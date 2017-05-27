@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tom Machon</title>
+    <link>http://tmachon.com/</link>
+    <description>Recent content on Tom Machon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 27 May 2017 05:41:45 -0400</lastBuildDate>
+    
+	<atom:link href="http://tmachon.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Publications</title>
+      <link>http://tmachon.com/publications/</link>
+      <pubDate>Sat, 27 May 2017 05:41:45 -0400</pubDate>
+      
+      <guid>http://tmachon.com/publications/</guid>
+      <description>   </description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://tmachon.com/contact/</link>
+      <pubDate>Sat, 27 May 2017 05:41:45 -0400</pubDate>
+      
+      <guid>http://tmachon.com/contact/</guid>
+      <description>Email:  machon at sas.upenn.edu  
+Address: 
+ Office 2N32 David Rittenhouse Laboratory 209 South 33rd Street Philadelphia, PA 19104, USA</description>
+    </item>
+    
+  </channel>
+</rss>
