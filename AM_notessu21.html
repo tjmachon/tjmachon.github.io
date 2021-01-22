@@ -1,0 +1,1855 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Canonical transformations</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 1834--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu20.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse3.html#AM_notessu21.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu22.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">3.4   </span> <a 
+ id="x25-260004"></a>Canonical transformations</h4>
+<!--l. 1835--><p class="noindent" >One of the key strengths of the Lagrangian approach is that we may use any set of generalised
+coordinates that we like in order to solve a problem, the Euler-Lagrange equations still work in
+those coordinates. In Hamiltonian mechanics we can have even more transformations! We can mix
+<!--l. 1835--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></math> and
+<!--l. 1835--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></math> if we
+like, as long as Hamilton’s equations still have the same form.
+</p>
+<div class="newtheorem">
+<!--l. 1837--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">A                                             coordinate                                             transformation</span>
+<!--l. 1838--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-rel">↦</mo><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">that preserves the structure of Hamilton’s equations is a canonical transformation.</span>
+</p>
+</div>
+<!--l. 1840--><p class="noindent" >This means that the new coordinates satisfy
+<!--tex4ht:inline--></p><!--l. 1841--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                        <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle></mrow></mfrac><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></mrow></mfrac><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1841--><p class="nopar" > If the coordinate transformation is time-independent, then there is a very geometric characterisation of canonical
+transformations.
+</p>
+<div class="newtheorem">
+                                                                                                       
+                                                                                                       
+<!--l. 1843--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Proposition.</span>  </span><span 
+class="cmti-10x-x-109">Let</span>
+<!--l. 1844--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">and</span>
+<!--l. 1844--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">be a new set of coordinates. Define the Jacobian matrix as a block matrix</span>
+<!--tex4ht:inline--></p><!--l. 1845--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+<mstyle mathvariant="bold"><mi 
+>J</mi></mstyle> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mi 
+>q</mi></mrow></msub 
+></mtd><mtd 
+class="array"  columnalign="center"><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mi 
+>p</mi></mrow></msub 
+></mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle><mi 
+>q</mi></mrow></msub 
+></mtd><mtd 
+class="array"  columnalign="center"><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle><mi 
+>p</mi></mrow></msub 
+></mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                               </mrow></mfenced>
+</math>
+<!--l. 1845--><p class="nopar" > <span 
+class="cmti-10x-x-109">where</span>
+<!--tex4ht:inline--></p><!--l. 1847--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                      <msub><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mi 
+>q</mi></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>i</mi><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><msub><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mi 
+>p</mi></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>i</mi><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 1847--><p class="nopar" > <span 
+class="cmti-10x-x-109">and so on. Then the coordinate transformation is canonical if and only if</span>
+<!--tex4ht:inline--></p><!--l. 1849--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msup><mrow 
+>
+                                              <mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+><mi 
+>Ω</mi><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mi 
+>Ω</mi><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 1849--><p class="nopar" > <span 
+class="cmti-10x-x-109">where</span>
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1850--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+<mi 
+>Ω</mi> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"> <mn>0</mn> </mtd><mtd 
+class="array"  columnalign="center"><mi 
+>I</mi></mtd></mtr> <mtr><mtd 
+class="array"  columnalign="center"><mo 
+class="MathClass-bin">−</mo><mi 
+>I</mi></mtd> <mtd 
+class="array"  columnalign="center"><mn>0</mn></mtd>
+</mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                 </mrow></mfenced>
+</math>
+<!--l. 1850--><p class="nopar" > <span 
+class="cmti-10x-x-109">is the symplectic form.</span>
+</p>
+</div>
+<!--l. 1855--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 1856--><p class="noindent" ><span class="head">
+<span 
+class="cmti-10x-x-109">Proof.</span> </span>The                                      time                                      derivative                                      of
+<!--l. 1856--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></math>
+and
+<!--l. 1856--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle></math>
+is given by (using the chain rule):
+<!--tex4ht:inline--></p><!--l. 1857--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+ <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle></mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                           </mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mstyle mathvariant="bold"><mi 
+>J</mi></mstyle><mo 
+class="MathClass-bin">⋅</mo><mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mtd></mtr> <mtr><mtd 
+class="array"  columnalign="center"><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mtd>
+</mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                           </mrow></mfenced>
+</math>
+<!--l. 1857--><p class="nopar" >               The                     using                     Hamilton’s                     equations                     for
+<!--l. 1858--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></math>
+and
+<!--l. 1858--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></math>
+we find
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1859--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+ <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle></mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                           </mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mstyle mathvariant="bold"><mi 
+>J</mi></mstyle><mo 
+class="MathClass-bin">⋅</mo><mi 
+>Ω</mi><mo 
+class="MathClass-bin">⋅</mo><mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"><mtr><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+ <mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow></mfrac> </mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mrow></mfrac> </mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                               </mrow></mfenced>
+</math>
+<!--l. 1859--><p class="nopar" > Now, using the chain rule we find
+<!--tex4ht:inline--></p><!--l. 1861--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+ <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+ <mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow></mfrac> </mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mrow></mfrac> </mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                               </mrow></mfenced> <mo 
+class="MathClass-rel">=</mo><msup><mrow 
+> <mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+><mo 
+class="MathClass-bin">⋅</mo><mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"><mtr><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></mrow></mfrac></mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle></mrow></mfrac> </mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                               </mrow></mfenced>
+</math>
+<!--l. 1861--><p class="nopar" > so we find
+<!--tex4ht:inline--></p><!--l. 1863--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+ <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle></mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                           </mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mstyle mathvariant="bold"><mi 
+>J</mi></mstyle><mo 
+class="MathClass-bin">⋅</mo><mi 
+>Ω</mi><mo 
+class="MathClass-bin">⋅</mo><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+><mo 
+class="MathClass-bin">⋅</mo><mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"><mtr><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></mrow></mfrac></mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle></mrow></mfrac> </mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                               </mrow></mfenced> <mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1863--><p class="nopar" >        But            this            is            equal            to            Hamilton’s            equations            for
+<!--l. 1864--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></math>
+and
+<!--l. 1864--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle></math>
+if and only if
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1865--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                      <mstyle mathvariant="bold"><mi 
+>J</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>Ω</mi> <mo 
+class="MathClass-bin">⋅</mo><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>Ω</mi><mspace width="3.04076pt" class="tmspace"/><mo 
+class="MathClass-rel">⇔</mo><mspace width="3.04076pt" class="tmspace"/><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>Ω</mi> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mi 
+>Ω</mi>
+</math>
+<!--l. 1865--><p class="nopar" >                                                                                                      □
+</p>
+</div>
+<!--l. 1868--><p class="noindent" >The condition <!--l. 1868--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>Ω</mi> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mi 
+>Ω</mi></math> must hold at all
+points in phase space. Any matrix <!--l. 1868--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></math>
+satisfying this condition is a <!--l. 1868--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>2</mn><mi 
+>N</mi></math>
+dimensional <span 
+class="cmbx-10x-x-109">symplectic matrix</span>. We can expand out the conditions by rewriting
+<!--l. 1868--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>Ω</mi> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mi 
+>Ω</mi></math> as
+<!--l. 1868--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>Ω</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>Ω</mi> <mo 
+class="MathClass-bin">⋅</mo><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+></math>. This
+can then be written out as explicit conditions for a canonical transformation
+<!--tex4ht:inline--></p><!--l. 1869--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                           <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>P</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac><mo 
+class="MathClass-punc">,</mo><mspace width="3.04076pt" class="tmspace"/> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>P</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-punc">,</mo><mspace width="3.04076pt" class="tmspace"/> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>P</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-punc">,</mo><mspace width="3.04076pt" class="tmspace"/><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac>  <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>P</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 1869--><p class="nopar" > which is in fact just two conditions
+<!--tex4ht:inline--></p><!--l. 1871--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                        <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>P</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac><mo 
+class="MathClass-punc">,</mo><mspace width="3.04076pt" class="tmspace"/> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>P</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 1871--><p class="nopar" >
+</p>
+<div class="newtheorem">
+<!--l. 1874--><p class="noindent" ><span class="head">
+                                                                                                       
+                                                                                                       
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Cartesian to polar canonical transformation in 2D. Suppose we have a point particle in two dimensions,
+with Hamiltonian
+<!--tex4ht:inline--></p><!--l. 1875--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                      <mi 
+>H</mi> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn><mi 
+>m</mi></mrow></mfrac><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msubsup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msubsup 
+> <mo 
+class="MathClass-bin">+</mo> <msubsup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+>
+<mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msubsup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1875--><p class="nopar" > where <!--l. 1876--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></math>,
+<!--l. 1876--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>y</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><mover accent="true"><mi 
+>y</mi><mo>&sdot;</mo></mover></math>.
+Defining polar coordinates
+<!--tex4ht:inline--></p><!--l. 1877--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                            <mi 
+>r</mi> <mo 
+class="MathClass-rel">=</mo> <msqrt><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt><mo 
+class="MathClass-punc">,</mo><mspace width="3.04076pt" class="tmspace"/><mi 
+>𝜃</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi><mi 
+>r</mi><mi 
+>c</mi><mi 
+>t</mi><mi 
+>a</mi><mi 
+>n</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>y</mi></mrow>
+<mrow 
+><mi 
+>x</mi></mrow></mfrac></mrow></mfenced><mo 
+class="MathClass-punc">,</mo><mspace width="0.3em" class="thinspace"/><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>r</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mspace width="0.3em" class="thinspace"/><mi 
+>y</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>r</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>𝜃</mi>
+</math>
+<!--l. 1877--><p class="nopar" >
+<!--tex4ht:inline--></p><!--l. 1878--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                <mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mover accent="true"><mi 
+>r</mi><mo>&sdot;</mo></mover><mo class="qopname">cos</mo><!--nolimits--><mi 
+>ϕ</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>r</mi><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ϕ</mi><mo 
+class="MathClass-punc">,</mo><mspace width="3.04076pt" class="tmspace"/><mover accent="true"><mi 
+>y</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mover accent="true"><mi 
+>r</mi><mo>&sdot;</mo></mover><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ϕ</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>r</mi><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover><mo class="qopname">cos</mo><!--nolimits--><mi 
+>ϕ</mi>
+</math>
+<!--l. 1878--><p class="nopar" > In polar coordinates the Hamiltonian becomes
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1880--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                      <mi 
+>H</mi> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn><mi 
+>m</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><msubsup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msubsup 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><msubsup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>2</mn></mrow></msubsup 
+></mrow> 
+ <mrow 
+><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac> </mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1880--><p class="nopar" > where
+<!--tex4ht:inline--></p><!--l. 1882--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                     <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>r</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>x</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>y</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>y</mi></mrow></msub 
+></mrow> 
+<mrow 
+><msqrt><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt></mrow></mfrac> <mo 
+class="MathClass-punc">,</mo><mspace width="0.3em" class="thinspace"/><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>𝜃</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>x</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>y</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo> <mi 
+>y</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+>
+</math>
+<!--l. 1882--><p class="nopar" > This allows us to compute the Jacobian matrix
+<!--tex4ht:inline--></p><!--l. 1884--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+<mstyle mathvariant="bold"><mi 
+>J</mi></mstyle> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center">   <mi 
+>x</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>r</mi>   </mtd><mtd 
+class="array"  columnalign="center">  <mi 
+>y</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>r</mi>  </mtd><mtd 
+class="array"  columnalign="center"> <mn>0</mn>  </mtd><mtd 
+class="array"  columnalign="center">  <mn>0</mn>  </mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"> <mo 
+class="MathClass-bin">−</mo><mi 
+>y</mi><mo 
+class="MathClass-bin">∕</mo><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+>  </mtd><mtd 
+class="array"  columnalign="center">  <mi 
+>x</mi><mo 
+class="MathClass-bin">∕</mo><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+>  </mtd><mtd 
+class="array"  columnalign="center">  <mn>0</mn>  </mtd><mtd 
+class="array"  columnalign="center">  <mn>0</mn>  </mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><mo 
+class="MathClass-bin">−</mo><mi 
+>y</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>𝜃</mi></mrow></msub 
+><mo 
+class="MathClass-bin">∕</mo><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>3</mn></mrow></msup 
+></mtd><mtd 
+class="array"  columnalign="center"><mi 
+>x</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>𝜃</mi></mrow></msub 
+><mo 
+class="MathClass-bin">∕</mo><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>3</mn></mrow></msup 
+></mtd><mtd 
+class="array"  columnalign="center"><mi 
+>x</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>r</mi></mtd><mtd 
+class="array"  columnalign="center"><mi 
+>y</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>r</mi></mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center">   <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>y</mi></mrow></msub 
+>    </mtd><mtd 
+class="array"  columnalign="center">  <mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+>  </mtd><mtd 
+class="array"  columnalign="center"><mo 
+class="MathClass-bin">−</mo><mi 
+>y</mi></mtd><mtd 
+class="array"  columnalign="center"> <mi 
+>x</mi> </mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                           </mrow></mfenced>
+</math>
+<!--l. 1888--><p class="nopar" > and you can check that <!--l. 1889--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>Ω</mi> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mi 
+>Ω</mi></math>,
+so that the transformation is canonical.
+</p>
+</div>
+<div class="newtheorem">
+<!--l. 1892--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Time translation. An interesting canonical transformation is time translation. For this we define the
+new coordinates
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1893--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                     <mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>τ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mstyle mathvariant="bold"><mi 
+>p</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>τ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1893--><p class="nopar" > for some fixed time <!--l. 1894--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>τ</mi></math>.
+This gives us
+<!--tex4ht:inline--></p><!--l. 1895--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 1895--><p class="nopar" > the first of our conditions for a canonical transformation. We also write our coordinates as as
+<!--tex4ht:inline--></p><!--l. 1897--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                             <mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>τ</mi></mrow></msubsup 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>τ</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow><mi 
+>d</mi><msup><mrow 
+><mi 
+>τ</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mo 
+class="MathClass-punc">,</mo><mspace width="3.04076pt" class="tmspace"/><mstyle mathvariant="bold"><mi 
+>P</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>τ</mi></mrow></msubsup 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle><mo>&sdot;</mo></mover><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>τ</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow><mi 
+>d</mi><msup><mrow 
+><mi 
+>τ</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+>
+</math>
+<!--l. 1897--><p class="nopar" > Now we have elements of the Jacobian matrix
+<!--tex4ht:inline--></p><!--l. 1899--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>τ</mi></mrow></msubsup 
+>  <mfrac><mrow 
+><mi 
+>∂</mi><mn>2</mn><mi 
+>H</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac><mi 
+>d</mi><msup><mrow 
+><mi 
+>τ</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 1899--><p class="nopar" >
+<!--tex4ht:inline--></p><!--l. 1900--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                     <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>P</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>τ</mi></mrow></msubsup 
+>  <mfrac><mrow 
+><mi 
+>∂</mi><mn>2</mn><mi 
+>H</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac><mi 
+>d</mi><msup><mrow 
+><mi 
+>τ</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 1900--><p class="nopar" > which gives the second the condition for a canonical transformation.
+</p>
+</div>
+<div class="newtheorem">
+<!--l. 1904--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Time translation for the 1D harmonic oscillator. The 1D harmonic oscillator has Hamiltonian
+<!--tex4ht:inline--></p><!--l. 1905--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mi 
+>H</mi> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn><mi 
+>m</mi></mrow></mfrac><msup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>k</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+>
+</math>
+<!--l. 1905--><p class="nopar" > with Hamilton’s equations
+<!--tex4ht:inline--></p><!--l. 1907--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mi 
+>p</mi></mrow> 
+<mrow 
+><mi 
+>m</mi></mrow></mfrac><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mover accent="true"><mi 
+>p</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>k</mi><mi 
+>q</mi>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 1907--><p class="nopar" > with solutions <!--l. 1908--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>q</mi> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mo class="qopname"> cos</mo><!--nolimits--><mi 
+>ω</mi><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mo class="qopname"> sin</mo><!--nolimits--><mi 
+>ω</mi><mi 
+>t</mi></math>,
+<!--l. 1908--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>p</mi> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mo class="qopname"> cos</mo><!--nolimits--><mi 
+>ω</mi><mi 
+>t</mi> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mo class="qopname"> sin</mo><!--nolimits--><mi 
+>ω</mi><mi 
+>t</mi></math>
+for initial conditions <!--l. 1908--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>p</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+and frequency <!--l. 1908--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ω</mi> <mo 
+class="MathClass-rel">=</mo> <msqrt><mrow><mi 
+>k</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>m</mi></mrow></msqrt></math>.
+If we define our time translated coordinates
+<!--tex4ht:inline--></p><!--l. 1909--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                    <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>Q</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>P</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>τ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>p</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>τ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1909--><p class="nopar" > we find
+<!--tex4ht:inline--></p><!--l. 1911--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                        <mi 
+>Q</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mo class="qopname"> cos</mo><!--nolimits--><mi 
+>ω</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>τ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mo class="qopname"> sin</mo><!--nolimits--><mi 
+>ω</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>τ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>q</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>ω</mi><mi 
+>τ</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>p</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ω</mi><mi 
+>τ</mi>
+</math>
+<!--l. 1911--><p class="nopar" >
+<!--tex4ht:inline--></p><!--l. 1912--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                        <mi 
+>P</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>p</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>ω</mi><mi 
+>τ</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>q</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ω</mi><mi 
+>τ</mi>
+</math>
+<!--l. 1912--><p class="nopar" >                                                and                                                                      the
+<!--l. 1913--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>2</mn> <mo 
+class="MathClass-bin">×</mo> <mn>2</mn></math>
+Jacobian is
+</p><!--l. 1915--><p class="noindent" >
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1915--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+<mstyle mathvariant="bold"><mi 
+>J</mi></mstyle> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center">   <mo class="qopname">cos</mo><!--nolimits--><mi 
+>ω</mi><mi 
+>τ</mi><mo 
+class="MathClass-punc">,</mo><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ω</mi><mi 
+>τ</mi>   </mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><mo 
+class="MathClass-bin">−</mo><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ω</mi><mi 
+>τ</mi><mo 
+class="MathClass-punc">,</mo><mo class="qopname">cos</mo><!--nolimits--><mi 
+>ω</mi><mi 
+>t</mi><mi 
+>a</mi><mi 
+>u</mi></mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                           </mrow></mfenced>
+</math>
+<!--l. 1915--><p class="nopar" >              It                    is                    easy                    to                    check                    that
+<!--l. 1916--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></math>
+is a symplectic matrix, so the transformation is canonical.
+</p>
+</div>
+<!--l. 1919--><p class="noindent" >Symplectic matrices are very special, they define a type of geometry (symplectic geometry), different from the geometry of
+space (Euclidean geometry) and spacetime (Lorentzian geometry). In fact, all three types of geometry can be described by
+the types of transformations that preserve a given structure. In this way classical mechanics is essentially “geometry in
+phase space” (VI Arnold).
+     </p><dl class="description"><dt class="description">
+<span 
+class="cmbx-10x-x-109">Euclidean Geometry</span> </dt><dd 
+class="description">Linear transformations that preserve the dot product in Euclidean space, in <!--l. 1921--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>2</mn><mi 
+>D</mi></math>
+     this is <!--l. 1921--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>.
+     This implies we seek transformation matrices <!--l. 1921--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>O</mi></math>
+     so that
+     <!--tex4ht:inline--><!--l. 1922--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msup><mrow 
+>
+<mi 
+>O</mi></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+><mi 
+>I</mi><mi 
+>O</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>I</mi><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>I</mi> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><mn>1</mn></mtd><mtd 
+class="array"  columnalign="center"><mn>0</mn></mtd></mtr> <mtr><mtd 
+class="array"  columnalign="center"><mn>0</mn></mtd> <mtd 
+class="array"  columnalign="center"><mn>1</mn></mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                 </mrow></mfenced><mo 
+class="MathClass-punc">.</mo>
+</math>
+     <!--l. 1922--><p class="nopar" > This defines orthogonal transformations (rotations and reflections).
+     </p></dd><dt class="description">
+<span 
+class="cmbx-10x-x-109">Lorentzian Geometry</span> </dt><dd 
+class="description">Linear transformations that preserve the ‘Lorentz product’ (in <!--l. 1924--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>2</mn><mi 
+>D</mi></math>
+     with <!--l. 1924--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>c</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></math>
+     this is <!--l. 1924--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>).
+     This implies we seek transformation matrices <!--l. 1924--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>Λ</mi></math>
+     so that
+                                                                                                       
+                                                                                                       
+     <!--tex4ht:inline--><!--l. 1925--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msup><mrow 
+>
+<mi 
+>Λ</mi></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+><mi 
+>η</mi><mi 
+>Λ</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>η</mi><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>η</mi> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><mn>1</mn></mtd><mtd 
+class="array"  columnalign="center"> <mn>0</mn> </mtd></mtr> <mtr><mtd 
+class="array"  columnalign="center"><mn>0</mn></mtd> <mtd 
+class="array"  columnalign="center"><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                 </mrow></mfenced><mo 
+class="MathClass-punc">.</mo>
+</math>
+     <!--l. 1925--><p class="nopar" > This defines Lorentz transformations.
+     </p></dd><dt class="description">
+<span 
+class="cmbx-10x-x-109">Symplectic Geometry</span> </dt><dd 
+class="description">Linear transformations that preserve the product <!--l. 1927--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>.
+     This implies we seek transformation matrices <!--l. 1927--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>J</mi></math>
+     so that
+     <!--tex4ht:inline--><!--l. 1928--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msup><mrow 
+>
+<mi 
+>J</mi></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+><mi 
+>Ω</mi><mi 
+>J</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>Ω</mi><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>Ω</mi> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"> <mn>0</mn> </mtd><mtd 
+class="array"  columnalign="center"><mn>1</mn></mtd></mtr> <mtr><mtd 
+class="array"  columnalign="center"><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mtd> <mtd 
+class="array"  columnalign="center"><mn>0</mn></mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                 </mrow></mfenced><mo 
+class="MathClass-punc">.</mo>
+</math>
+     <!--l. 1928--><p class="nopar" > This defines symplectic transformations.</p></dd></dl>
+                                                                                                       
+                                                                                                       
+<!--l. 1934--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu20.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse3.html#AM_notessu21.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu22.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

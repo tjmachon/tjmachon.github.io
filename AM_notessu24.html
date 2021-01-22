@@ -1,0 +1,392 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Integrability, ergodicity, and chaos</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 2094--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu23.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse3.html#AM_notessu24.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu25.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">3.7   </span> <a 
+ id="x28-290007"></a>Integrability, ergodicity, and chaos</h4>
+<!--l. 2096--><p class="noindent" >Liouville’s theorem tells us that phase space volume is preserved, but the qualitative nature of phase space dynamics can
+still be very complex. The simplest case is complete integrability.
+</p>
+<div class="newtheorem">
+<!--l. 2098--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">A         Hamiltonian         system         with         phase         space         of         dimension</span>
+<!--l. 2099--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>2</mn><mi 
+>N</mi></math>
+<span 
+class="cmti-10x-x-109">is                     </span>completely                      <span 
+class="cmti-10x-x-109">integrable                     if                     it                     has</span>
+<!--l. 2099--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>N</mi></math>
+<span 
+class="cmti-10x-x-109">independent            conserved            quantities            that            Poisson            commute            (i.e.</span>
+<!--l. 2099--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">{</mo><mrow><mi 
+>f</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>g</mi></mrow><mo 
+class="MathClass-close">}</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>
+<span 
+class="cmti-10x-x-109">for any two conserved quantities).</span>
+</p>
+</div>
+<!--l. 2101--><p class="noindent" >By the Liouville-Arnold theorem, a completely integrable Hamiltonian system can always be transformed into a form where the
+Hamiltonian depends only on the momenta, which are conserved, with the corresponding coordinates evolving linearly. These
+are called <span 
+class="cmti-10x-x-109">action-angle coordinates </span>and we will not study them further. An example of a completely integrable system is
+<!--l. 2101--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>N</mi></math>
+uncoupled harmonic oscillators, the energy of each oscillator is conserved.
+</p><!--l. 2103--><p class="noindent" >A <span 
+class="cmti-10x-x-109">partially </span>integrable system has some conserved quantities, but fewer than
+<!--l. 2103--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>N</mi></math>. The
+trajectories of these systems are typically chaotic. Phase space distributions in chaotic motion are spread around phase
+space as time evolves. This agrees with the popular notion that chaos is extremely irregular, as the configuration of the
+system moves around all possible coordinates and momenta as time evolves. The notion of phase space distributions
+spreading also implies that there is a consistent sensitivity to precisely where a particular system is in phase space; two
+points initially close at one time might be very far from each other subsequently. A classic example of a chaotic
+system is three bodies interacting via a gravitational potential – its chaotic nature means it cannot be solved
+analytically.
+</p><!--l. 2105--><p class="noindent" >A key property of chaos is sensitivity to initial conditions. Suppose we have two points
+<!--l. 2105--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>x</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math> and
+<!--l. 2105--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>x</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math> in phase space. Initially
+they are a distance <!--l. 2105--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+apart (using some invented notion of distance, since there is no natural metric in phase space – this is not Euclidean
+geometry!). Then in chaotic systems, the distance between nearby trajectories grows exponentially
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 2106--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <mi 
+>d</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">≈</mo> <mi 
+>d</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow><msup><mrow 
+><mi 
+>e</mi></mrow><mrow 
+><mi 
+>λ</mi><mi 
+>t</mi></mrow></msup 
+>
+</math>
+<!--l. 2106--><p class="nopar" > where <!--l. 2107--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>λ</mi></math> is
+known as a Lyapunov exponent. Many real world systems, such as the weather, are chaotic, and this has consequences for
+modelling those systems. If we want to forecast the weather we need to know the physical laws governing the system <span 
+class="cmti-10x-x-109">and</span>
+the initial conditions. But because the system is sensitive to initial conditions (our measurements of the current weather),
+any tiny error in the initial conditions leads to a large error in prediction (the weather forecast) after only a short
+time.
+</p><!--l. 2109--><p class="noindent" >There is an even stronger notion of mixing which is ergodicity. Ergodic systems diffuse around phase space so strongly that ensemble
+averages over <!--l. 2109--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ρ</mi></math>
+are equivalent to time averages. Ergodic systems satisfy Poincaré’s recurrence theorem: if all orbits in a system are
+bounded (i.e. don’t diffuse to infinity), they will cross any given connected set infinitely often, at a rate proportional to the
+proportion of phase space filled by the set. This means that if you start at a given point, the trajectory of a
+Hamiltonian system will come arbitrarily close to all other points in phase space. Ergodicity is an extremely
+important concept in the foundation of statistical mechanics but rigorous mathematical results are hard to come
+by
+</p>
+<div class="newtheorem">
+<!--l. 2114--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Not examinable. Henon-Heiles system. This system is a model of stellar motion around a galactic core.
+The Hamiltonian is given by
+<!--tex4ht:inline--></p><!--l. 2116--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                             <mi 
+>H</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msubsup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msubsup 
+> <mo 
+class="MathClass-bin">+</mo> <msubsup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+>
+<mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msubsup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mi 
+>λ</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mi 
+>y</mi> <mo 
+class="MathClass-bin">−</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>3</mn></mrow></msup 
+><mo 
+class="MathClass-bin">∕</mo><mn>3</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 2116--><p class="nopar" > For <!--l. 2117--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>λ</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>
+this is just two independent harmonic oscillators. Turning on <!--l. 2117--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>λ</mi></math>
+gives them a nonlinear coupling. We will set <!--l. 2117--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>λ</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></math>,
+giving the equations of motion
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 2118--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                            <mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mover accent="true"><msub><mrow 
+><mi 
+>p</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mn>2</mn><mi 
+>x</mi><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mover accent="true"><mi 
+>y</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>y</mi></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mover accent="true"><msub><mrow 
+><mi 
+>p</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>y</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>y</mi> <mo 
+class="MathClass-bin">−</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 2118--><p class="nopar" > It  turns  out  the  dynamics  of  this  system  is  sometimes  chaotic  and  sometimes  not.  Because  the  phase
+space  is  four  dimensional  it  is  difficult  to  visualise  the  trajectories  of  the  system.  The  trajectory  of
+the  system  is  a  line  in  four  dimensional  space.  By  intersecting  this  line  with  the  3-dimensional  space
+<!--l. 2119--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>y</mi></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+we get a set of points in three dimensions. This is called a Poincaré return map. This return map is plotted
+for different initial conditions in Figure <a 
+href="#x28-2900131">31<!--tex4ht:ref: fig:hhplot --></a>. We see that for some initial conditions the motion is regular, and
+periodic, whereas for others the motion is extremely complex – this is chaos.
+</p>
+<figure class="figure"> 
+<a 
+ id="x28-2900131"></a>
+<div class="center" 
+>
+<!--l. 2123--><p class="noindent" >
+</p><!--l. 2124--><p class="noindent" > <img 
+src="figures/hhplot-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 31:</span><span  
+class="content">Poincaré       sections       of       the       Henon-Heiles       system.       Initial       conditions       are
+<!--l. 2125--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>,
+<!--l. 2125--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo><mn>2</mn></math>,
+<!--l. 2125--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>y</mi><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mn>0</mn><mo 
+class="MathClass-punc">.</mo><mn>2</mn></math>,
+<!--l. 2125--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>x</mi><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mn>0</mn><mo 
+class="MathClass-punc">.</mo><mn>2</mn></math>
+(blue), <!--l. 2125--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" > <mo 
+class="MathClass-bin">−</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo><mn>3</mn></math>
+(yellow), <!--l. 2125--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" > <mo 
+class="MathClass-bin">−</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo><mn>4</mn></math>
+(greed), <!--l. 2125--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" > <mo 
+class="MathClass-bin">−</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo><mn>5</mn></math>
+(red).</span></figcaption><!--tex4ht:label?: x28-2900131 -->
+</div>
+</figure>
+</div>
+                                                                                                       
+                                                                                                       
+<!--l. 2135--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu23.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse3.html#AM_notessu24.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu25.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

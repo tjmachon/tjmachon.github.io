@@ -1,0 +1,1488 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>D’Alembert’s principle of virtual work</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 1135--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu12.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse2.html#AM_notessu13.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu14.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">2.4   </span> <a 
+ id="x16-160004"></a>D’Alembert’s principle of virtual work</h4>
+<!--l. 1137--><p class="noindent" >This is an alternative development of the Euler-Lagrange equations. It can be useful for dealing with non-holonomic
+constraints.
+</p><!--l. 1139--><p class="noindent" >Suppose we have <!--l. 1139--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>M</mi></math> point
+particles, labelled by <!--l. 1139--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>i</mi></math> with
+masses <!--l. 1139--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math>. Furthermore let
+<!--l. 1139--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math> be the Cartesian position vector
+of the <!--l. 1139--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>i</mi></mrow><mrow 
+><mi 
+>t</mi><mi 
+>h</mi></mrow></msup 
+></math> particle. We say each
+particle is subject to a force <!--l. 1139--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msubsup><mrow 
+><mstyle mathvariant="bold"><mi 
+>F</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow><mrow 
+><mi 
+>t</mi><mi 
+>o</mi><mi 
+>t</mi></mrow></msubsup 
+> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+> <mstyle mathvariant="bold"><mi 
+>F</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo><msub><mrow 
+> <mstyle mathvariant="bold"><mi 
+>C</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math>,
+where <!--l. 1139--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>F</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math> are motion
+generating forces, and <!--l. 1139--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>C</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math>
+are constraint forces. Newton’s law then says
+<!--tex4ht:inline--></p><!--l. 1140--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msub><mrow 
+>
+                                     <mstyle mathvariant="bold"><mi 
+>F</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo><msub><mrow 
+> <mstyle mathvariant="bold"><mi 
+>C</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><msub><mrow 
+><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mo 
+class="MathClass-op">̈</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>i</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo><mo 
+class="MathClass-punc">,</mo><mi 
+>M</mi>
+</math>
+<!--l. 1140--><p class="nopar" > D’Alembert’s idea is to consider <!--l. 1141--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" > <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><msub><mrow 
+><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mo 
+class="MathClass-op">̈</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math> as a
+new <span 
+class="cmbx-10x-x-109">inertial force </span>which we write as <!--l. 1141--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>I</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math>,
+then Newton’s law becomes
+<!--tex4ht:inline--></p><!--l. 1142--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msub><mrow 
+>
+                                      <mstyle mathvariant="bold"><mi 
+>F</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo><msub><mrow 
+> <mstyle mathvariant="bold"><mi 
+>C</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>i</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo><mo 
+class="MathClass-punc">,</mo><mi 
+>M</mi>
+</math>
+<!--l. 1142--><p class="nopar" > Now this is mathematically equivalent to the statement
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1144--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                 <munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>F</mi></mstyle></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo><msub><mrow 
+> <mstyle mathvariant="bold"><mi 
+>C</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfenced> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>δ</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">,</mo><mspace width="3.04076pt" class="tmspace"/><mi 
+>f</mi><mi 
+>o</mi><mi 
+>r</mi><mspace width="0.3em" class="thinspace"/><mi 
+>a</mi><mi 
+>l</mi><mi 
+>l</mi><mspace width="0.3em" class="thinspace"/><mi 
+>δ</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+>
+</math>
+<!--l. 1144--><p class="nopar" > <span 
+class="cmti-10x-x-109">i.e. </span>we may choose <!--l. 1145--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>N</mi></math>
+infinitesimal displacements <!--l. 1145--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math>
+and the above equation must hold true for any such choice.
+</p><!--l. 1147--><p class="noindent" >Recall that work done is equal to <!--l. 1147--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>W</mi> <mo 
+class="MathClass-rel">=</mo> <mstyle mathvariant="bold"><mi 
+>F</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>δ</mi><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></math>, and in
+this way we can define the virtual work done <!--l. 1147--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><msub><mrow 
+><mi 
+>W</mi></mrow><mrow 
+><mi 
+>V</mi> </mrow></msub 
+></math>
+as
+<!--tex4ht:inline--></p><!--l. 1148--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                    <mi 
+>δ</mi><msub><mrow 
+><mi 
+>W</mi></mrow><mrow 
+><mi 
+>V</mi> </mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>F</mi></mstyle></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo><msub><mrow 
+> <mstyle mathvariant="bold"><mi 
+>C</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfenced> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>δ</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+>
+</math>
+<!--l. 1148--><p class="nopar" >
+</p>
+<div class="newtheorem">
+<!--l. 1149--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Proposition.</span>  </span><span 
+class="cmti-10x-x-109">D’Alembert’s principle. The infinitesimal virtual work done vanishes.</span>
+</p>
+</div>
+<!--l. 1152--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 1153--><p class="noindent" ><span class="head">
+<span 
+class="cmti-10x-x-109">Proof.</span> </span>True by definition                                                                                                                  □
+                                                                                                       
+                                                                                                       
+</p>
+</div>
+<!--l. 1155--><p class="noindent" >This is a generalisation of a principle of equilibrium. If a mechanical system is in equilibrium, then
+<!--l. 1155--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>I</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>, and the
+virtual work becomes the real (infinitesimal) work.
+</p><!--l. 1157--><p class="noindent" >This suggests a connection with calculus of variations, and Lagrangian mechanics. We say we have
+<!--l. 1157--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>N</mi></math> generalised
+coordinates <!--l. 1157--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+with <!--l. 1157--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+> <mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+We now write each of the three terms in the virtual work equation in terms of the
+<!--l. 1157--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math>.
+     </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+   1. </dt><dd 
+class="enumerate-enumitem">Motion forces. We have
+     <!--tex4ht:inline--><!--l. 1160--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                               <munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>M</mi></mrow></munderover 
+><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>F</mi></mstyle></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>δ</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>j</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>M</mi></mrow></munderover 
+><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>F</mi></mstyle></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">⋅</mo><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>j</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+>
+<mi 
+>j</mi></mrow></msub 
+><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><mo 
+class="MathClass-punc">.</mo>
+</math>
+     <!--l. 1160--><p class="nopar" >
+     </p></dd><dt class="enumerate-enumitem">
+   2. </dt><dd 
+class="enumerate-enumitem">Constraint forces. These can be dealt with in the same way as inertial forces. However we can often choose
+     our generalised coordinates cleverly so that the constraints are automatically satisfied (in fact this is done
+     implicitly when we model the pendulum using an angle rather than <!--l. 1161--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+     with a constraint on the length). If we make such a clever choice, the constraint forces vanish. We will assume
+     this is the case.
+     </dd><dt class="enumerate-enumitem">
+   3. </dt><dd 
+class="enumerate-enumitem">Inertial forces. We have
+     <!--tex4ht:inline--><!--l. 1163--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                 <munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>M</mi></mrow></munderover 
+><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>I</mi></mstyle></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>δ</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>j</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>M</mi></mrow></munderover 
+><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>I</mi></mstyle></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">⋅</mo><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>j</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+>
+<mi 
+>j</mi></mrow></msub 
+><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+>
+</math>
+                                                                                                       
+                                                                                                       
+     <!--l. 1163--><p class="nopar" > where <!--l. 1164--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+><mo 
+class="MathClass-op"> ∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>I</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">⋅</mo><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac></math>.
+     Now we know that <!--l. 1164--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>I</mi></math>
+     is related to the total kinetic energy <!--l. 1164--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>K</mi></math>
+     as <!--l. 1164--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>I</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>d</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-bin">∕</mo><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>d</mi><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+     so that
+     <!--tex4ht:inline--></p><!--l. 1166--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                 <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><munder class="msub"><mrow 
+><mo mathsize="big" 
+>∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+> <mfenced separators="" 
+open="("  close=")" ><mrow> <mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow>
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> </mrow></mfenced> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow>
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac><munder class="msub"><mrow 
+><mo mathsize="big" 
+>∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo><munder class="msub"><mrow 
+><mo mathsize="big" 
+> ∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac>  <mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow> 
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+     <!--l. 1166--><p class="nopar" > The second term on the RHS can be written as
+     <!--tex4ht:inline--></p><!--l. 1168--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                                  <munder class="msub"><mrow 
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac>  <mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow> 
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo><munder class="msub"><mrow 
+><mo mathsize="big" 
+> ∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+     <!--l. 1168--><p class="nopar" > The first term becomes
+     <!--tex4ht:inline--></p><!--l. 1170--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                     <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow>
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac><munder class="msub"><mrow 
+><mo mathsize="big" 
+>∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow>
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+</mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>M</mi></mrow></munderover 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac></mrow></mfenced>
+</math>
+     <!--l. 1170--><p class="nopar" > Now <!--l. 1171--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac>  <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> </math>
+     so this becomes
+                                                                                                       
+                                                                                                       
+     <!--tex4ht:inline--></p><!--l. 1172--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                           <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow>
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+</mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>M</mi></mrow></munderover 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow>
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow>
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+     <!--l. 1172--><p class="nopar" > where we use <!--l. 1173--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>δ</mi></mrow><mrow 
+><mi 
+>k</mi><mi 
+>j</mi></mrow></msub 
+></math>.
+     Putting it all together we find
+     <!--tex4ht:inline--></p><!--l. 1174--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                                            <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow>
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac><mo 
+class="MathClass-punc">.</mo>
+</math>
+     <!--l. 1174--><p class="nopar" ></p></dd></dl>
+<!--l. 1176--><p class="noindent" >The result of this is that D’Alembert’s principle becomes
+<!--tex4ht:inline--></p><!--l. 1177--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                   <munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>j</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+>
+<mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow> 
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>K</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac></mrow></mfenced> <mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1177--><p class="nopar" >
+</p>
+<div class="newtheorem">
+<!--l. 1178--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">A                                                                                                                  force</span>
+<!--l. 1179--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></math>
+<span 
+class="cmti-10x-x-109">is             monogenic             if             there             is             a             generalised             potential</span>
+<!--l. 1179--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">such that</span>
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1180--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo>  <mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow> 
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 1180--><p class="nopar" >
+</p>
+</div>
+<!--l. 1182--><p class="noindent" >If we assume a monogenic force, D’Alembert’s principle becomes
+<!--tex4ht:inline--></p><!--l. 1183--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                     <munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>j</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+> <mfenced separators="" 
+open="("  close=")" ><mrow> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow> 
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac></mrow></mfenced> <mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1185--><p class="nopar" > where <!--l. 1186--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>K</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>V</mi> </math> is the
+Lagrangian. Since <!--l. 1186--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></math>
+is arbitrary, this implies the Euler-Lagrange equations.
+                                                                                                       
+                                                                                                       
+</p>
+<!--l. 1194--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu12.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse2.html#AM_notessu13.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu14.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

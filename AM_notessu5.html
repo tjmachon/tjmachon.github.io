@@ -1,0 +1,438 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Calculus of variations in higher dimensions</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 312--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu4.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse1.html#AM_notessu5.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu6.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">1.5   </span> <a 
+ id="x7-60005"></a>Calculus of variations in higher dimensions</h4>
+<!--l. 314--><p class="noindent" >So far we have been thinking about one-dimensional motion. To really describe physics we
+want to look at more dimensions. In general, a particle will be described by a trajectory
+<!--l. 314--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>. For example, in three
+dimensions <!--l. 314--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>. Our action
+<!--l. 314--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>S</mi></math> is then a functional of the
+full-three dimensional trajectory <!--l. 314--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+we write
+<!--tex4ht:inline--></p><!--l. 315--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mi 
+>S</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>S</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow>
+</math>
+<!--l. 315--><p class="nopar" > We say this is a functional of <!--l. 316--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>3</mn></math>
+dependent variables <!--l. 316--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> and
+one independent variable <!--l. 316--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi></math>.
+</p>
+<div class="newtheorem">
+<!--l. 317--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Proposition.</span>  </span><span 
+class="cmti-10x-x-109">A                                                                                                         functional</span>
+<!--l. 318--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>S</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">of</span>
+<!--l. 318--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi></math>
+<span 
+class="cmti-10x-x-109">dependent                                                                                                                   variables</span>
+<!--l. 318--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">is                                                             extremised                                                             if</span>
+<!--l. 318--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">satisfies                                                                                                                             the</span>
+<!--l. 318--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi></math>
+<span 
+class="cmti-10x-x-109">Euler-Lagrange equations</span>
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 319--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 319--><p class="nopar" > <span 
+class="cmti-10x-x-109">for each </span><!--l. 320--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>i</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn><mo 
+class="MathClass-punc">,</mo><mn>2</mn><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo><mo 
+class="MathClass-punc">,</mo><mi 
+>n</mi></math><span 
+class="cmti-10x-x-109">.</span>
+</p>
+</div>
+<!--l. 322--><p class="noindent" >To establish this result, all you need to do is observe that the functional must be extremised for each function
+<!--l. 322--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>, these
+each give a separate Euler-Lagrange equation. This is sometimes written in compact notation as
+<!--tex4ht:inline--></p><!--l. 323--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 323--><p class="nopar" > Now we can show how Hamilton’s principle gives Newton’s laws in higher dimensions. Our Lagrangian
+is
+<!--tex4ht:inline--></p><!--l. 325--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>m</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+>  <mfenced separators="" 
+open="|"  close="|" ><mrow><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 325--><p class="nopar" > then we can check that
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 327--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mo 
+class="MathClass-op">∇</mo><mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mstyle mathvariant="bold"><mi 
+>F</mi></mstyle>
+</math>
+<!--l. 327--><p class="nopar" > where
+<!--tex4ht:inline--></p><!--l. 329--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                         <mo 
+class="MathClass-op">∇</mo><mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow></mfrac><mo 
+class="MathClass-punc">,</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfrac><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo><mo 
+class="MathClass-punc">,</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+></mrow></mfrac></mrow></mfenced>
+</math>
+<!--l. 329--><p class="nopar" > and
+<!--tex4ht:inline--></p><!--l. 331--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                               <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover>
+</math>
+<!--l. 331--><p class="nopar" > so the Euler-Lagrange equations give Newton’s second law.
+<!--tex4ht:inline--></p><!--l. 333--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                               <mi 
+>m</mi><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow><mo 
+class="MathClass-op">̈</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mstyle mathvariant="bold"><mi 
+>F</mi></mstyle>
+</math>
+<!--l. 333--><p class="nopar" >
+                                                                                                       
+                                                                                                       
+                                                                                                       
+                                                                                                       
+</p>
+<!--l. 424--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu4.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse1.html#AM_notessu5.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu6.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

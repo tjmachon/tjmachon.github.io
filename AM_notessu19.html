@@ -1,0 +1,1853 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Hamilton’s equations and phase space</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 1613--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu18.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse3.html#AM_notessu19.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu20.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">3.2   </span> <a 
+ id="x23-230002"></a>Hamilton’s equations and phase space</h4>
+<!--l. 1614--><p class="noindent" >In Lagrangian mechanics, our system was described by a path
+<!--l. 1614--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> in the configuration space of the system.
+For a system with <!--l. 1614--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>N</mi></math> degrees of freedom, the
+configuration space was of dimension <!--l. 1614--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>N</mi></math>.
+the quantity <!--l. 1614--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></math>
+arose only as the velocity of a trajectory. In Hamiltonian mechanics the momenta
+<!--l. 1614--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></math>
+are promoted to full independent variables, equal but different to the position variables
+<!--l. 1614--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></math>. We then obtain a
+<!--l. 1614--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>2</mn><mi 
+>N</mi></math> dimensional space,
+spanned by the <!--l. 1614--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>N</mi></math>
+<!--l. 1614--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></math> and
+<!--l. 1614--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></math> values.
+This is called phase space.
+</p>
+<div class="newtheorem">
+<!--l. 1617--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">The </span>phase space <span 
+class="cmti-10x-x-109">of a mechanical system described by </span><!--l. 1618--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>N</mi></math>
+<span 
+class="cmti-10x-x-109">generalised coordinates </span><!--l. 1618--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></math><span 
+class="cmti-10x-x-109">,</span>
+<span 
+class="cmti-10x-x-109">is the </span><!--l. 1618--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>2</mn><mi 
+>N</mi></math>
+<span 
+class="cmti-10x-x-109">dimensional space given by </span><!--l. 1618--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow></math><span 
+class="cmti-10x-x-109">.</span>
+</p>
+</div>
+<div class="newtheorem">
+<!--l. 1624--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Proposition.</span>  </span><span 
+class="cmti-10x-x-109">Hamilton’s equations. The Euler-Lagrange equations for a mechanical system with Lagrangian</span>
+<!--l. 1624--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">and                                                                                                                      Hamiltonian</span>
+<!--l. 1624--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>H</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">are equivalent to Hamilton’s equations</span>
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1625--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                         <mfrac><mrow 
+><mi 
+>d</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+ <mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mfrac><mrow 
+><mi 
+>d</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+ <mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac>  <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 1625--><p class="nopar" > <span 
+class="cmti-10x-x-109">on phase space</span>
+</p>
+</div>
+<!--l. 1628--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 1629--><p class="noindent" ><span class="head">
+<span 
+class="cmti-10x-x-109">Proof.</span> </span>For simplicity we work with one coordinate, <!--l. 1629--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>q</mi></math>.
+The extension follows naturally. We use the definition of Hamiltonian <!--l. 1629--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>H</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>p</mi><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">−</mo> <mi 
+>L</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+then we find Hamilton’s first equation is
+<!--tex4ht:inline--></p><!--l. 1630--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <mfrac><mrow 
+><mi 
+>d</mi><mi 
+>q</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow> 
+ <mrow 
+><mi 
+>∂</mi><mi 
+>p</mi></mrow></mfrac>  <mo 
+class="MathClass-rel">=</mo> <mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 1630--><p class="nopar" > Hamilton’s second equation gives
+<!--tex4ht:inline--></p><!--l. 1632--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mfrac><mrow 
+><mi 
+>d</mi><mi 
+>p</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+ <mrow 
+><mi 
+>∂</mi><mi 
+>q</mi></mrow></mfrac>  <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mi 
+>q</mi></mrow></mfrac>
+</math>
+<!--l. 1632--><p class="nopar" > recall that since the Hamiltonian is the Legendre transform of <!--l. 1633--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi></math>,
+<!--l. 1633--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>p</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow></mfrac> </math>,
+so the second equation is rewritten as
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1634--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mi 
+>q</mi></mrow></mfrac> <mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 1634--><p class="nopar" > these are just the Euler-Lagrange equations.                                                                                       □
+</p>
+</div>
+<!--l. 1637--><p class="noindent" >If the Hamiltonian does not depend explicitly on time, then it is conserved.
+</p>
+<div class="newtheorem">
+<!--l. 1638--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Proposition.</span>  </span><span 
+class="cmti-10x-x-109">In              a              Hamiltonian              system              with              Hamiltonian</span>
+<!--l. 1639--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>H</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>p</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">we have</span>
+<!--tex4ht:inline--></p><!--l. 1640--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                               <mfrac><mrow 
+><mi 
+>d</mi><mi 
+>H</mi></mrow>
+ <mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow> 
+ <mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac>
+</math>
+<!--l. 1640--><p class="nopar" >
+</p>
+</div>
+<!--l. 1642--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 1643--><p class="noindent" ><span class="head">
+<span 
+class="cmti-10x-x-109">Proof.</span> </span>
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1643--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                         <mfrac><mrow 
+><mi 
+>d</mi><mi 
+>H</mi></mrow>
+ <mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow> 
+ <mrow 
+><mi 
+>∂</mi><mi 
+>q</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>q</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow> 
+ <mrow 
+><mi 
+>∂</mi><mi 
+>p</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>p</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow> 
+ <mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac>  <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow> 
+ <mrow 
+><mi 
+>∂</mi><mi 
+>q</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow> 
+ <mrow 
+><mi 
+>∂</mi><mi 
+>p</mi></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow> 
+ <mrow 
+><mi 
+>∂</mi><mi 
+>p</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow> 
+ <mrow 
+><mi 
+>∂</mi><mi 
+>q</mi></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow> 
+ <mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1643--><p class="nopar" >                                                                                                      □
+</p>
+</div>
+<!--l. 1645--><p class="noindent" >Hamilton’s equations can be recast in matrix form. In 2D this is written as
+<!--tex4ht:inline--></p><!--l. 1646--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+ <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><mi 
+>q</mi></mtd></mtr> <mtr><mtd 
+class="array"  columnalign="center"><mi 
+>p</mi></mtd>
+</mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                           </mrow></mfenced> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"> <mn>0</mn> </mtd><mtd 
+class="array"  columnalign="center"><mn>1</mn></mtd></mtr> <mtr><mtd 
+class="array"  columnalign="center"><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mtd> <mtd 
+class="array"  columnalign="center"><mn>0</mn></mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                 </mrow></mfenced> <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+ <mrow 
+><mi 
+>∂</mi><mi 
+>q</mi></mrow></mfrac> </mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mi 
+>p</mi></mrow></mfrac> </mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                               </mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mi 
+>Ω</mi><mo 
+class="MathClass-bin">⋅</mo><mo 
+class="MathClass-op">∇</mo><mi 
+>H</mi>
+</math>
+<!--l. 1648--><p class="nopar" > For <!--l. 1649--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>N</mi></math>
+dimensions, they can be written as
+<!--tex4ht:inline--></p><!--l. 1650--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+ <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mtd></mtr> <mtr><mtd 
+class="array"  columnalign="center"><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mtd>
+</mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                           </mrow></mfenced> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"> <mn>0</mn> </mtd><mtd 
+class="array"  columnalign="center"><mi 
+>I</mi></mtd></mtr> <mtr><mtd 
+class="array"  columnalign="center"><mo 
+class="MathClass-bin">−</mo><mi 
+>I</mi></mtd> <mtd 
+class="array"  columnalign="center"><mn>0</mn></mtd>
+</mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                 </mrow></mfenced> <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+ <mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow></mfrac> </mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mrow></mfrac> </mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                               </mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>Ω</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msub 
+><mo 
+class="MathClass-bin">⋅</mo><mo 
+class="MathClass-op">∇</mo><mi 
+>H</mi>
+</math>
+<!--l. 1652--><p class="nopar" > where <!--l. 1653--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>I</mi></math>
+corresponds to an <!--l. 1653--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>N</mi> <mo 
+class="MathClass-bin">×</mo> <mi 
+>N</mi></math>
+identity matrix. <!--l. 1653--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>Ω</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msub 
+></math>
+is sometimes known as <span 
+class="cmti-10x-x-109">the symplectic form</span>.
+</p>
+<div class="newtheorem">
+                                                                                                       
+                                                                                                       
+<!--l. 1655--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Hamiltonian description of simple harmonic motion. Consider a one-dimensional particle of mass
+<!--l. 1655--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>m</mi></math>
+in a harmonic potential <!--l. 1655--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>k</mi><msup><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mo 
+class="MathClass-bin">∕</mo><mn>2</mn></math>.
+The Lagrangian is
+<!--tex4ht:inline--></p><!--l. 1656--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>m</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac> <mover accent="true"><msup><mrow 
+><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>k</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+>
+</math>
+<!--l. 1656--><p class="nopar" >                             The                                          momentum                                          is
+<!--l. 1657--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>p</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></math>
+and we find the Hamiltonian
+<!--tex4ht:inline--></p><!--l. 1658--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mi 
+>H</mi> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn><mi 
+>m</mi></mrow></mfrac><msup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>k</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+>
+</math>
+<!--l. 1658--><p class="nopar" > Hamilton’s equations then give
+<!--tex4ht:inline--></p><!--l. 1660--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mi 
+>p</mi></mrow> 
+<mrow 
+><mi 
+>m</mi></mrow></mfrac><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mover accent="true"><mi 
+>p</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>k</mi><mi 
+>q</mi>
+</math>
+<!--l. 1660--><p class="nopar" > With solution
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1662--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                           <mi 
+>q</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>A</mi><mo class="qopname">cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>ω</mi><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>ϕ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>p</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>A</mi><mi 
+>m</mi><mi 
+>ω</mi><mo class="qopname">sin</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>ω</mi><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>ϕ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>ω</mi> <mo 
+class="MathClass-rel">=</mo> <msqrt><mrow><mi 
+>k</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>m</mi></mrow></msqrt>
+</math>
+<!--l. 1662--><p class="nopar" > Sketching the dynamics in phase space, we see ellipses (as in Figure <a 
+href="#x23-2300227">27<!--tex4ht:ref: fig:pendulum_ham --></a> from the next example). In fact, each
+trajectory in phase space follows the ellipse
+<!--tex4ht:inline--></p><!--l. 1664--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mn>2</mn><mi 
+>m</mi></mrow></mfrac><msup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>k</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>c</mi><mi 
+>o</mi><mi 
+>n</mi><mi 
+>s</mi><mi 
+>t</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1664--><p class="nopar" > given by finding the contour of fixed energy in phase space. The aspect ratio (or eccentricity) of the ellipse is fixed
+by <!--l. 1665--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi></math>
+and <!--l. 1665--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>m</mi></math>,
+the size by the total energy which varies from trajectory to trajectory.
+</p>
+</div>
+<div class="newtheorem">
+<!--l. 1669--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Hamiltonian description of a pendulum.
+</p>
+<figure class="figure"> 
+<a 
+ id="x23-2300126"></a>
+<div class="center" 
+>
+<!--l. 1673--><p class="noindent" >
+</p><!--l. 1674--><p class="noindent" > <img 
+src="figures/pendulum-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 26:</span><span  
+class="content">A pendulum, described by <!--l. 1675--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>.</span></figcaption><!--tex4ht:label?: x23-2300126 -->
+</div>
+</figure>
+<!--l. 1680--><p class="noindent" >The Lagrangian is
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1681--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                      <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>m</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac> <msup><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mover accent="true"><msup><mrow 
+><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <mi 
+>m</mi><mi 
+>g</mi><mi 
+>L</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo><mo class="qopname"> cos</mo><!--nolimits--><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1681--><p class="nopar" > so the Hamiltonian is given by
+<!--tex4ht:inline--></p><!--l. 1683--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                 <mi 
+>H</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>p</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>p</mi><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>m</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac> <msup><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mover accent="true"><msup><mrow 
+><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>m</mi><mi 
+>g</mi><mi 
+>L</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo><mo class="qopname"> cos</mo><!--nolimits--><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1683--><p class="nopar" > with the momentum <!--l. 1684--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>p</mi></math>
+given by
+<!--tex4ht:inline--></p><!--l. 1685--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mi 
+>p</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><msup><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover>
+</math>
+<!--l. 1685--><p class="nopar" > rearranging we find
+<!--tex4ht:inline--></p><!--l. 1687--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                   <mi 
+>H</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>p</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo>   <mfrac><mrow 
+><msup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow> 
+<mrow 
+><mi 
+>m</mi><msup><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac>  <mfrac><mrow 
+><msup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow> 
+<mrow 
+><mi 
+>m</mi><msup><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <mi 
+>m</mi><mi 
+>g</mi><mi 
+>L</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo><mo class="qopname"> cos</mo><!--nolimits--><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac>  <mfrac><mrow 
+><msup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow> 
+<mrow 
+><mi 
+>m</mi><msup><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <mi 
+>m</mi><mi 
+>g</mi><mi 
+>L</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo><mo class="qopname"> cos</mo><!--nolimits--><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 1687--><p class="nopar" > as a function on the two-dimensional phase space <!--l. 1688--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>p</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+Let’s first assume the small-angle approximation, where
+<!--l. 1688--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>1</mn> <mo 
+class="MathClass-bin">−</mo><mo class="qopname"> cos</mo><!--nolimits--><mi 
+>𝜃</mi> <mo 
+class="MathClass-rel">≈</mo> <msup><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mo 
+class="MathClass-bin">∕</mo><mn>2</mn></math>, then we
+have
+<!--tex4ht:inline--></p><!--l. 1689--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                      <mi 
+>H</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>p</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo>    <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn><mi 
+>m</mi><msup><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac><msup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>m</mi><mi 
+>g</mi><mi 
+>L</mi></mrow> 
+  <mrow 
+><mn>2</mn></mrow></mfrac>   <msup><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+>
+</math>
+<!--l. 1689--><p class="nopar" > Hamilton’s equations then read
+<!--tex4ht:inline--></p><!--l. 1691--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                               <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>𝜃</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo>   <mfrac><mrow 
+><mi 
+>p</mi></mrow> 
+<mrow 
+><mi 
+>m</mi><mi 
+>L</mi></mrow></mfrac><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 1691--><p class="nopar" >
+<!--tex4ht:inline--></p><!--l. 1692--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>p</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>m</mi><mi 
+>g</mi><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1692--><p class="nopar" > Which we can solve to give
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1694--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mi 
+>𝜃</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>A</mi><mo class="qopname">cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>ω</mi><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>ϕ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1694--><p class="nopar" >
+<!--tex4ht:inline--></p><!--l. 1695--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mi 
+>p</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>m</mi><mi 
+>ω</mi><mi 
+>L</mi><mi 
+>A</mi><mo class="qopname">sin</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>ω</mi><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>ϕ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1695--><p class="nopar" > with <!--l. 1696--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>ω</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>g</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>L</mi></math>. It
+is, however, much more instructive to look at the phase-space behaviour of the system. We can plot the level sets of the
+Hamiltonian, which are also the phase space trajectories, we find these are ellipses!
+</p>
+<figure class="figure"> 
+<a 
+ id="x23-2300227"></a>
+<div class="center" 
+>
+<!--l. 1700--><p class="noindent" >
+</p><!--l. 1701--><p class="noindent" > <img 
+src="figures/ham_pen-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 27:</span><span  
+class="content">Trajectories of the approximated pendulum system in phase space. The Hamiltonian is constant along
+the trajectories, which are ellipses in phase space.</span></figcaption><!--tex4ht:label?: x23-2300227 -->
+</div>
+</figure>
+<!--l. 1707--><p class="noindent" >The full pendulum equations are difficult to solve. The Hamiltonian perspective, however, allows us to understand the
+qualitative behaviour very easily. Figure <a 
+href="#x23-2300328">28<!--tex4ht:ref: fig:pendulum_ham2b --></a> shows the contours of the pendulum Hamiltonian (and hence the trajectories)
+for the full pendulum system. We see that we can obtain a qualitative picture of the pendulum’s behaviour simply by
+studying the topology of the trajectories.
+</p>
+<figure class="figure"> 
+<a 
+ id="x23-2300328"></a>
+<div class="center" 
+>
+<!--l. 1712--><p class="noindent" >
+</p><!--l. 1713--><p class="noindent" > <img 
+src="figures/ham_pen2b-.svg" alt="PIC"  
+ />
+                                                                                                       
+                                                                                                       
+</p>
+<figcaption class="caption" ><span class="id">Figure 28:</span><span  
+class="content">Full trajectories of the pendulum in phase space. A: stationary solution. B: small oscillations of the
+pendulum. C: a special trajectory where the pendulum approaches a vertical orientation. Where the lines cross
+there is an unstable equilibrium point where the pendulum points vertically upwards. D: a pendulum with sufficient
+kinetic energy that it spins round and round.</span></figcaption><!--tex4ht:label?: x23-2300328 -->
+</div>
+</figure>
+</div>
+<div class="newtheorem">
+<!--l. 1727--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Hamiltonian for relativistic particles. The Lagrangian for a free relativistic particle was given by
+<!--tex4ht:inline--></p><!--l. 1728--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                     <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>m</mi><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow>
+  <mrow 
+><mi 
+>γ</mi></mrow></mfrac>  <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>m</mi><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><msqrt><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mo 
+class="MathClass-rel">|</mo><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> <msup><mrow 
+><mo 
+class="MathClass-rel">|</mo></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">∕</mo><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt>
+</math>
+<!--l. 1728--><p class="nopar" > which was expressed in terms of the proper time. Using this we find the conjugate momentum
+<!--tex4ht:inline--></p><!--l. 1730--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                    <mstyle mathvariant="bold"><mi 
+>p</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><mi 
+>γ</mi><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>γ</mi> <mo 
+class="MathClass-rel">=</mo>         <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><msqrt><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mo 
+class="MathClass-rel">|</mo><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> <msup><mrow 
+><mo 
+class="MathClass-rel">|</mo></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">∕</mo><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt></mrow></mfrac><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1730--><p class="nopar" > This implies
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1732--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mi 
+>γ</mi> <mo 
+class="MathClass-rel">=</mo> <msqrt><mrow><mn>1</mn> <mo 
+class="MathClass-bin">+</mo> <mo 
+class="MathClass-rel">|</mo><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle> <msup><mrow 
+><mo 
+class="MathClass-rel">|</mo></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">∕</mo><msup><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt>
+</math>
+<!--l. 1732--><p class="nopar" > so that the Hamiltonian is
+<!--tex4ht:inline--></p><!--l. 1734--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                         <mi 
+>H</mi> <mo 
+class="MathClass-rel">=</mo> <mstyle mathvariant="bold"><mi 
+>p</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> <mo 
+class="MathClass-bin">−</mo> <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><mi 
+>γ</mi><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 1734--><p class="nopar" > which is the relativistic energy of a free particle. We can then use Hamilton’s equations to find the motion of the
+particle
+<!--tex4ht:inline--></p><!--l. 1736--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                    <mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow> 
+ <mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mrow></mfrac>  <mo 
+class="MathClass-rel">=</mo>   <mfrac><mrow 
+><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mrow> 
+<mrow 
+><mi 
+>m</mi><mi 
+>γ</mi></mrow></mfrac><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mover accent="true"><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>H</mi></mrow>
+ <mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow></mfrac>  <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1736--><p class="nopar" >                              So                                            when                                            there
+is no force, the relativistic momentum of a particle is conserved. The relativistic energy is also conserved, since
+<!--l. 1737--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>H</mi></math>
+is constant. This is reference-frame dependent, but is constant within each reference frame.
+</p>
+</div>
+<div class="newtheorem">
+<!--l. 1742--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Hamiltonian for charged particles. The Lagrangian for a charged particle was given by
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1743--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                         <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>m</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+>  <mfenced separators="" 
+open="|"  close="|" ><mrow><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <mi 
+>e</mi><mi 
+>ϕ</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>e</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>A</mi></mstyle>
+</math>
+<!--l. 1743--><p class="nopar" > This implies the caonical momentum is
+<!--tex4ht:inline--></p><!--l. 1745--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <mstyle mathvariant="bold"><mi 
+>p</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">+</mo> <mi 
+>e</mi><mstyle mathvariant="bold"><mi 
+>A</mi></mstyle>
+</math>
+<!--l. 1745--><p class="nopar" > note that the canonical momentum is not gauge invariant. We then find the Hamiltonian is given by
+<!--tex4ht:inline--></p><!--l. 1747--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                        <mi 
+>H</mi> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn><mi 
+>m</mi></mrow></mfrac><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle> <mo 
+class="MathClass-bin">−</mo> <mi 
+>e</mi><mstyle mathvariant="bold"><mi 
+>A</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>e</mi><mi 
+>ϕ</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1747--><p class="nopar" >  Note   that   in   contrast   with   the   Lagrangian,   the   Hamiltonian   <span 
+class="cmti-10x-x-109">is   </span>gauge   invariant.   The   term
+<!--l. 1748--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle> <mo 
+class="MathClass-bin">−</mo> <mi 
+>e</mi><mstyle mathvariant="bold"><mi 
+>A</mi></mstyle></math>
+is the <span 
+class="cmbx-10x-x-109">kinetic momentum</span>.
+</p>
+</div>
+<div class="newtheorem">
+<!--l. 1754--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Ignorable      coordinates.      We      study      the      motion      of      a      particle      of      mass
+<!--l. 1755--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>m</mi></math>
+in     three     dimensions     constrained     to     lie     on     the     surface     of     a     cylinder     of     radius
+                                                                                                       
+                                                                                                       
+<!--l. 1755--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>R</mi></math>
+inside                                        a                                        central                                        potential
+<!--l. 1755--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>k</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-bin">∕</mo><mn>2</mn></math>
+(see Figure <a 
+href="#x23-2300429">29<!--tex4ht:ref: fig:cylinder --></a>. Using cylindrical coordinates
+<!--tex4ht:inline--></p><!--l. 1756--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                   <mi 
+>r</mi> <mo 
+class="MathClass-rel">=</mo> <msqrt><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt><mo 
+class="MathClass-punc">,</mo><mspace width="3.04076pt" class="tmspace"/><mi 
+>𝜃</mi> <mo 
+class="MathClass-rel">=</mo><mo class="qopname"> arctan</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>y</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="3.04076pt" class="tmspace"/><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>z</mi>
+</math>
+<!--l. 1756--><p class="nopar" > we may write the Lagrangian
+<!--tex4ht:inline--></p><!--l. 1758--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                   <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>m</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac>  <mfenced separators="" 
+open="("  close=")" ><mrow><msup><mrow 
+><mover accent="true"><mi 
+>r</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><msup><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfenced> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>k</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1758--><p class="nopar" > We can now incorporate the constraint <!--l. 1759--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>R</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>r</mi></math>,
+by defining our generalised coordinates <!--l. 1759--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+in terms of which our Lagrangian becomes
+<!--tex4ht:inline--></p><!--l. 1760--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                     <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>m</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><msup><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>k</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1760--><p class="nopar" > The Hamiltonian approach gives
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1762--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                    <mi 
+>H</mi> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn><mi 
+>m</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><msubsup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>2</mn></mrow></msubsup 
+></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac>  <mo 
+class="MathClass-bin">+</mo> <msubsup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msubsup 
+></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>k</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1762--><p class="nopar" > and our equations of motion are
+<!--tex4ht:inline--></p><!--l. 1764--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo>   <mfrac><mrow 
+><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>𝜃</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>m</mi><msup><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mover accent="true"><msub><mrow 
+><mi 
+>p</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>𝜃</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 1764--><p class="nopar" >
+<!--tex4ht:inline--></p><!--l. 1765--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mover accent="true"><mi 
+>z</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>z</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mn>2</mn><mi 
+>m</mi></mrow></mfrac><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mover accent="true"><msub><mrow 
+><mi 
+>p</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>z</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>k</mi><mi 
+>z</mi>
+</math>
+<!--l. 1765--><p class="nopar" >                                                                                                  Since
+<!--l. 1766--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>
+did   no   appear   in   the   Hamiltonian   it   is   said   to   be   <span 
+class="cmti-10x-x-109">cyclic</span>,   and   the   corresponding   momentum
+<!--l. 1766--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>𝜃</mi></mrow></msub 
+></math>
+is           consequently           constant.           We           can           find           the           value           of
+<!--l. 1766--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>
+by simple integration
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1767--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                 <mi 
+>𝜃</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits-->  <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mi 
+>m</mi><msup><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>𝜃</mi></mrow></msub 
+><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mi 
+>t</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>𝜃</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>m</mi><msup><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+>
+</math>
+<!--l. 1767--><p class="nopar" > This pair of coordinates are therefore ignorable in the rest of the problem. We have reduced the dimension of the
+problem. In our case all that remains is the motion of the <!--l. 1768--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>z</mi></math>
+coordinate, which in this case gives simple harmonic motion with frequency <!--l. 1768--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>ω</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>k</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>m</mi></math>,
+<!--tex4ht:inline--></p><!--l. 1769--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <mover 
+accent="true"><mrow 
+><mi 
+>z</mi></mrow><mo 
+class="MathClass-op">̈</mo></mover> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>k</mi></mrow> 
+<mrow 
+><mi 
+>m</mi></mrow></mfrac><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1769--><p class="nopar" >
+</p>
+</div>
+<figure class="figure"> 
+
+                                                                                                       
+                                                                                                       
+<a 
+ id="x23-2300429"></a>
+                                                                                                       
+                                                                                                       
+<div class="center" 
+>
+<!--l. 1773--><p class="noindent" >
+</p><!--l. 1774--><p class="noindent" > <img 
+src="figures/cylinder-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 29:</span><span  
+class="content">Particle confined to the surface of a cylinder of radius <!--l. 1775--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>R</mi></math>.</span></figcaption><!--tex4ht:label?: x23-2300429 -->
+</div>
+                                                                                                       
+                                                                                                       
+</figure>
+                                                                                                       
+                                                                                                       
+<!--l. 1784--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu18.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse3.html#AM_notessu19.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu20.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

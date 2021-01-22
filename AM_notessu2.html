@@ -1,0 +1,739 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Global formulation of Newton’s first law</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 100--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu1.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse1.html#AM_notessu2.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu3.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">1.2   </span> <a 
+ id="x4-30002"></a>Global formulation of Newton’s first law</h4>
+<!--l. 102--><p class="noindent" >We argued that Newton’s first law can be phrased globally as: </p>
+<div class="center" 
+>
+<!--l. 103--><p class="noindent" >
+</p>
+<div class="minipage"><!--l. 103--><p class="noindent" >In  the  absence  of  external  forces,  a  particle  moving  between  two  nearby  points
+<!--l. 103--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>A</mi></math>
+and
+<!--l. 103--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>B</mi></math>
+takes the path of shortest length, out of all possible paths, and does so at constant speed.</p></div></div>
+<!--l. 105--><p class="noindent" >The goal of this section is to formulate this law in a precise mathematical form.
+</p><!--l. 107--><p class="noindent" >To do so we need to define the length of a particle’s trajectory. For now we will assume we are in two dimensions, so that
+the trajectory of the particle can be parameterised as
+<!--tex4ht:inline--></p><!--l. 107--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 107--><p class="nopar" > at each <!--l. 108--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi></math>,
+<!--l. 108--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> gives the
+<!--l. 108--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi></math> and
+<!--l. 108--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi></math> positions of the particle. For
+example, circular motion of radius <!--l. 108--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>R</mi></math>
+and angular frequency <!--l. 108--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ω</mi></math>
+would be
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 109--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                        <mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>R</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>ω</mi><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>R</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ω</mi><mi 
+>t</mi></mrow></mfenced><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 109--><p class="nopar" > We want to derive an expression for the distance travelled by a particle over a time
+<!--l. 110--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>T</mi></math>
+(if the trajectory is curved this is longer than the distance between the start and end points of the
+trajectory)<span class="footnote-mark"><a 
+href="#fn2x0" id="fn2x0-bk"><sup class="textsuperscript">2</sup></a></span><a 
+ id="x4-3001f2"></a>).
+We need only basic observations about the particle’s trajectory. The velocity of the particle is given by
+<!--tex4ht:inline--></p><!--l. 111--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mi 
+>y</mi><mo>&sdot;</mo></mover><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 111--><p class="nopar" > and the speed of the particle is given by
+<!--tex4ht:inline--></p><!--l. 113--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <mfenced separators="" 
+open="|"  close="|" ><mrow><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <msqrt><mrow><msup><mrow 
+><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover> </mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">+</mo><msup><mrow 
+> <mover accent="true"> <mi 
+>y</mi><mo>&sdot;</mo></mover> </mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 113--><p class="nopar" > We know from mechanics the law
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 115--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mi 
+>D</mi><mi 
+>i</mi><mi 
+>s</mi><mi 
+>t</mi><mi 
+>a</mi><mi 
+>n</mi><mi 
+>c</mi><mi 
+>e</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>S</mi><mi 
+>p</mi><mi 
+>e</mi><mi 
+>e</mi><mi 
+>d</mi><mspace width="3.04076pt" class="tmspace"/> <mo 
+class="MathClass-bin">×</mo><mspace width="3.04076pt" class="tmspace"/><mi 
+>T</mi><mi 
+>i</mi><mi 
+>m</mi><mi 
+>e</mi><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 115--><p class="nopar" > this tells as that in a short time <!--l. 116--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi><mi 
+>t</mi></math>,
+the distance travelled, <!--l. 116--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi><mi 
+>l</mi></math>
+is equal to
+<!--tex4ht:inline--></p><!--l. 117--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                               <mi 
+>d</mi><mi 
+>l</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-rel">|</mo><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover><mo 
+class="MathClass-rel">|</mo><mi 
+>d</mi><mi 
+>t</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 117--><p class="nopar" > Then in a time <!--l. 118--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>T</mi></math>, the
+total distance travelled, <!--l. 118--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+mathvariant="bold-script">ℒ</mi></math>
+must be the integral of <!--l. 118--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi><mi 
+>l</mi></math>,
+so we can write
+<!--tex4ht:inline--></p><!--l. 119--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                             <mi 
+mathvariant="bold-script">ℒ</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+mathvariant="bold-script">ℒ</mi></mrow></msubsup 
+><mi 
+>d</mi><mi 
+>l</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+> <mfenced separators="" 
+open="|"  close="|" ><mrow><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfenced><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+><msqrt><mrow><msup><mrow 
+><mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>x</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> </mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo><msup><mrow 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>y</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac></mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt><mi 
+>d</mi><mi 
+>t</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 119--><p class="nopar" > The middle expression above holds for any trajectory, in any number of dimensions.
+</p><!--l. 123--><p class="noindent" >Now suppose we have a particle travelling between <!--l. 123--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>A</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn><mo 
+class="MathClass-punc">,</mo><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+and <!--l. 123--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>B</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>T</mi> </mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>T</mi> </mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> in time
+<!--l. 123--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>T</mi></math>. If we believe a straight line
+is the shortest path between <!--l. 123--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>A</mi></math>
+and <!--l. 123--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>B</mi></math>,
+then our global statement of Newton’s first law says that, in the absence of forces, the trajectory of a particle satisfying
+<!--l. 123--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> with
+<!--l. 123--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>A</mi></math> and
+<!--l. 123--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>T</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>B</mi></math> will minimise
+the integral <!--l. 123--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+mathvariant="bold-script">ℒ</mi></math>.
+                                                                                                       
+                                                                                                       
+</p><!--l. 125--><p class="noindent" >The above argument captures the “straight line” aspect. However, Newton’s law doesn’t only say that
+particles go in constant direction, but at constant speed. For example, suppose the motion is confined to the
+<!--l. 125--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi></math> axis.
+Then the two trajectories
+<!--tex4ht:inline--></p><!--l. 126--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msub><mrow 
+>
+                                    <mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="("  close=")" ><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>T</mi> </mrow></msub 
+> <mfrac><mrow 
+><mi 
+>t</mi></mrow> 
+<mrow 
+><mi 
+>T</mi></mrow></mfrac><mo 
+class="MathClass-punc">,</mo><mn>0</mn></mrow></mfenced><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="("  close=")" ><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>T</mi> </mrow></msub 
+> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow> 
+<mrow 
+><msup><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac><mo 
+class="MathClass-punc">,</mo><mn>0</mn></mrow></mfenced>
+</math>
+<!--l. 126--><p class="nopar" > both give a straight line in the <!--l. 127--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+plane, but the speed is different (this is like walking the same path but with a different speed). Only the first one is
+physical, how do we make this mathematical?
+</p><!--l. 129--><p class="noindent" >Recall the Cauchy-Schwarz inequality
+<!--tex4ht:inline--></p><!--l. 130--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msup><mrow 
+>
+                                      <mfenced separators="" 
+open="("  close=")" ><mrow><msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mi 
+>d</mi><mi 
+>t</mi></mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>T</mi><msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+><mi 
+>f</mi><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mi 
+>d</mi><mi 
+>t</mi>
+</math>
+<!--l. 130--><p class="nopar" > which is the integral version of <!--l. 131--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>b</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">≤</mo> <mn>2</mn><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>b</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+We can rewrite this as
+<!--tex4ht:inline--></p><!--l. 132--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msup><mrow 
+>
+                                            <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>a</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>b</mi></mrow>
+  <mrow 
+><mn>2</mn></mrow></mfrac>   </mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">≤</mo> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>b</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow> 
+     <mrow 
+><mn>2</mn></mrow></mfrac>
+</math>
+<!--l. 132--><p class="nopar" > or ‘the square of the average is less than the average of the squares’. The inequality is an equality only if
+<!--l. 133--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></math>
+is constant. Applying this to our problem we find, for an arbitrary trajectory
+<!--l. 133--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>:
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 134--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <msup><mrow 
+><mi 
+mathvariant="bold-script">ℒ</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>T</mi><msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+><msup><mrow 
+> <mfenced separators="" 
+open="|"  close="|" ><mrow><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mi 
+>d</mi><mi 
+>t</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 134--><p class="nopar" > Now suppose we try to find the trajectory <!--l. 135--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+from <!--l. 135--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>A</mi></math> to
+<!--l. 135--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>B</mi></math>
+that minimises the right hand side of the above inequality. We can always reduce the value of integral
+by making the speed is constant, but keeping the path the same, and if we do that it is equal to
+<!--l. 135--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+mathvariant="bold-script">ℒ</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mo 
+class="MathClass-bin">∕</mo><mi 
+>T</mi></math>. We can
+then further reduce the value of the integral by choosing the path of least length. So, if we minimise the right-hand side we
+find the minimum length <span 
+class="cmti-10x-x-109">and </span>constant speed – both parts of Newton’s first law. Now we can multiply the integral by a
+factor <!--l. 135--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>m</mi><mo 
+class="MathClass-bin">∕</mo><mn>2</mn></math>
+without affecting anything and define the action.
+</p>
+<div class="newtheorem">
+<!--l. 136--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">In the absence of forces the action of a particle is the integral of its kinetic energy</span>
+<!--tex4ht:inline--></p><!--l. 138--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mi 
+>S</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+><mfrac><mrow 
+><mi 
+>m</mi></mrow>
+<mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+>  <mfenced separators="" 
+open="|"  close="|" ><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mi 
+>d</mi><mi 
+>t</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 138--><p class="nopar" >
+</p>
+</div>
+<!--l. 140--><p class="noindent" >and we find the following result.
+</p>
+<div class="center" 
+>
+<!--l. 142--><p class="noindent" >
+                                                                                                       
+                                                                                                       
+</p>
+<div class="minipage"><!--l. 142--><p class="noindent" >Newton’s First Law (Global). In the absence of forces a particle traces out a trajectory
+<!--l. 142--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+between
+<!--l. 142--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>A</mi></math>
+and
+<!--l. 142--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>B</mi></math>
+that minimises the action (total kinetic energy).
+</p></div></div>
+<!--l. 145--><p class="noindent" >We have found a direct link between Newton’s first law, kinetic energy, and geodesics. In
+other words, Newton’s first law states that in the absence of any force, particles go from
+<!--l. 145--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>A</mi></math> to
+<!--l. 145--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>B</mi></math>
+in such a way to minimise their total kinetic energy. Or in the words of
+Feynman:<span class="footnote-mark"><a 
+href="#fn3x0" id="fn3x0-bk"><sup class="textsuperscript">3</sup></a></span><a 
+ id="x4-3002f3"></a>
+</p>
+<div class="center" 
+>
+<!--l. 146--><p class="noindent" >
+</p>
+<div class="minipage"><!--l. 147--><p class="noindent" >“As an example, say your job is to start from home and get to school in a given length of
+time with the car. You can do it several ways: You can accelerate like mad at the beginning
+and slow down with the brakes near the end, or you can go at a uniform speed, or you can
+go backwards for a while and then go forward, and so on. The thing is that the average
+speed has got to be, of course, the total distance that you have gone over the time. But
+if you do anything but go at a uniform speed, then sometimes you are going too fast and
+sometimes you are going too slow. Now the mean square of something that deviates around
+an average, as you know, is always greater than the square of the mean; so the kinetic
+energy integral would always be higher if you wobbled your velocity than if you went at
+a uniform velocity. So we see that the integral is a minimum if the velocity is a constant
+(when there are no forces).”
+</p></div></div>
+                                                                                                       
+                                                                                                       
+<div class="footnotes"><!--l. 110--><p class="noindent" ><span class="footnote-mark"><a 
+href="#fn2x0-bk" id="fn2x0"><sup class="textsuperscript">2</sup></a></span><span 
+class="cmr-9">Work out the distance from wherever you’re sitting now to where you were born. Ignoring the motion of the Earth this is you lifetime net</span>
+<span 
+class="cmr-9">displacement! Of course the total distance you have travelled is longer than this.</span></p>
+<!--l. 145--><p class="noindent" ><span class="footnote-mark"><a 
+href="#fn3x0-bk" id="fn3x0"><sup class="textsuperscript">3</sup></a></span><span 
+class="cmr-9">Feynman, R. P., Leighton, R. B., &#x0026; Sands, M. L. (1963). The Feynman lectures on physics. Reading, Mass: Addison-Wesley</span>
+<span 
+class="cmr-9">Pub.</span></p>                                                                                                   </div>
+<!--l. 150--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu1.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse1.html#AM_notessu2.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu3.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

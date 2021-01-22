@@ -1,0 +1,869 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The Beltrami identity and Legendre transforms</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 1542--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notesse3.html#AM_notessu18.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu19.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">3.1   </span> <a 
+ id="x22-220001"></a>The Beltrami identity and Legendre transforms</h4>
+<!--l. 1543--><p class="noindent" >We now study a third formulation of mechanics, the Hamiltonian formulation. This is the deepest formulation of classical
+mechanics, recasting classical mechanics as geometric problems in ‘phase space’. It is often less suited to direct
+computation than the Lagrangian formulation.
+</p><!--l. 1546--><p class="noindent" >For a Lagrangian system with Lagrangian <!--l. 1546--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi></math>
+that does not explicitly depend on time <!--l. 1546--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi></math>,
+we found that the quantity
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1547--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mi 
+>H</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-bin">⋅</mo><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">−</mo> <mi 
+>L</mi>
+</math>
+<!--l. 1547--><p class="nopar" > was a constant of the motion. Explicit computation showed that this was related to the total
+energy of the system, a result we also derived using Noether’s theorem. This quantity is known as
+<!--l. 1548--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>H</mi></math>, the
+Hamiltonian, and is the Legendre transform of the Lagrangian.
+</p>
+<div class="newtheorem">
+<!--l. 1549--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">A                                                                                                              function</span>
+<!--l. 1550--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">is convex if</span>
+<!--tex4ht:inline--></p><!--l. 1551--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>t</mi><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">≤</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mi 
+>t</mi><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1551--><p class="nopar" >                                                                                                      <span 
+class="cmti-10x-x-109">if</span>
+<!--l. 1552--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi></math>
+<span 
+class="cmti-10x-x-109">is twice-differentiable, this is equivalent to the condition that</span>
+<!--tex4ht:inline--></p><!--l. 1553--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                                <mfrac><mrow 
+><msup><mrow 
+><mi 
+>d</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mi 
+>f</mi></mrow>
+<mrow 
+><mi 
+>d</mi><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac> <mo 
+class="MathClass-rel">≥</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1553--><p class="nopar" >
+</p>
+                                                                                                       
+                                                                                                       
+</div>
+<div class="newtheorem">
+<!--l. 1555--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">A                                                                                                              function</span>
+<!--l. 1556--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">is strictly convex if</span>
+<!--tex4ht:inline--></p><!--l. 1557--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>t</mi><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">&#x003C;</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mi 
+>t</mi><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1557--><p class="nopar" >                                                                                                      <span 
+class="cmti-10x-x-109">if</span>
+<!--l. 1558--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi></math>
+<span 
+class="cmti-10x-x-109">is twice-differentiable, this is equivalent to the condition that</span>
+<!--tex4ht:inline--></p><!--l. 1559--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                                <mfrac><mrow 
+><msup><mrow 
+><mi 
+>d</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mi 
+>f</mi></mrow>
+<mrow 
+><mi 
+>d</mi><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1559--><p class="nopar" >
+</p>
+</div>
+<div class="newtheorem">
+<!--l. 1561--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">The        Legendre        transformation        of        a        strictly        convex        function</span>
+<!--l. 1562--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">is                                                             the                                                             function</span>
+<!--l. 1562--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mo 
+class="MathClass-bin">∗</mo></mrow></msup 
+></math>
+                                                                                                       
+                                                                                                       
+<span 
+class="cmti-10x-x-109">of</span>
+<!--l. 1562--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>p</mi></math>
+<span 
+class="cmti-10x-x-109">given by</span>
+<!--tex4ht:inline--></p><!--l. 1563--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mo 
+class="MathClass-bin">∗</mo></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>p</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+> <mi 
+>m</mi><mi 
+>a</mi><mi 
+>x</mi></mrow><mrow 
+>
+<mi 
+>x</mi></mrow></msub 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>x</mi><mi 
+>p</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></mfenced><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1563--><p class="nopar" >
+</p>
+</div>
+<!--l. 1565--><p class="noindent" >This just means ‘pick a value of <!--l. 1565--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>p</mi></math>, then
+find the maximum value of the quantity <!--l. 1565--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mi 
+>p</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+over all values of <!--l. 1565--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi></math>, the maximum
+value is the Legendre transform’. If <!--l. 1565--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi></math>
+is differentiable, then <!--l. 1565--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mi 
+>p</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+will be maximised if
+<!--tex4ht:inline--></p><!--l. 1566--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                      <mfrac><mrow 
+><mi 
+>∂</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mi 
+>x</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn> <mo 
+class="MathClass-rel">=</mo> <mi 
+>p</mi> <mo 
+class="MathClass-bin">−</mo> <msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="3.04076pt" class="tmspace"/><mo 
+class="MathClass-rel">⇒</mo><mspace width="3.04076pt" class="tmspace"/><mi 
+>p</mi> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1566--><p class="nopar" > If the function is differentiable, then the Legendre transform has a nice graphical interpretation, shown in
+Figure <a 
+href="#x22-2200125">25<!--tex4ht:ref: fig:legendre --></a>.
+</p>
+<figure class="figure"> 
+
+                                                                                                       
+                                                                                                       
+<a 
+ id="x22-2200125"></a>
+                                                                                                       
+                                                                                                       
+<div class="center" 
+>
+<!--l. 1570--><p class="noindent" >
+</p><!--l. 1571--><p class="noindent" > <img 
+src="figures/legendre-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 25:</span><span  
+class="content">The Legendre transform</span></figcaption><!--tex4ht:label?: x22-2200125 -->
+</div>
+                                                                                                       
+                                                                                                       
+</figure>
+<div class="newtheorem">
+<!--l. 1578--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Proposition.</span>  </span><span 
+class="cmti-10x-x-109">The Hamiltonian </span><!--l. 1579--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>H</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>p</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">is the Legendre transformation of the Lagrangian </span><!--l. 1579--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">with respect to </span><!--l. 1579--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></math><span 
+class="cmti-10x-x-109">.</span>
+</p>
+</div>
+<!--l. 1581--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 1582--><p class="noindent" ><span class="head">
+<span 
+class="cmti-10x-x-109">Proof.</span> </span>Recall the Hamiltonian is defined as
+<!--tex4ht:inline--></p><!--l. 1583--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mi 
+>H</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>p</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>p</mi><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mi 
+>L</mi>
+</math>
+<!--l. 1583--><p class="nopar" > and that the momentum is given by
+<!--tex4ht:inline--></p><!--l. 1584--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                                <mi 
+>p</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1584--><p class="nopar" > Therefore the definition of Legendre transform for a differentiable function is satisfied.                                □
+                                                                                                       
+                                                                                                       
+</p>
+</div>
+<!--l. 1588--><p class="noindent" >If a function <!--l. 1588--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+is a convex function of several variables, then we may take the Legendre transformation of each variable. In this case, we find a
+Hamiltonian <!--l. 1588--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>H</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+This requires a little more technical work – the convexity condition must be extended to multiple variables, this is a little
+tricky and is discussed in the problems. However, it remains true, and one may use the same relations to define the
+Hamiltonian for multiple variables.
+<!--tex4ht:inline--></p><!--l. 1589--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                <mi 
+>H</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mstyle mathvariant="bold"><mi 
+>p</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="("  close=")" ><mrow><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><msub><mrow 
+><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac></mrow></mfenced> <mo 
+class="MathClass-bin">−</mo> <mi 
+>L</mi>
+</math>
+<!--l. 1589--><p class="nopar" >
+<!--tex4ht:inline--></p><!--l. 1590--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mstyle mathvariant="bold"><mi 
+>p</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac> <mspace width="3.04076pt" class="tmspace"/><mo 
+class="MathClass-rel">⇒</mo><mspace width="3.04076pt" class="tmspace"/><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><msub><mrow 
+><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 1590--><p class="nopar" >
+</p>
+<div class="newtheorem">
+<!--l. 1592--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>We consider a single particle in a potential, with Lagrangian
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1593--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>m</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+>  <mfenced separators="" 
+open="|"  close="|" ><mrow><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1593--><p class="nopar" > the momentum is
+<!--tex4ht:inline--></p><!--l. 1595--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <mstyle mathvariant="bold"><mi 
+>p</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 1595--><p class="nopar" >        so           we           can           rewrite           the           Lagrangian           in           terms           of
+<!--l. 1595--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></math>
+as
+<!--tex4ht:inline--></p><!--l. 1596--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn><mi 
+>m</mi></mrow></mfrac><msup><mrow 
+> <mfenced separators="" 
+open="|"  close="|" ><mrow><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1596--><p class="nopar" > Then we find our Hamiltonian as expected
+<!--tex4ht:inline--></p><!--l. 1598--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mi 
+>H</mi> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn><mi 
+>m</mi></mrow></mfrac><msup><mrow 
+> <mfenced separators="" 
+open="|"  close="|" ><mrow><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1598--><p class="nopar" >
+                                                                                                       
+                                                                                                       
+</p>
+</div>
+<div class="newtheorem">
+<!--l. 1600--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>General                              quadratic                              energy.                              Suppose
+<!--l. 1600--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>M</mi></math>
+is                                                                                                                                               an
+<!--l. 1600--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>N</mi> <mo 
+class="MathClass-bin">×</mo> <mi 
+>N</mi></math>
+symmetric matrix and our system is given by the Lagrangian (no potential term)
+<!--tex4ht:inline--></p><!--l. 1601--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                               <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>M</mi> <mo 
+class="MathClass-bin">⋅</mo><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+</mrow><mrow 
+><mi 
+>j</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+><mover accent="true"><msub><mrow 
+><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+><msub><mrow 
+><mi 
+>M</mi></mrow><mrow 
+><mi 
+>i</mi><mi 
+>j</mi></mrow></msub 
+><mover accent="true"><msub><mrow 
+><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1601--><p class="nopar" > Then the momentum is given by
+<!--tex4ht:inline--></p><!--l. 1603--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                  <mstyle mathvariant="bold"><mi 
+>p</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mi 
+>M</mi> <mo 
+class="MathClass-bin">⋅</mo><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><munder class="msub"><mrow 
+><mo mathsize="big" 
+> ∑</mo>
+   </mrow><mrow 
+><mi 
+>j</mi></mrow></munder 
+><msub><mrow 
+><mi 
+>M</mi></mrow><mrow 
+><mi 
+>i</mi><mi 
+>j</mi></mrow></msub 
+><mover accent="true"><msub><mrow 
+><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><mspace width="3.04076pt" class="tmspace"/><mo 
+class="MathClass-rel">⇒</mo><mspace width="3.04076pt" class="tmspace"/><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>M</mi></mrow><mrow 
+><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle>
+</math>
+<!--l. 1603--><p class="nopar" > so that the Hamiltonian becomes
+<!--tex4ht:inline--></p><!--l. 1605--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mi 
+>H</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo> <msup><mrow 
+><mi 
+>M</mi></mrow><mrow 
+><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle><mo 
+class="MathClass-punc">.</mo>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 1605--><p class="nopar" > The Hamiltonian only exists if <!--l. 1606--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>M</mi></math>
+is invertible, so that <!--l. 1606--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi><mi 
+>e</mi><mi 
+>t</mi><mspace width="0.3em" class="thinspace"/><mi 
+>M</mi><mo 
+class="MathClass-rel">≠</mo><mn>0</mn></math>.
+In fact, <!--l. 1606--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>M</mi></math>
+must be positive definite so all eigenvalues must be positive. For systems which do not satisfy this condition, there
+is no Hamiltonian description, even if there is a Lagrangian one.
+</p>
+</div>
+                                                                                                       
+                                                                                                       
+<!--l. 1613--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notesse3.html#AM_notessu18.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu19.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

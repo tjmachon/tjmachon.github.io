@@ -1,0 +1,2569 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Example Lagrangian systems</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 890--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu10.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse2.html#AM_notessu11.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu12.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">2.2   </span> <a 
+ id="x14-140002"></a>Example Lagrangian systems</h4>
+<!--l. 892--><p class="noindent" >Here is the basic recipe for doing Lagrangian mechanics.
+     </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+   1. </dt><dd 
+class="enumerate-enumitem">Write down appropriate generalised coordinates <!--l. 894--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+     for the system.
+     </dd><dt class="enumerate-enumitem">
+   2. </dt><dd 
+class="enumerate-enumitem">Write down the kinetic and potential energies, <!--l. 895--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>K</mi></math>
+     and <!--l. 895--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> </math>
+     in terms of <!--l. 895--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></math>
+     and <!--l. 895--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></math>,
+     to give the Lagrangian <!--l. 895--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>K</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>V</mi> </math>.
+     </dd><dt class="enumerate-enumitem">
+   3. </dt><dd 
+class="enumerate-enumitem">Solve the Euler-Lagrange equations (or if <!--l. 896--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi></math>
+     has a special symmetry, solve a simpler first order equation).</dd></dl>
+<!--l. 899--><p class="noindent" >We will now give a number of example applications of this procedure.
+</p>
+<div class="newtheorem">
+<!--l. 902--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Two dimensional particle of mass <!--l. 903--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>m</mi></math>
+in a central potential <!--l. 903--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+We use polar coordinates <!--l. 903--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+Then the kinetic energy is
+<!--tex4ht:inline--></p><!--l. 904--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mi 
+>K</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mi 
+>m</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mover accent="true"><mi 
+>r</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><msup><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 904--><p class="nopar" > so the Lagrangian is
+<!--tex4ht:inline--></p><!--l. 906--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                   <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>K</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mi 
+>m</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mover accent="true"><mi 
+>r</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><msup><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">−</mo> <mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 906--><p class="nopar" >
+</p>
+</div>
+<!--l. 908--><p class="noindent" >Because we have two coordinates <!--l. 908--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>r</mi></math>
+and <!--l. 908--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>,
+we get two Euler-Lagrange equations. The Lagrangian does not depend on
+<!--l. 908--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>, so the
+<!--l. 908--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math> equation
+gives
+<!--tex4ht:inline--></p><!--l. 909--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac><mi 
+>m</mi><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 909--><p class="nopar" > You should recognise this as the conservation of angular momentum
+<!--l. 910--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>𝜃</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></math> in a
+central potential. Now we can look at the radial coordinate. The Euler-Lagrange equation is
+<!--tex4ht:inline--></p><!--l. 911--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mi 
+>m</mi><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">̈</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><mi 
+>r</mi><mover accent="true"><msup><mrow 
+><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <msup><mrow 
+><mi 
+>V</mi> </mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 911--><p class="nopar" > Since we know that <!--l. 912--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>𝜃</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></math> is
+constant, we can eliminate the <!--l. 912--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></math>
+term to find
+<!--tex4ht:inline--></p><!--l. 913--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mi 
+>m</mi><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">̈</mo></mover> <mo 
+class="MathClass-rel">=</mo>   <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mi 
+>m</mi><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>3</mn></mrow></msup 
+></mrow></mfrac><msubsup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>2</mn></mrow></msubsup 
+> <mo 
+class="MathClass-bin">−</mo> <msup><mrow 
+><mi 
+>V</mi> </mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 913--><p class="nopar" > Given a particular <!--l. 914--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>, this
+can then be solved (e.g. <!--l. 914--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>k</mi><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></math>).
+Of interest is whether the system admits uniform circular motion – that is motion with constant angular velocity and fixed
+radius <!--l. 914--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></math>. Then
+<!--l. 914--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">̈</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mover accent="true"><mi 
+>r</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>. For a
+given <!--l. 914--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>r</mi></math>
+with <!--l. 914--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>V</mi> </mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn></math> this
+can always be achieved by solving
+<!--tex4ht:inline--></p><!--l. 915--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo>        <mfrac><mrow 
+><msubsup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>2</mn><mo 
+class="MathClass-bin">∕</mo><mn>3</mn></mrow></msubsup 
+></mrow> 
+<mrow 
+><msup><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn><mo 
+class="MathClass-bin">∕</mo><mn>3</mn></mrow></msup 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>V</mi> </mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>1</mn><mo 
+class="MathClass-bin">∕</mo><mn>3</mn></mrow></msup 
+></mrow></mfrac><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 915--><p class="nopar" > For an attractive potential like <!--l. 916--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>k</mi><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></math>,
+<!--l. 916--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>V</mi> </mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+is always positive, so we find orbits at any radius, determined by the angular momentum as
+<!--l. 916--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <msqrt><mrow><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>𝜃</mi></mrow></msub 
+></mrow></msqrt><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>k</mi><mi 
+>m</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mo 
+class="MathClass-bin">−</mo><mn>1</mn><mo 
+class="MathClass-bin">∕</mo><mn>4</mn></mrow></msup 
+></math>
+</p>
+<div class="newtheorem">
+<!--l. 921--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Simple pendulum. We have a pendulum of fixed length <!--l. 922--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi></math>,
+mass <!--l. 922--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>m</mi></math>
+as shown in Figure <a 
+href="#x14-1400413">13<!--tex4ht:ref: fig:pendulum --></a>. The pendulum is completely described by the angle <!--l. 922--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>.
+The kinetic energy is given by
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 923--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <mi 
+>K</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mi 
+>m</mi><msup><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><msup><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+>
+</math>
+<!--l. 923--><p class="nopar" > and the potential energy is the height. Assuming the height is zero when the pendulum points vertically downwards
+we find
+<!--tex4ht:inline--></p><!--l. 925--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><mi 
+>g</mi><mi 
+>L</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo><mo class="qopname"> cos</mo><!--nolimits--><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 925--><p class="nopar" > The Euler-Lagrange equation is then
+<!--tex4ht:inline--></p><!--l. 927--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                        <mo 
+class="MathClass-bin">−</mo><mi 
+>m</mi><mi 
+>g</mi><mi 
+>L</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>𝜃</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>m</mi><msup><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mover 
+accent="true"><mrow 
+><mi 
+>𝜃</mi></mrow><mo class="qopname">̈</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 927--><p class="nopar" > which is the pendulum equation. Solving this analytically is difficult, and we will not do it here. Using the small
+angle approximation reduces this to simple harmonic motion.
+</p>
+<figure class="figure"> 
+<a 
+ id="x14-1400413"></a>
+<div class="center" 
+>
+<!--l. 931--><p class="noindent" >
+</p><!--l. 932--><p class="noindent" > <img 
+src="figures/pendulum-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 13:</span><span  
+class="content">A pendulum, described by <!--l. 933--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>.</span></figcaption><!--tex4ht:label?: x14-1400413 -->
+</div>
+</figure>
+                                                                                                       
+                                                                                                       
+</div>
+<div class="newtheorem">
+<!--l. 939--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>The two-body problem. We have two particles of masses <!--l. 940--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math>,
+<!--l. 940--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>
+and positions <!--l. 940--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+and <!--l. 940--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+each exerting a force on the other. These are equal and opposite by Newton’s third law.
+</p><!--l. 942--><p class="noindent" >The force experienced by particle 1, <!--l. 942--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>F</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math>
+is a function of their mutual displacement, <!--l. 942--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>F</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+and the force experience by particle 2 is <!--l. 942--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>F</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>F</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math>.
+</p><!--l. 944--><p class="noindent" >We     will     assume     the     force     is     conservative,     so     there     is     a     potential     function
+<!--l. 944--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+so that
+<!--tex4ht:inline--></p><!--l. 945--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                        <mstyle mathvariant="bold"><mi 
+>F</mi><msub><mrow 
+></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow></mfrac><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mstyle mathvariant="bold"><mi 
+>F</mi><msub><mrow 
+></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 945--><p class="nopar" > Note that this automatically takes care of Newton’s third law using the chain rule. In terms of the positions
+<!--l. 946--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math>
+and
+<!--l. 946--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>
+the Lagrangian is
+<!--tex4ht:inline--></p><!--l. 947--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                  <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msup><mrow 
+> <mfenced separators="" 
+open="|"  close="|" ><mrow><msub><mrow 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow></mfenced> </mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+>
+<mn>2</mn></mrow></msub 
+><msup><mrow 
+> <mfenced separators="" 
+open="|"  close="|" ><mrow><msub><mrow 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfenced> </mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfenced> <mo 
+class="MathClass-bin">−</mo> <mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 947--><p class="nopar" > We simplify the system by introducing the displacement <!--l. 948--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+> <mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>
+as a new generalised coordinate, so that <!--l. 948--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+We then need a second generalised coordinate. One choice would be the sum, <!--l. 948--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo><msub><mrow 
+> <mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>,
+                                                                                                       
+                                                                                                       
+but it is more convenient to use the centre of mass <!--l. 948--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mo 
+class="MathClass-op">̄</mo></mover></math>
+defined as
+<!--tex4ht:inline--></p><!--l. 949--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mo 
+class="MathClass-op">̄</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow> 
+    <mrow 
+><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 949--><p class="nopar" >                      We                                can                                then                                write
+<!--l. 950--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math>
+and
+<!--l. 950--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>
+in                                                                    terms                                                                    of
+<!--l. 950--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle></math>
+and
+<!--l. 950--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mo 
+class="MathClass-op">̄</mo></mover></math>
+as
+<!--tex4ht:inline--></p><!--l. 951--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msub><mrow 
+>
+                               <mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mo 
+class="MathClass-op">̄</mo></mover> <mo 
+class="MathClass-bin">+</mo>     <mfrac><mrow 
+><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow> 
+<mrow 
+><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfrac><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mo 
+class="MathClass-op">̄</mo></mover> <mo 
+class="MathClass-bin">−</mo>  <mfrac><mrow 
+><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow> 
+<mrow 
+><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfrac><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle>
+</math>
+<!--l. 951--><p class="nopar" > We can then write the Lagrangian in terms of these new coordinates as
+<!--tex4ht:inline--></p><!--l. 953--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                  <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-rel">|</mo><mover accent="true"><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mo 
+class="MathClass-op">̄</mo></mover><mo>&sdot;</mo></mover><msup><mrow 
+><mo 
+class="MathClass-rel">|</mo></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>μ</mi><mo 
+class="MathClass-rel">|</mo><mover accent="true"><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle><mo>&sdot;</mo></mover><msup><mrow 
+><mo 
+class="MathClass-rel">|</mo></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfenced> <mo 
+class="MathClass-bin">−</mo> <mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 953--><p class="nopar" > where <!--l. 954--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>μ</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-bin">∕</mo><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+is the reduced mass. We then get six Euler-Lagrange equations, one for each component of <!--l. 954--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mo 
+class="MathClass-op">̄</mo></mover></math>
+and <!--l. 954--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle></math>,
+                                                                                                       
+                                                                                                       
+but we can package them into two sets, for <!--l. 954--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mo 
+class="MathClass-op">̄</mo></mover></math>
+and <!--l. 954--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle></math>.
+The Euler-Lagrange equation for the centre of mass coordinate gives
+<!--tex4ht:inline--></p><!--l. 955--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                  <mn>0</mn> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mo 
+class="MathClass-op">̄</mo></mover></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow> 
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mo 
+class="MathClass-op">̄</mo></mover><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow>
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow>
+      <mrow 
+><mn>2</mn></mrow></mfrac>     <mover accent="true"><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mo 
+class="MathClass-op">̄</mo></mover><mo>&sdot;</mo></mover></mrow></mfenced>
+</math>
+<!--l. 955--><p class="nopar" >          so               that               the               centre               of               mass               momentum
+<!--l. 956--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle></mrow><mo 
+class="MathClass-op">̄</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-bin">+</mo><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow> 
+     <mrow 
+><mn>2</mn></mrow></mfrac>     <mover accent="true"><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mo 
+class="MathClass-op">̄</mo></mover><mo>&sdot;</mo></mover></math>
+is conserved. The equation for the displacement is more interesting, and we find
+<!--tex4ht:inline--></p><!--l. 957--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                    <mn>0</mn> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow> 
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mi 
+>μ</mi><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle></mrow><mo 
+class="MathClass-op">̈</mo></mover>
+</math>
+<!--l. 957--><p class="nopar" > and we end up with the equation of motion
+<!--tex4ht:inline--></p><!--l. 959--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle></mrow><mo 
+class="MathClass-op">̈</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mi 
+>μ</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow> 
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle></mrow></mfrac>
+</math>
+<!--l. 959--><p class="nopar" > note that
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 961--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                         <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="("  close=")" ><mrow> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow></mfrac><mo 
+class="MathClass-punc">,</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfrac><mo 
+class="MathClass-punc">,</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+></mrow></mfrac></mrow></mfenced><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 961--><p class="nopar" > We find the equation for the displacement is just a one-body problem with potential <!--l. 962--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> </math>
+and mass <!--l. 962--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>μ</mi></math>.
+If we can solve this one-body problem then we have solved the two-body problem. Commonly <!--l. 962--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> </math>
+depends only on the magnitude of the relative displacement, <!--l. 962--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo 
+class="MathClass-rel">|</mo><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-rel">|</mo></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+as in gravitational interactions for example, in this case the model reduces to a central potential, which one can
+then split into angular and radial pieces (as we did in the two-dimensional case) and simplify the motion even
+further
+</p>
+</div>
+<div class="newtheorem">
+<!--l. 967--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>The double pendulum.
+</p><!--l. 971--><p class="noindent" >Consider the double pendulum in Figure <a 
+href="#x14-1400514">14<!--tex4ht:ref: fig:dp2 --></a> </p><figure class="figure"> 
+<a 
+ id="x14-1400514"></a>
+<div class="center" 
+>
+<!--l. 973--><p class="noindent" >
+</p><!--l. 974--><p class="noindent" > <img 
+src="figures/double_p-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 14:</span><span  
+class="content">A double pendulum described by <!--l. 975--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math>
+and <!--l. 975--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>,
+with masses <!--l. 975--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math>
+and <!--l. 975--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>
+and lengths <!--l. 975--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math>
+and <!--l. 975--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>.</span></figcaption><!--tex4ht:label?: x14-1400514 -->
+</div>
+</figure>
+<!--l. 979--><p class="noindent" >We can describe it with two coordinates, <!--l. 979--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math>
+and <!--l. 979--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>.
+We now need to write down the Lagrangian. The position of the mass
+<!--l. 979--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math> is given
+by
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 980--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msub><mrow 
+>
+                                       <mstyle mathvariant="bold"><mi 
+>R</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo class="qopname"> sin</mo><!--nolimits--><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo class="qopname"> cos</mo><!--nolimits--><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 980--><p class="nopar" > so that the Lagrangian of mass 1 is given by
+<!--tex4ht:inline--></p><!--l. 982--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                    <msub><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow> 
+  <mrow 
+><mn>2</mn></mrow></mfrac>  <msubsup><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>1</mn></mrow><mrow 
+><mn>2</mn></mrow></msubsup 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mover accent="true"><msub><mrow 
+><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+><mi 
+>g</mi><msub><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo class="qopname"> cos</mo><!--nolimits--><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 982--><p class="nopar" > The position of mass 2 is given by
+<!--tex4ht:inline--></p><!--l. 984--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msub><mrow 
+>
+                                     <mstyle mathvariant="bold"><mi 
+>R</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+> <mstyle mathvariant="bold"><mi 
+>R</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo class="qopname"> sin</mo><!--nolimits--><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo class="qopname"> cos</mo><!--nolimits--><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 984--><p class="nopar" > the kinetic energy of mass 2 is given by <!--l. 985--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">⋅</mo><msub><mrow 
+><mover accent="true"><mstyle mathvariant="bold"><mi 
+>R</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-bin">∕</mo><mn>2</mn></math>,
+and we get the Lagrangian for mass 2 as
+<!--tex4ht:inline--></p><!--l. 986--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+              <msub><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow>
+  <mrow 
+><mn>2</mn></mrow></mfrac>  <msubsup><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>1</mn></mrow><mrow 
+><mn>2</mn></mrow></msubsup 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mn>2</mn><msub><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+><msub><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo class="qopname"> cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow><msub><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msub><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msubsup><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>2</mn></mrow><mrow 
+><mn>2</mn></mrow></msubsup 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+>
+<mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+>
+<mn>2</mn></mrow></msub 
+><mi 
+>g</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo class="qopname"> cos</mo><!--nolimits--><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo class="qopname"> cos</mo><!--nolimits--><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 987--><p class="nopar" > The total Lagrangian of this system is then
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 989--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+>
+</math>
+<!--l. 989--><p class="nopar" > The resulting Euler-Lagrange equations are very complex, and display chaotic behaviour, which we will talk about later
+in the course. Trying to write the equations of motion down without Lagrangian mechanics would have been nearly
+impossible.
+</p>
+</div>
+<div class="newtheorem">
+<!--l. 995--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Relativistic point particle. Einstein showed us that Newton’s laws are not exact, and we can no longer
+use the kinetic and potential energies for our Lagrangian. Recall that the general form of the Euler-Lagrange
+equations, in terms of generalised forces and momenta is
+<!--tex4ht:inline--></p><!--l. 997--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                                <mstyle mathvariant="bold"><mi 
+>F</mi></mstyle> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle>
+</math>
+<!--l. 997--><p class="nopar" > Now what is the relativistic form of the momentum? Einstein calculated that
+<!--tex4ht:inline--></p><!--l. 999--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mstyle mathvariant="bold"><mi 
+>p</mi></mstyle> <mo 
+class="MathClass-rel">=</mo>       <mfrac><mrow 
+><mi 
+>m</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle><mo>&sdot;</mo></mover></mrow> 
+<mrow 
+><msqrt><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mo 
+class="MathClass-rel">|</mo><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> <msup><mrow 
+><mo 
+class="MathClass-rel">|</mo></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">∕</mo><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt></mrow></mfrac>
+</math>
+<!--l. 999--><p class="nopar" > This can be written as
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1001--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mstyle mathvariant="bold"><mi 
+>p</mi></mstyle> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mi 
+>∂</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mi 
+>m</mi><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><msqrt><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> </mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">∕</mo><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> </mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msqrt>
+</math>
+<!--l. 1001--><p class="nopar" > hence we we find the Lagrangian
+<!--tex4ht:inline--></p><!--l. 1003--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>m</mi><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><msqrt><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> </mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">∕</mo><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> </mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msqrt> <mo 
+class="MathClass-bin">−</mo> <mi 
+>V</mi>
+</math>
+<!--l. 1003--><p class="nopar" >                where                      we                      assume                      the                      potential
+<!--l. 1004--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> </math>
+generates the force. We can recover the non-relativistic limit by expanding
+<!--tex4ht:inline--></p><!--l. 1005--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                   <mo 
+class="MathClass-bin">−</mo><mi 
+>m</mi><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><msqrt><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> </mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">∕</mo><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> </mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msqrt> <mo 
+class="MathClass-rel">≈</mo><mo 
+class="MathClass-bin">−</mo><mi 
+>m</mi><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mi 
+>m</mi><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 1005--><p class="nopar" >                                                                                                    the
+<!--l. 1006--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" > <mo 
+class="MathClass-bin">−</mo> <mi 
+>m</mi><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></math>
+term is constant and so can be ignored. Hence we find
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1007--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mi 
+>m</mi><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> <mo 
+class="MathClass-bin">−</mo> <mi 
+>V</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1007--><p class="nopar" > Now assume <!--l. 1008--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>.
+We know from special relativity that the proper time of a particle <!--l. 1008--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>τ</mi></math>
+is defined as
+<!--tex4ht:inline--></p><!--l. 1009--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mo 
+class="MathClass-bin">−</mo><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><msup><mrow 
+><mi 
+>τ</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><msup><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+>
+</math>
+<!--l. 1009--><p class="nopar" >                and                        is                        Lorentz                        invariant                        –
+<!--l. 1010--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>τ</mi></math>
+records the time measured on a clock carried by the particle. The infinitesimal version of this gives
+<!--tex4ht:inline--></p><!--l. 1011--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mo 
+class="MathClass-bin">−</mo><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>d</mi><mi 
+>τ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>d</mi><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>d</mi><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+>
+</math>
+<!--l. 1011--><p class="nopar" > so that <!--l. 1012--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi><mi 
+>τ</mi> <mo 
+class="MathClass-rel">=</mo> <msqrt><mrow><mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> </mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">∕</mo><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> </mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msqrt><mi 
+>d</mi><mi 
+>t</mi></math>,
+and we find that
+<!--tex4ht:inline--></p><!--l. 1013--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mi 
+mathvariant="bold-script">ℒ</mi> <mo 
+class="MathClass-rel">=</mo><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--><mo 
+class="MathClass-bin">−</mo><mi 
+>m</mi><msup><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mi 
+>d</mi><mi 
+>τ</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 1013--><p class="nopar" >                                                One                                                                     final
+note, normally in the calculus of variations we are allowed to choose any path for our particle. But in this case, if
+<!--l. 1014--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle></math>
+is faster than the speed of light, the functional diverges. Hence we are restricted to paths only in the light-cone of
+our particle, Figure <a 
+href="#x14-1400615">15<!--tex4ht:ref: fig:light_cone --></a>, the paths that respect causality.
+</p>
+<figure class="figure"> 
+<a 
+ id="x14-1400615"></a>
+<div class="center" 
+>
+<!--l. 1017--><p class="noindent" >
+</p><!--l. 1018--><p class="noindent" > <img 
+src="figures/light_cone-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 15:</span><span  
+class="content">Past and future light cones for a particle at <!--l. 1019--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>,
+<!--l. 1019--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>.
+The red line is a permitted space-time trajectory in the relativistic variational principle.</span></figcaption><!--tex4ht:label?: x14-1400615 -->
+</div>
+</figure>
+</div>
+<div class="newtheorem">
+<!--l. 1028--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Classical charged particles. Consider a particle of charge <!--l. 1028--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>e</mi></math>,
+mass <!--l. 1028--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>m</mi></math>,
+moving under the Lorentz force with position <!--l. 1028--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+<!--tex4ht:inline--></p><!--l. 1029--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mstyle mathvariant="bold"><mi 
+>F</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mi 
+>e</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>E</mi></mstyle> <mo 
+class="MathClass-bin">+</mo> <mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">×</mo><mstyle mathvariant="bold"><mi 
+>B</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1029--><p class="nopar" > for electric field <!--l. 1030--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>E</mi></mstyle></math>
+and magnetic field <!--l. 1030--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>B</mi></mstyle></math>.
+The kinetic energy of the particle is just
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1031--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <mi 
+>K</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>m</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+>  <mfenced separators="" 
+open="|"  close="|" ><mrow><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1031--><p class="nopar" > To find a Lagrangian description (with <!--l. 1032--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></math>)
+of this system we need to find a potential energy <!--l. 1032--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+which produces the Lorentz equations. <!--l. 1032--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>E</mi></mstyle></math>
+and <!--l. 1032--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>B</mi></mstyle></math>
+are related to the electromagnetic potentials <!--l. 1032--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>A</mi></mstyle></math>
+and <!--l. 1032--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>ϕ</mi></mstyle></math>
+by the relations
+<!--tex4ht:inline--></p><!--l. 1033--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                      <mstyle mathvariant="bold"><mi 
+>E</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mo 
+class="MathClass-op">∇</mo><mi 
+>ϕ</mi> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>A</mi></mstyle></mrow> 
+<mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mstyle mathvariant="bold"><mi 
+>B</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-op">∇</mo><mo 
+class="MathClass-bin">×</mo><mstyle mathvariant="bold"><mi 
+>A</mi></mstyle>
+</math>
+<!--l. 1033--><p class="nopar" > or
+<!--tex4ht:inline--></p><!--l. 1035--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                     <msub><mrow 
+><mi 
+>E</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>ϕ</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>A</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+ <mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><msub><mrow 
+><mi 
+>B</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>𝜖</mi></mrow><mrow 
+><mi 
+>i</mi><mi 
+>j</mi><mi 
+>k</mi></mrow></msub 
+><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>A</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 1035--><p class="nopar" > where we have used Einstein notation (index summation). Now consider the expression
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1037--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>e</mi><mi 
+>ϕ</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>e</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>A</mi></mstyle>
+</math>
+<!--l. 1037--><p class="nopar" > putting it into the Euler-Lagrange equations we find
+<!--tex4ht:inline--></p><!--l. 1039--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                  <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow> 
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>r</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mi 
+>e</mi> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>ϕ</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mi 
+>e</mi><msub><mrow 
+><mover accent="true"><mi 
+>r</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>A</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow> 
+ <mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac>  <mo 
+class="MathClass-bin">+</mo> <mi 
+>e</mi> <mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow>
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac><msub><mrow 
+><mi 
+>A</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+>
+</math>
+<!--l. 1039--><p class="nopar" > or
+<!--tex4ht:inline--></p><!--l. 1041--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                             <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow> 
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>r</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mi 
+>e</mi> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>ϕ</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mi 
+>e</mi><msub><mrow 
+><mover accent="true"><mi 
+>r</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>A</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow> 
+ <mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac>  <mo 
+class="MathClass-bin">+</mo> <mi 
+>e</mi><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>A</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+ <mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac>  <mo 
+class="MathClass-bin">+</mo><msub><mrow 
+>  <mfrac><mrow 
+><mi 
+>∂</mi><mn>2</mn><msub><mrow 
+><mi 
+>A</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>r</mi><mo>&sdot;</mo></mover></mrow></mfrac></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+>
+</math>
+<!--l. 1041--><p class="nopar" > Now we have the vector calculus identity
+<!--tex4ht:inline--></p><!--l. 1043--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                             <msub><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>a</mi></mstyle> <mo 
+class="MathClass-bin">×</mo><mo 
+class="MathClass-op">∇</mo><mo 
+class="MathClass-bin">×</mo><mstyle mathvariant="bold"><mi 
+>b</mi></mstyle></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>𝜖</mi></mrow><mrow 
+><mi 
+>i</mi><mi 
+>j</mi><mi 
+>k</mi></mrow></msub 
+><msub><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><msub><mrow 
+><mi 
+>𝜖</mi></mrow><mrow 
+><mi 
+>k</mi><mi 
+>l</mi><mi 
+>m</mi></mrow></msub 
+><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>b</mi></mrow><mrow 
+><mi 
+>m</mi></mrow></msub 
+></mrow> 
+ <mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mi 
+>l</mi></mrow></msub 
+></mrow></mfrac>  <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>b</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>b</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 1043--><p class="nopar" > which tells us that
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1045--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                   <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi mathvariant="normal">d</mi></mrow> 
+<mrow 
+><mi mathvariant="normal">d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>V</mi> </mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>r</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>e</mi><mstyle mathvariant="bold"><mi 
+>E</mi></mstyle> <mo 
+class="MathClass-bin">−</mo><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">×</mo><mstyle mathvariant="bold"><mi 
+>B</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mstyle mathvariant="bold"><mi 
+>F</mi></mstyle>
+</math>
+<!--l. 1045--><p class="nopar" > adding in the kinetic energy we find the full Lagrangian
+<!--tex4ht:inline--></p><!--l. 1047--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                         <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>m</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+>  <mfenced separators="" 
+open="|"  close="|" ><mrow><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <mi 
+>e</mi><mi 
+>ϕ</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>e</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>A</mi></mstyle>
+</math>
+<!--l. 1047--><p class="nopar" > Note that under a gauge transformation
+<!--tex4ht:inline--></p><!--l. 1049--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mstyle mathvariant="bold"><mi 
+>A</mi></mstyle><mo 
+class="MathClass-rel">↦</mo><mstyle mathvariant="bold"><mi 
+>A</mi></mstyle> <mo 
+class="MathClass-bin">+</mo> <mo 
+class="MathClass-op">∇</mo><mi 
+>χ</mi><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>ϕ</mi><mo 
+class="MathClass-rel">↦</mo><mi 
+>ϕ</mi> <mo 
+class="MathClass-bin">−</mo><mover accent="true"><mi 
+>χ</mi><mo>&sdot;</mo></mover>
+</math>
+<!--l. 1049--><p class="nopar" > the Lagrangian is <span 
+class="cmti-10x-x-109">not </span>invariant, but the equations of motion are.
+</p>
+</div>
+                                                                                                       
+                                                                                                       
+<!--l. 1056--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu10.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse2.html#AM_notessu11.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu12.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

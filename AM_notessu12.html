@@ -1,0 +1,909 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Constraints in Lagrangian mechanics</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 1056--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu11.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse2.html#AM_notessu12.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu13.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">2.3   </span> <a 
+ id="x15-150003"></a>Constraints in Lagrangian mechanics</h4>
+<!--l. 1058--><p class="noindent" >The pendulum systems we considered above had an <span 
+class="cmti-10x-x-109">implicit </span>constraint that the pendulum length was fixed. Sometimes,
+however it is not possible to incorporate the constraints in such a natural way.
+</p>
+<div class="newtheorem">
+<!--l. 1059--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">A      constraint      on      a      mechanical      system      with      generalised      coordinates</span>
+<!--l. 1060--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>q</mi></math>
+<span 
+class="cmti-10x-x-109">is called </span>holonomic <span 
+class="cmti-10x-x-109">if it can be written as</span>
+<!--tex4ht:inline--></p><!--l. 1061--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                               <mi 
+>g</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 1061--><p class="nopar" > <span 
+class="cmti-10x-x-109">for some function </span><!--l. 1062--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>g</mi></math><span 
+class="cmti-10x-x-109">.</span>
+</p>
+</div>
+<!--l. 1064--><p class="noindent" >Note that holonomic constrains depend only on the generalised coordinates, not the
+velocities. There is a further distinction on holonomic constraints between <span 
+class="cmti-10x-x-109">scleronomic </span>where
+<!--l. 1064--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>g</mi></math> has no
+explicit time-dependence and <span 
+class="cmti-10x-x-109">rheonomic </span>where it does.
+</p>
+<div class="newtheorem">
+<!--l. 1065--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">A      constraint      on      a      mechanical      system      with      generalised      coordinates</span>
+                                                                                                       
+                                                                                                       
+<!--l. 1066--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>q</mi></math>
+<span 
+class="cmti-10x-x-109">is called </span>non-holonomic <span 
+class="cmti-10x-x-109">if it can be written as</span>
+<!--tex4ht:inline--></p><!--l. 1067--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 1067--><p class="nopar" > <span 
+class="cmti-10x-x-109">for some function </span><!--l. 1068--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi></math>
+<span 
+class="cmti-10x-x-109">with explicit dependence on </span><!--l. 1068--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></math><span 
+class="cmti-10x-x-109">.</span>
+</p>
+</div>
+<!--l. 1070--><p class="noindent" >We first consider holonomic constraints.
+</p>
+<div class="newtheorem">
+<!--l. 1071--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Pendulum. Suppose we have a pendulum of length <!--l. 1072--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ρ</mi></math>,
+then the position of the mass is given by <!--l. 1072--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+The constraint is
+<!--tex4ht:inline--></p><!--l. 1073--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mi 
+>x</mi><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>y</mi><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <msup><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 1073--><p class="nopar" >          so               the               constraint               function               is               written               as
+<!--l. 1074--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>g</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>g</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>x</mi><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>y</mi><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <msup><mrow 
+><mi 
+>ρ</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></math>
+and                                          has                                          no                                          explicit
+<!--l. 1074--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi></math>
+dependence.
+</p>
+</div>
+                                                                                                       
+                                                                                                       
+<!--l. 1076--><p class="noindent" >How do we incorporate constraints into our system. Consider a system with two generalised coordinates
+<!--l. 1076--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> and
+Lagrangian <!--l. 1076--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi></math>.
+Then Hamilton’s variational principle states
+<!--tex4ht:inline--></p><!--l. 1077--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--><mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>δ</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow></mfrac><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>δ</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfrac><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfenced> <mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1077--><p class="nopar" > Previously we were allowed to choose the variations <!--l. 1078--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+and <!--l. 1078--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+independently, so we got two separate equations by setting each functional derivative to zero. Now suppose that there is a
+constraint <!--l. 1078--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>g</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+the variations can no longer be chosen independently, they must satisfy
+<!--tex4ht:inline--></p><!--l. 1079--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>g</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow></mfrac><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo>  <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>g</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfrac><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 1079--><p class="nopar" > Now consider the time-dependent vectors
+<!--tex4ht:inline--></p><!--l. 1081--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                               <mi 
+>δ</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfenced> <mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>δ</mi><mstyle mathvariant="bold"><mi 
+>L</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="("  close=")" ><mrow> <mfrac><mrow 
+><mi 
+>δ</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow></mfrac><mo 
+class="MathClass-punc">,</mo> <mfrac><mrow 
+><mi 
+>δ</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>δ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfrac></mrow></mfenced> <mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mstyle mathvariant="bold"><mi 
+>η</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="("  close=")" ><mrow> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>g</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow></mfrac><mo 
+class="MathClass-punc">,</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>g</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfrac></mrow></mfenced>
+</math>
+<!--l. 1081--><p class="nopar" > Our variational principle with constraints can now be stated as
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1083--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                  <mi 
+>δ</mi><mstyle mathvariant="bold"><mi 
+>L</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>δ</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">,</mo><mspace width="3.04076pt" class="tmspace"/><mi 
+>f</mi><mi 
+>o</mi><mi 
+>r</mi><mspace width="0.3em" class="thinspace"/><mi 
+>a</mi><mi 
+>l</mi><mi 
+>l</mi><mspace width="0.3em" class="thinspace"/><mi 
+>δ</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mspace width="0.3em" class="thinspace"/><mi 
+>s</mi><mi 
+>u</mi><mi 
+>c</mi><mi 
+>h</mi><mspace width="0.3em" class="thinspace"/><mi 
+>t</mi><mi 
+>h</mi><mi 
+>a</mi><mi 
+>t</mi><mspace width="0.3em" class="thinspace"/><mstyle mathvariant="bold"><mi 
+>η</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>δ</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 1083--><p class="nopar" > This implies that
+<!--tex4ht:inline--></p><!--l. 1085--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                               <mi 
+>δ</mi><mstyle mathvariant="bold"><mi 
+>L</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mi 
+>λ</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mstyle mathvariant="bold"><mi 
+>η</mi></mstyle>
+</math>
+<!--l. 1085--><p class="nopar" > for some function <!--l. 1086--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>λ</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+Hence we find the Euler-Lagrange equations for holonomic constraints with any number of generalised
+coordinates
+<!--tex4ht:inline--></p><!--l. 1087--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                         <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mi 
+>λ</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>g</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 1087--><p class="nopar" > with <!--l. 1088--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>λ</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+chosen to enforce the constraint. Note the similarity to the constrained calculus of variations formulae.
+</p>
+<div class="newtheorem">
+<!--l. 1089--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Ball rolling down a slope without slipping. Suppose a ball of radius <!--l. 1090--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>r</mi></math>,
+mass <!--l. 1090--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>m</mi></math>
+and moment of inertia <!--l. 1090--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>I</mi></math>
+rolls down a slope of angle <!--l. 1090--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ϕ</mi></math>
+                                                                                                       
+                                                                                                       
+without slipping, as shown in Figure <a 
+href="#x15-1500116">16<!--tex4ht:ref: fig:on_slope --></a>. We describe it with two coordinates <!--l. 1090--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>s</mi></math>
+and <!--l. 1090--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>.
+Because the ball rolls without slipping we have the constraint
+<!--tex4ht:inline--></p><!--l. 1091--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                               <mi 
+>s</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>r</mi><mi 
+>𝜃</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 1091--><p class="nopar" > then the kinetic energy is
+<!--tex4ht:inline--></p><!--l. 1092--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mi 
+>K</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>m</mi><msup><mrow 
+><mover accent="true"><mi 
+>s</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>I</mi><mover accent="true"><msup><mrow 
+><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfenced>
+</math>
+<!--l. 1092--><p class="nopar" > and the potential energy is
+<!--tex4ht:inline--></p><!--l. 1093--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>m</mi><mi 
+>g</mi><mi 
+>s</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ϕ</mi>
+</math>
+<!--l. 1093--><p class="nopar" > giving a Lagrangian
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1095--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                      <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>m</mi><msup><mrow 
+><mover accent="true"><mi 
+>s</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>I</mi><msup><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mi 
+>m</mi><mi 
+>g</mi><mi 
+>s</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ϕ</mi>
+</math>
+<!--l. 1095--><p class="nopar" > our constrained equations of motion are then
+<!--tex4ht:inline--></p><!--l. 1097--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mi 
+>m</mi><mi 
+>g</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ϕ</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>m</mi><mover 
+accent="true"><mrow 
+><mi 
+>s</mi></mrow><mo class="qopname">̈</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mi 
+>λ</mi>
+</math>
+<!--l. 1097--><p class="nopar" >
+<!--tex4ht:inline--></p><!--l. 1098--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                               <mi 
+>I</mi><mover 
+accent="true"><mrow 
+><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-op">̈</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mi 
+>r</mi><mi 
+>λ</mi>
+</math>
+<!--l. 1098--><p class="nopar" > The constraint <!--l. 1099--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>s</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>r</mi><mi 
+>𝜃</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>
+can be differentiated to give <!--l. 1099--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover 
+accent="true"><mrow 
+><mi 
+>s</mi></mrow><mo 
+class="MathClass-op">̈</mo></mover> <mo 
+class="MathClass-bin">−</mo> <mi 
+>r</mi><mover 
+accent="true"><mrow 
+><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-op">̈</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>,
+using our equations of motion we find
+<!--tex4ht:inline--></p><!--l. 1100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                         <mi 
+>g</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ϕ</mi> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mi 
+>m</mi></mrow></mfrac><mi 
+>λ</mi> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow> 
+ <mrow 
+><mi 
+>I</mi></mrow></mfrac> <mi 
+>λ</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 1100--><p class="nopar" >        which           can           be           solved           to           give           a           constant           value
+<!--l. 1101--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>λ</mi></math>
+<!--tex4ht:inline--></p><!--l. 1102--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <mi 
+>λ</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mi 
+>g</mi><mi 
+>m</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>𝜃</mi></mrow>
+<mrow 
+><mn>1</mn> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>m</mi><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow> 
+  <mrow 
+><mi 
+>I</mi></mrow></mfrac>  </mrow></mfrac><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1102--><p class="nopar" > Can you describe the resulting motion? </p><figure class="figure"> 
+<a 
+ id="x15-1500116"></a>
+<div class="center" 
+>
+<!--l. 1105--><p class="noindent" >
+</p><!--l. 1106--><p class="noindent" > <img 
+src="figures/on_slope-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 16:</span><span  
+class="content">A ball rolls down a slope without slipping.</span></figcaption><!--tex4ht:label?: x15-1500116 -->
+</div>
+</figure>
+</div>
+<!--l. 1113--><p class="noindent" >Now we consider general non-holonomic constraints. These are more difficult to deal with, and we will not study them in
+detail in this course.
+</p>
+<div class="newtheorem">
+<!--l. 1114--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>A unicycle. Consider a unicycle as shown in Figure <a 
+href="#x15-1500217">17<!--tex4ht:ref: fig:unicycle --></a>, which rolls without slipping. It is described by
+the coordinates <!--l. 1115--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+of the contact point of the tyre with the ground, the angles <!--l. 1115--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>
+and <!--l. 1115--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ϕ</mi></math>
+of the wheel. There are two constraints in this system. The change in <!--l. 1115--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>
+is determined by the motion of the contact point, since the unicycle rolls without slipping, but the direction is
+determined by <!--l. 1115--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ϕ</mi></math>,
+so we find
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1116--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mi 
+>ρ</mi><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover><mo class="qopname">cos</mo><!--nolimits--><mi 
+>ϕ</mi>
+</math>
+<!--l. 1116--><p class="nopar" >
+<!--tex4ht:inline--></p><!--l. 1117--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <mover accent="true"><mi 
+>y</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mi 
+>ρ</mi><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ϕ</mi>
+</math>
+<!--l. 1117--><p class="nopar" > which are non-holonomic constraints, since they depend on velocity.
+</p>
+</div>
+<!--l. 1121--><p class="noindent" >There are other types of constraint which can be written as an inequality. For example, one might require
+<!--l. 1121--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>z</mi> <mo 
+class="MathClass-rel">≥</mo> <mn>0</mn></math>, <span 
+class="cmti-10x-x-109">i.e. </span>the
+height of a particle is required to be greater than zero. Such constraints are also known as non-holonomic.
+</p>
+<figure class="figure"> 
+
+                                                                                                       
+                                                                                                       
+<a 
+ id="x15-1500217"></a>
+                                                                                                       
+                                                                                                       
+<div class="center" 
+>
+<!--l. 1124--><p class="noindent" >
+</p><!--l. 1125--><p class="noindent" > <img 
+src="figures/unicycle-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 17:</span><span  
+class="content">A                                                                                                                         unicycle.
+<!--l. 1126--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+is                                          the                                          contact                                          point.
+<!--l. 1126--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>
+changes                            as                            the                            wheel                            rotates,
+<!--l. 1126--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ϕ</mi></math>
+gives the azimuthal orientation of the wheel.</span></figcaption><!--tex4ht:label?: x15-1500217 -->
+</div>
+                                                                                                       
+                                                                                                       
+</figure>
+                                                                                                       
+                                                                                                       
+<!--l. 1135--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu11.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse2.html#AM_notessu12.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu13.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

@@ -1,0 +1,1488 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Generalised coordinates</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 798--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notesse2.html#AM_notessu10.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu11.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">2.1   </span> <a 
+ id="x13-130001"></a>Generalised coordinates</h4>
+<!--l. 800--><p class="noindent" >The computational power of Lagrangian mechanics comes through the use of generalised coordinates. </p><figure class="figure"> 
+
+                                                                                                       
+                                                                                                       
+<a 
+ id="x13-1300111"></a>
+                                                                                                       
+                                                                                                       
+<div class="center" 
+>
+<!--l. 802--><p class="noindent" >
+</p><!--l. 803--><p class="noindent" > <img 
+src="figures/john-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 11:</span><span  
+class="content">Mechanical systems that can be treated by the methods from this course, by JH Hannay.</span></figcaption><!--tex4ht:label?: x13-1300111 -->
+</div>
+                                                                                                       
+                                                                                                       
+</figure>
+<div class="newtheorem">
+<!--l. 808--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">A                      set                      of                      generalised                      coordinates</span>
+<!--l. 809--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">for a mechanical system completely specifies the configuration of the system.</span>
+</p>
+</div>
+<div class="newtheorem">
+<!--l. 811--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Suppose we have two particles in three dimensions, their positions are <!--l. 812--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+and <!--l. 812--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+then the generalised coordinates are <!--l. 812--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+(note this is six-dimensional).
+</p>
+</div>
+<div class="newtheorem">
+<!--l. 814--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Consider the double pendulum in Figure <a 
+href="#x13-1300212">12<!--tex4ht:ref: fig:dp --></a>. It is specified by two angles
+<!--l. 815--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math> and
+<!--l. 815--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math> which
+form generalised coordinates for the system. </p><figure class="figure"> 
+<a 
+ id="x13-1300212"></a>
+<div class="center" 
+>
+<!--l. 817--><p class="noindent" >
+</p><!--l. 818--><p class="noindent" > <img 
+src="figures/double_p-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 12:</span><span  
+class="content">A double pendulum described by <!--l. 819--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math>
+and <!--l. 819--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>𝜃</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>.</span></figcaption><!--tex4ht:label?: x13-1300212 -->
+</div>
+</figure>
+</div>
+<!--l. 825--><p class="noindent" >One can have any number of different generalised coordinate systems. Often the trick is choosing the right one! If
+<!--l. 825--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></math> is one set of generalised
+coordinates, then another set <!--l. 825--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+is related to the first by a general transformation
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 826--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                         <msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 826--><p class="nopar" > This implies that the velocities satisfy
+<!--tex4ht:inline--></p><!--l. 828--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msub><mrow 
+>
+                                      <mover accent="true"><mi 
+>Q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+> <mover accent="true"><mi 
+>Q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-op">…</mo><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>N</mi></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 828--><p class="nopar" > An important quantity for a coordinate transformation is the Jacobian.
+</p>
+<div class="newtheorem">
+<!--l. 830--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">The                                                                                                           Jacobian</span>
+<!--l. 831--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></math>
+<span 
+class="cmti-10x-x-109">of                                                         the                                                         transformation</span>
+<!--l. 831--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-rel">→</mo><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></math>
+<span 
+class="cmti-10x-x-109">is                                                                                                                                    the</span>
+<!--l. 831--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>N</mi> <mo 
+class="MathClass-bin">×</mo> <mi 
+>N</mi></math>
+<span 
+class="cmti-10x-x-109">matrix</span>
+<!--tex4ht:inline--></p><!--l. 832--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mstyle mathvariant="bold"><mi 
+>J</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></mrow> 
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><msub><mrow 
+><mi 
+>J</mi></mrow><mrow 
+><mi 
+>i</mi><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-punc">.</mo>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 832--><p class="nopar" >                            <span 
+class="cmti-10x-x-109">The                                      inverse                                      Jacobian</span>
+<!--l. 833--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+></math>
+<span 
+class="cmti-10x-x-109">is given by</span>
+<!--tex4ht:inline--></p><!--l. 834--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <msubsup><mrow 
+><mi 
+>J</mi></mrow><mrow 
+><mi 
+>i</mi><mi 
+>j</mi></mrow><mrow 
+><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msubsup 
+> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 834--><p class="nopar" >
+</p>
+</div>
+<div class="newtheorem">
+<!--l. 836--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>
+</span><!--l. 837--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+are                Cartesian                coordinates                in                the                plane,                and
+<!--l. 837--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+polar coordinates. Polar coordinates are determined by
+<!--tex4ht:inline--></p><!--l. 838--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mi 
+>r</mi> <mo 
+class="MathClass-rel">=</mo> <msqrt><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>𝜃</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi><mi 
+>r</mi><mi 
+>c</mi><mi 
+>t</mi><mi 
+>a</mi><mi 
+>n</mi><mfrac><mrow 
+><mi 
+>y</mi></mrow> 
+<mrow 
+><mi 
+>x</mi></mrow></mfrac><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 838--><p class="nopar" > and the Jacobian is equal to
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 840--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+<mstyle mathvariant="bold"><mi 
+>J</mi></mstyle> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>r</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mi 
+>x</mi></mrow></mfrac></mtd><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>r</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mi 
+>y</mi></mrow></mfrac></mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>𝜃</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mi 
+>x</mi></mrow></mfrac></mtd><mtd 
+class="array"  columnalign="center"><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>𝜃</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mi 
+>y</mi></mrow></mfrac></mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                               </mrow></mfenced> <mo 
+class="MathClass-rel">=</mo>       <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><msqrt><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"> <mi 
+>x</mi> </mtd><mtd 
+class="array"  columnalign="center"><mi 
+>y</mi></mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><mo 
+class="MathClass-bin">−</mo><mi 
+>y</mi></mtd><mtd 
+class="array"  columnalign="center"><mi 
+>x</mi></mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                           </mrow></mfenced>
+</math>
+<!--l. 841--><p class="nopar" > (note the singularity at the origin).
+</p>
+</div>
+<!--l. 845--><p class="noindent" >The power of generalised coordinates comes from the following theorem.
+</p>
+<div class="newtheorem">
+<!--l. 846--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Theorem.</span>  </span><span 
+class="cmti-10x-x-109">Let</span>
+<!--l. 847--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></math>
+<span 
+class="cmti-10x-x-109">and</span>
+<!--l. 847--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></math>
+<span 
+class="cmti-10x-x-109">be two different sets of generalised coordinates for the same mechanical system. If the mechanical system satisfies</span>
+<span 
+class="cmti-10x-x-109">the Euler-Lagrange equations</span>
+<!--tex4ht:inline--></p><!--l. 848--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 848--><p class="nopar" > <span 
+class="cmti-10x-x-109">in one set of generalised coordinates, then it also satisfies the Euler-Lagrange equations</span>
+<!--tex4ht:inline--></p><!--l. 850--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">,</mo>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 850--><p class="nopar" > <span 
+class="cmti-10x-x-109">in the other set.</span>
+</p>
+</div>
+<!--l. 853--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 854--><p class="noindent" ><span class="head">
+<span 
+class="cmti-10x-x-109">Proof.</span> </span>We can rewrite the first term in the Euler-Lagrange equations as
+<!--tex4ht:inline--></p><!--l. 855--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>Q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>Q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 855--><p class="nopar" > or as a matrix equation
+<!--tex4ht:inline--></p><!--l. 857--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                        <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo><msup><mrow 
+> <mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+> <mo 
+class="MathClass-bin">⋅</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo><msup><mrow 
+> <mover accent="true"><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+> <mo 
+class="MathClass-bin">⋅</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac>
+</math>
+<!--l. 857--><p class="nopar" > where we have defined the ‘dotted Jacobian’ as
+<!--tex4ht:inline--></p><!--l. 859--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msub><mrow 
+>
+                                               <mover accent="true"><mi 
+>J</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>Q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 859--><p class="nopar" > The second term in the Euler-Lagrange equations can similarly be written as
+<!--tex4ht:inline--></p><!--l. 861--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                      <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mover accent="true"><mi 
+>∂</mi><mo>&sdot;</mo></mover><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>Q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>Q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> </mrow></mfenced>
+</math>
+<!--l. 861--><p class="nopar" > (note that the coordinates <!--l. 862--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math>
+do not depend on the velocities <!--l. 862--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></math>,
+so terms like <!--l. 862--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></msubsup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>∂</mi><mi 
+>L</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-bin">∕</mo><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></math>
+vanish). Now consider the quantity
+<!--tex4ht:inline--></p><!--l. 863--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                                  <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>Q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 863--><p class="nopar" > we know that
+<!--tex4ht:inline--></p><!--l. 865--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msub><mrow 
+>
+                                       <mover accent="true"><mi 
+>Q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+ <mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac>  <mo 
+class="MathClass-bin">+</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow></mfrac><msub><mrow 
+> <mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+>
+</math>
+<!--l. 865--><p class="nopar" > now <!--l. 866--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-bin">∕</mo><mi 
+>∂</mi><mi 
+>t</mi></math>
+is a function of <!--l. 866--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi></math>
+and <!--l. 866--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></math>
+only, as is <!--l. 866--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mo 
+class="MathClass-bin">∕</mo><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></math>,
+so we find
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 867--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                     <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>Q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 867--><p class="nopar" > since <!--l. 868--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+><mo 
+class="MathClass-bin">∕</mo><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>δ</mi></mrow><mrow 
+><mi 
+>k</mi><mi 
+>j</mi></mrow></msub 
+></math>,
+0 if <!--l. 868--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi><mo 
+class="MathClass-rel">≠</mo><mi 
+>j</mi></math>
+and 1 if <!--l. 868--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>j</mi></math>.
+This allows us to write the second term in the Euler-Lagrange equations as
+<!--tex4ht:inline--></p><!--l. 869--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mover accent="true"><mi 
+>∂</mi><mo>&sdot;</mo></mover><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+> <mo 
+class="MathClass-bin">⋅</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac></mrow></mfenced>
+</math>
+<!--l. 869--><p class="nopar" > Putting it together we find
+<!--tex4ht:inline--></p><!--l. 871--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                              <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo><msup><mrow 
+> <mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+> <mo 
+class="MathClass-bin">⋅</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo><msup><mrow 
+> <mover accent="true"><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+> <mo 
+class="MathClass-bin">⋅</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><msup><mrow 
+><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+> <mo 
+class="MathClass-bin">⋅</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac></mrow></mfenced>
+</math>
+<!--l. 871--><p class="nopar" > Now note that the dotted Jacobian is the time derivative of the regular Jacobian <!--l. 872--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover accent="true"><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mi 
+>d</mi><mstyle mathvariant="bold"><mi 
+>J</mi></mstyle><mo 
+class="MathClass-bin">∕</mo><mi 
+>d</mi><mi 
+>t</mi></math>.
+We can then expand the <!--l. 872--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>d</mi><mi 
+>t</mi></math>
+term, get a cancellation and find
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 873--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                     <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mover accent="true"><mi 
+>∂</mi><mo>&sdot;</mo></mover><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo><msup><mrow 
+> <mstyle mathvariant="bold"><mi 
+>J</mi></mstyle></mrow><mrow 
+><mi 
+>T</mi> </mrow></msup 
+> <mo 
+class="MathClass-bin">⋅</mo><mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac></mrow></mfenced>
+</math>
+<!--l. 873--><p class="nopar" > so the system also satisfies the Euler-Lagrange equations with respect to <!--l. 874--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></math>.
+                                                                                                      □
+</p>
+</div>
+<!--l. 877--><p class="noindent" >With generalised coordinates come generalised forces and momenta.
+</p>
+<div class="newtheorem">
+<!--l. 878--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">For                                                   a                                                   Lagrangian</span>
+<!--l. 879--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">the quantity</span>
+<!--tex4ht:inline--></p><!--l. 880--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                               <msub><mrow 
+><mi 
+>F</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 880--><p class="nopar" >                                                 <span 
+class="cmti-10x-x-109">is                                                                  the</span>
+<!--l. 881--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>i</mi></mrow><mrow 
+><mi 
+>t</mi><mi 
+>h</mi></mrow></msup 
+></math>
+<span 
+class="cmti-10x-x-109">generalised force and the quantity</span>
+<!--tex4ht:inline--></p><!--l. 882--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                                <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 882--><p class="nopar" >                                                 <span 
+class="cmti-10x-x-109">is                                                                  the</span>
+<!--l. 883--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>i</mi></mrow><mrow 
+><mi 
+>t</mi><mi 
+>h</mi></mrow></msup 
+></math>
+<span 
+class="cmti-10x-x-109">generalised (or conjugate, canonical) momentum.</span>
+</p>
+</div>
+<!--l. 885--><p class="noindent" >In this way the Euler-Lagrange equations can be seen as a generalised form of Newton’s second law
+<!--tex4ht:inline--></p><!--l. 886--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                                <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mstyle mathvariant="bold"><mi 
+>F</mi></mstyle>
+</math>
+<!--l. 886--><p class="nopar" >
+                                                                                                       
+                                                                                                       
+</p>
+<!--l. 890--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notesse2.html#AM_notessu10.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu11.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

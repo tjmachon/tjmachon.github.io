@@ -1,0 +1,1445 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>A first look at the calculus of variations</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 150--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu2.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse1.html#AM_notessu3.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu4.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">1.3   </span> <a 
+ id="x5-40003"></a>A first look at the calculus of variations</h4>
+<!--l. 152--><p class="noindent" >We argued, using our intuition about straight lines, that Newton’s first law is given by minimising the total kinetic energy,
+given as the action
+<!--tex4ht:inline--></p><!--l. 153--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mi 
+>S</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+><mfrac><mrow 
+><mi 
+>m</mi></mrow>
+<mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+>  <mfenced separators="" 
+open="|"  close="|" ><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle></mrow></mfenced></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mi 
+>d</mi><mi 
+>t</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 153--><p class="nopar" > Starting from the action, how do we get back to Newton’s first law?
+</p><!--l. 156--><p class="noindent" >Let’s imagine that our particle lives one-dimension, so its trajectory
+<!--l. 156--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> is given by
+<!--l. 156--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>, we have boundary
+conditions <!--l. 156--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>
+and <!--l. 156--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>T</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>T</mi> </mrow></msub 
+></math>.
+Then the action is equal to
+<!--tex4ht:inline--></p><!--l. 157--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mi 
+>S</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mi 
+>d</mi><mi 
+>t</mi>
+</math>
+<!--l. 157--><p class="nopar" > where <!--l. 158--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>d</mi><mi 
+>x</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>d</mi><mi 
+>t</mi></math>.
+We will write this in an abstract way
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 159--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                        <mi 
+>S</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+><mi 
+>L</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow><mi 
+>d</mi><mi 
+>t</mi>
+</math>
+<!--l. 159--><p class="nopar" > Note that in our case <!--l. 160--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi></math> only
+depends explicitly on <!--l. 160--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></math>,
+but we will want to allow for the more general case later.
+</p>
+<div class="newtheorem">
+<!--l. 161--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><!--l. 162--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+mathvariant="bold-script">𝒮</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">is a </span>functional <span 
+class="cmti-10x-x-109">(a function of a function) of </span><!--l. 162--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math><span 
+class="cmti-10x-x-109">.</span>
+</p>
+</div>
+<!--l. 165--><p class="noindent" >Now our problem is to minimise over <span 
+class="cmti-10x-x-109">all possible paths </span><!--l. 165--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+to find the one with the smallest kinetic energy. When we want to minimise a function, we know what to do, we find the
+derivative and set it equal to zero. This is exactly what we do with functionals. This kind of calculus of functionals is
+known as the <span 
+class="cmti-10x-x-109">calculus of variations</span>.
+</p><!--l. 167--><p class="noindent" >Suppose we have a candidate path <!--l. 167--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+We can make a small variation <!--l. 167--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi><mi 
+>δ</mi><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+Note that <!--l. 167--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> is a function of
+<!--l. 167--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi></math>. Since the boundary conditions
+must be respected we require <!--l. 167--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>δ</mi><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>T</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>.
+</p>
+<div class="newtheorem">
+<!--l. 168--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Suppose our trajectory is <!--l. 169--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></math>,
+with <!--l. 169--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>T</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></math>,
+<!--l. 169--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>, and
+<!--l. 169--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>T</mi> </mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></math>, then a modification
+could be <!--l. 169--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo><mo class="qopname"> sin</mo><!--nolimits--><mn>2</mn><mi 
+>π</mi><mi 
+>t</mi></math>,
+since <!--l. 169--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo class="qopname">sin</mo><!--nolimits--><mn>0</mn> <mo 
+class="MathClass-rel">=</mo><mo class="qopname"> sin</mo><!--nolimits--><mn>2</mn><mi 
+>π</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>, as
+shown in Figure <a 
+href="#x5-40011">1<!--tex4ht:ref: fig:exm --></a>. </p><figure class="figure"> 
+<a 
+ id="x5-40011"></a>
+<div class="center" 
+>
+<!--l. 171--><p class="noindent" >
+                                                                                                       
+                                                                                                       
+</p><!--l. 172--><p class="noindent" > <img 
+src="figures/exm-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 1:</span><span  
+class="content">Three trajectories of the form <!--l. 173--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi><mo class="qopname">sin</mo><!--nolimits--><mn>2</mn><mi 
+>π</mi><mi 
+>t</mi></math>,
+<!--l. 173--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>0</mn> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>t</mi> <mo 
+class="MathClass-rel">≤</mo> <mn>1</mn></math>
+(note the axes should be <!--l. 173--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+not <!--l. 173--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>).</span></figcaption><!--tex4ht:label?: x5-40011 -->
+</div>
+</figure>
+</div>
+<div class="newtheorem">
+<!--l. 184--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Proposition.</span>  </span><span 
+class="cmti-10x-x-109">A trajectory </span><!--l. 185--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">between </span><!--l. 185--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>
+<span 
+class="cmti-10x-x-109">and </span><!--l. 185--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>T</mi> </mrow></msub 
+></math> <span 
+class="cmti-10x-x-109">will</span>
+<span 
+class="cmti-10x-x-109">minimise </span><!--l. 185--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>S</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow></math> <span 
+class="cmti-10x-x-109">if</span> </p><table class="equation"><tr><td>
+<a 
+ id="x5-4002r1"></a>
+<!--l. 186--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation"><msub><mrow 
+>
+                 <mfenced separators="" 
+open=""  close="|" ><mrow><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>S</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi><mi 
+>δ</mi><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>δ</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow></mrow>
+              <mrow 
+><mi 
+>d</mi><mi 
+>𝜖</mi></mrow></mfrac>            </mrow></mfenced></mrow><mrow 
+><mi 
+>𝜖</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><munder class="msub"><mrow 
+><mo class="qopname"> lim</mo></mrow><mrow 
+><mi 
+>𝜖</mi><mo 
+class="MathClass-rel">→</mo><mn>0</mn></mrow></munder 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>S</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi><mi 
+>δ</mi><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>δ</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow> <mo 
+class="MathClass-bin">−</mo> <mi 
+>S</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">]</mo></mrow></mrow>
+                     <mrow 
+><mi 
+>𝜖</mi></mrow></mfrac>                  </mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math></td><td class="eq-no">(1)</td></tr></table>
+<!--l. 188--><p class="noindent" ><span 
+class="cmti-10x-x-109">for any </span><!--l. 188--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi></math> <span 
+class="cmti-10x-x-109">satisfying the</span>
+<span 
+class="cmti-10x-x-109">boundary conditions </span><!--l. 188--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math><span 
+class="cmti-10x-x-109">,</span>
+<!--l. 188--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>T</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math><span 
+class="cmti-10x-x-109">.</span>
+</p>
+</div>
+<!--l. 190--><p class="noindent" >How do we see this? Well, if we’re at the minimum then any change
+<!--l. 190--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi></math> can only increase the
+value of <!--l. 190--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>S</mi></math>. This must
+mean that <!--l. 190--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜖</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math> is a critical
+point of <!--l. 190--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>S</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi><mi 
+>δ</mi><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow></math>, thought
+of a <span 
+class="cmti-10x-x-109">function </span>of <!--l. 190--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜖</mi></math>,
+as illustrated in Figure <a 
+href="#x5-40032">2<!--tex4ht:ref: fig:crit --></a>.
+</p>
+<figure class="figure"> 
+
+                                                                                                       
+                                                                                                       
+<a 
+ id="x5-40032"></a>
+                                                                                                       
+                                                                                                       
+<div class="center" 
+>
+<!--l. 194--><p class="noindent" >
+</p><!--l. 195--><p class="noindent" > <img 
+src="figures/crit-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 2:</span><span  
+class="content">If <!--l. 196--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+is length-minimising, then <!--l. 196--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+mathvariant="bold-script">𝒮</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi><mi 
+>δ</mi><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">]</mo></mrow></math>
+must have a minimum at <!--l. 196--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜖</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>
+for every possible <!--l. 196--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>δ</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+></math>.</span></figcaption><!--tex4ht:label?: x5-40032 -->
+</div>
+                                                                                                       
+                                                                                                       
+</figure>
+<!--l. 202--><p class="noindent" >Now we need to calculate the change in <!--l. 202--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>S</mi></math>
+as we change the value of <!--l. 202--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜖</mi></math>.
+We can compute directly, </p><table class="equation"><tr><td>  <a 
+ id="x5-4004r2"></a>
+<!--l. 203--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+           <mfrac><mrow 
+><mi 
+>d</mi><mi 
+mathvariant="bold-script">𝒮</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>𝜖</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow> <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>𝜖</mi></mrow></mfrac><mi 
+>L</mi></mrow></mfenced><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mi 
+>x</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi><mi 
+>δ</mi><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+     <mrow 
+><mi 
+>∂</mi><mi 
+>𝜖</mi></mrow></mfrac>     <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>δ</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+       <mrow 
+><mi 
+>∂</mi><mi 
+>𝜖</mi></mrow></mfrac>      </mrow></mfenced><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mi 
+>x</mi></mrow></mfrac><mi 
+>δ</mi><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow></mfrac><mi 
+>δ</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow></mfenced><mi 
+>d</mi><mi 
+>t</mi><mo 
+class="MathClass-punc">.</mo>
+</math></td><td class="eq-no">(2)</td></tr></table>
+<!--l. 205--><p class="noindent" >Now we can integrate the second term by parts, we write
+<!--tex4ht:inline--></p><!--l. 206--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                    <msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+> <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow></mfrac><mi 
+>δ</mi><mi 
+>x</mi></mrow></mfenced><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow></mfrac><mi 
+>δ</mi><mi 
+>x</mi></mrow></mfenced></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 206--><p class="nopar" > This must be zero because <!--l. 207--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>δ</mi><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>T</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>.
+But we can also write it as
+<!--tex4ht:inline--></p><!--l. 208--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                        <mn>0</mn> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow> <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow></mfrac><mi 
+>δ</mi><mi 
+>x</mi></mrow></mfenced></mrow></mfenced><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow></mfrac><mi 
+>δ</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow></mfenced><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow> <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow></mfrac></mrow></mfenced><mi 
+>δ</mi><mi 
+>x</mi></mrow></mfenced><mi 
+>d</mi><mi 
+>t</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 208--><p class="nopar" > Now we can go back to the original expression (<a 
+href="#x5-4004r2">2<!--tex4ht:ref: eq:a --></a>), and using the above result we find
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 210--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                      <mfrac><mrow 
+><mi 
+>d</mi><mi 
+>S</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>𝜖</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+><mi 
+>δ</mi><mi 
+>x</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mi 
+>x</mi></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow></mfrac></mrow></mfenced><mi 
+>d</mi><mi 
+>t</mi>
+</math>
+<!--l. 210--><p class="nopar" > Where we have the following definition
+</p>
+<div class="newtheorem">
+<!--l. 212--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">The quantity</span>
+<!--tex4ht:inline--></p><!--l. 214--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mfrac><mrow 
+><mi 
+>δ</mi><mi 
+>S</mi></mrow>
+<mrow 
+><mi 
+>δ</mi><mi 
+>x</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mi 
+>x</mi></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow></mfrac>
+</math>
+<!--l. 214--><p class="nopar" > <span 
+class="cmti-10x-x-109">is the </span>functional derivative <span 
+class="cmti-10x-x-109">of the functional </span><!--l. 215--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>S</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow></math><span 
+class="cmti-10x-x-109">,</span>
+<span 
+class="cmti-10x-x-109">given by</span>
+<!--tex4ht:inline--></p><!--l. 216--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                        <mi 
+>S</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow> <mo 
+class="MathClass-rel">=</mo><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--><mi 
+>L</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow><mi 
+>d</mi><mi 
+>t</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 216--><p class="nopar" >
+</p>
+</div>
+                                                                                                       
+                                                                                                       
+<!--l. 218--><p class="noindent" >Now, per our statement (<a 
+href="#x5-4002r1">1<!--tex4ht:ref: eq:deff --></a>), this must be zero (at <!--l. 218--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜖</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>)
+for every possible modification to our trajectory <!--l. 218--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi></math>.
+This can only happen if the functional derivative vanishes.
+</p>
+<div class="newtheorem">
+<!--l. 219--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Lemma.</span>  </span><span 
+class="cmti-10x-x-109">(Fundamental lemma of the calculus of variations) The quantity</span> </p><table class="equation"><tr><td>  <a 
+ id="x5-4005r3"></a>
+<!--l. 221--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                                             <msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+><mi 
+>δ</mi><mi 
+>x</mi><mfrac><mrow 
+><mi 
+>δ</mi><mi 
+>S</mi></mrow>
+<mrow 
+><mi 
+>δ</mi><mi 
+>x</mi></mrow></mfrac><mi 
+>d</mi><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo>
+</math></td><td class="eq-no">(3)</td></tr></table>
+<!--l. 224--><p class="noindent" ><span 
+class="cmti-10x-x-109">is zero for all </span><!--l. 224--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi></math> <span 
+class="cmti-10x-x-109">if and only if</span>
+<span 
+class="cmti-10x-x-109">the functional derivative </span><!--l. 224--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>S</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>δ</mi><mi 
+>x</mi></math>
+<span 
+class="cmti-10x-x-109">vanishes.</span>
+</p>
+</div>
+<!--l. 226--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 227--><p class="noindent" ><span class="head">
+<span 
+class="cmti-10x-x-109">Proof.</span> </span>Suppose the functional derivative is not zero. Then there must be a time interval
+<!--l. 227--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>b</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>, with
+<!--l. 227--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>0</mn> <mo 
+class="MathClass-rel">&#x003C;</mo> <mi 
+>a</mi> <mo 
+class="MathClass-rel">&#x003C;</mo> <mi 
+>b</mi> <mo 
+class="MathClass-rel">&#x003C;</mo> <mi 
+>T</mi></math>, where it is single-signed (we assume
+positive). Now we can choose <!--l. 227--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi></math>
+to be anything we like, and we must still find that (<a 
+href="#x5-4005r3">3<!--tex4ht:ref: eq:lemlem --></a>) vanishes. In particular we can choose
+<!--l. 227--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi></math> to be a smooth “bump”
+function between <!--l. 227--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>a</mi></math>
+and <!--l. 227--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>b</mi></math>, as
+shown in Figure <a 
+href="#x5-40063">3<!--tex4ht:ref: fig:bump --></a>. </p><figure class="figure"> 
+<a 
+ id="x5-40063"></a>
+<div class="center" 
+>
+<!--l. 229--><p class="noindent" >
+</p><!--l. 230--><p class="noindent" > <img 
+src="figures/bump-.svg" alt="PIC"  
+ />
+</p>
+                                                                                                       
+                                                                                                       
+<figcaption class="caption" ><span class="id">Figure 3:</span><span  
+class="content">A “bump” function <!--l. 231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+between <!--l. 231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>a</mi></math>
+and <!--l. 231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>b</mi></math>.
+It is zero for <!--l. 231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi> <mo 
+class="MathClass-rel">&#x003C;</mo> <mi 
+>a</mi></math>
+and <!--l. 231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi> <mo 
+class="MathClass-rel">&#x003E;</mo> <mi 
+>b</mi></math>
+(note the axes should be <!--l. 231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi></math>
+and <!--l. 231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi></math>
+not <!--l. 231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>y</mi></math>
+and <!--l. 231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi></math>.</span></figcaption><!--tex4ht:label?: x5-40063 -->
+</div>
+</figure>
+<!--l. 236--><p class="noindent" >Then the integral
+<!--tex4ht:inline--></p><!--l. 237--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+><mi 
+>δ</mi><mi 
+>x</mi><mfrac><mrow 
+><mi 
+>δ</mi><mi 
+>S</mi></mrow>
+<mrow 
+><mi 
+>δ</mi><mi 
+>x</mi></mrow></mfrac><mi 
+>d</mi><mi 
+>t</mi>
+</math>
+<!--l. 237--><p class="nopar" > is zero outside the interval <!--l. 238--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>b</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+so we can replace it with a new one
+<!--tex4ht:inline--></p><!--l. 239--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mi 
+>δ</mi><mi 
+>x</mi><mfrac><mrow 
+><mi 
+>δ</mi><mi 
+>S</mi></mrow>
+<mrow 
+><mi 
+>δ</mi><mi 
+>x</mi></mrow></mfrac><mi 
+>d</mi><mi 
+>t</mi>
+</math>
+<!--l. 239--><p class="nopar" > But on this interval both <!--l. 240--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>δ</mi><mi 
+>x</mi></math>
+<span 
+class="cmti-10x-x-109">and </span>the functional derivative are positive, by assumption, hence we must have
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 241--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mi 
+>δ</mi><mi 
+>x</mi><mfrac><mrow 
+><mi 
+>δ</mi><mi 
+>S</mi></mrow>
+<mrow 
+><mi 
+>δ</mi><mi 
+>x</mi></mrow></mfrac><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn>
+</math>
+<!--l. 241--><p class="nopar" > but this is a contradiction, so the functional derivative must vanish.                                                        □
+</p>
+</div>
+<!--l. 244--><p class="noindent" >By setting the functional derivative to zero we get an equation, known as the Euler-Lagrange equation. Any function
+<!--l. 244--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> minimising
+<!--l. 244--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>S</mi></math>
+must satisfy the Euler-Lagrange equation, but in general solutions are not minima of
+<!--l. 244--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>S</mi></math>, but
+instead critical points, known as extrema (in the same way the a critical point of a function can be a minimum, maximum
+or inflection point). Setting the functional derivative equal to zero is extremising, or finding a stationary point of, the
+functional.
+</p>
+<div class="newtheorem">
+<!--l. 245--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">The              Euler-Lagrange              equation              for              the              functional</span>
+<!--l. 246--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>S</mi></math>
+<span 
+class="cmti-10x-x-109">is given by</span>
+<!--tex4ht:inline--></p><!--l. 247--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                         <mfrac><mrow 
+><mi 
+>δ</mi><mi 
+>S</mi></mrow>
+<mrow 
+><mi 
+>δ</mi><mi 
+>x</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mi 
+>x</mi></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 247--><p class="nopar" >
+</p>
+</div>
+<!--l. 249--><p class="noindent" >If we solve this equation we should find out straight lines, and the ‘global’ version of Newton’s first law.
+</p><!--l. 251--><p class="noindent" >Our functional is
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 252--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mi 
+>S</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>T</mi> </mrow></msubsup 
+><mfrac><mrow 
+><mi 
+>m</mi></mrow>
+<mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+> <mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mi 
+>d</mi><mi 
+>t</mi>
+</math>
+<!--l. 252--><p class="nopar" > and the functional derivative is
+<!--tex4ht:inline--></p><!--l. 254--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                 <mfrac><mrow 
+><mi 
+>δ</mi><mi 
+>S</mi></mrow>
+<mrow 
+><mi 
+>δ</mi><mi 
+>x</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mi 
+>x</mi></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>d</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac><mi 
+>m</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>m</mi><mi 
+>ẍ</mi>
+</math>
+<!--l. 254--><p class="nopar" > and the Euler-Lagrange equation is Newton’s first law (force-free motion)
+<!--tex4ht:inline--></p><!--l. 256--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                                <mi 
+>ẍ</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 256--><p class="nopar" >
+                                                                                                       
+                                                                                                       
+</p>
+<!--l. 259--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu2.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse1.html#AM_notessu3.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu4.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

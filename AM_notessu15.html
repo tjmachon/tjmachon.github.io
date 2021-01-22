@@ -1,0 +1,1196 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Rigid body motion</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 1280--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu14.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse2.html#AM_notessu15.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu16.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">2.6   </span> <a 
+ id="x18-180006"></a>Rigid body motion</h4>
+<!--l. 1282--><p class="noindent" >A rigid body is a system of particles or solid body with a fixed distance between each particle (or mass element of the
+solid body). A rigid body has six degrees of freedom – three from the position of the centre of mass, and three
+orientational. Here study the rotational dynamics of rigid bodies, so we assume the centre of mass velocity is
+zero.
+</p><!--l. 1284--><p class="noindent" >Any rigid body <!--l. 1284--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>B</mi></math> has a
+moment of inertia, a tensor <!--l. 1284--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>I</mi></mstyle></math>.
+In Cartesian coordinates, the moment of inertia is given by
+<!--tex4ht:inline--></p><!--l. 1285--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msub><mrow 
+>
+                                           <mstyle mathvariant="bold"><mi 
+>I</mi></mstyle></mrow><mrow 
+><mi 
+>i</mi><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>B</mi></mrow></msub 
+><mi 
+>ρ</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+><mspace width="0.3em" class="thinspace"/><mi 
+>d</mi><mi 
+>V</mi>
+</math>
+<!--l. 1285--><p class="nopar" > where <!--l. 1286--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>x</mi></math>,
+<!--l. 1286--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>y</mi></math>,
+<!--l. 1286--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>z</mi></math> and
+<!--l. 1286--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ρ</mi></math> is the density of the body. If the body
+is a set of point masses, <!--l. 1286--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ρ</mi></math> is a set of delta
+functions. <!--l. 1286--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>I</mi></mstyle></math> is a symmetric, positive
+definite, tensor, which means that <!--l. 1286--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>I</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn></math>.
+<!--l. 1286--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>I</mi></mstyle></math>
+depends on the orientation of the body. This means that the eigenvectors of
+<!--l. 1286--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>I</mi></mstyle></math> depend
+on the orientation of the rigid body (though the eigenvalues do not). We can always choose a coordinate system (the body
+frame) where the moment of inertia is diagonal, so that
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1287--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+<mstyle mathvariant="bold"><mi 
+>I</mi></mstyle> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mtd><mtd 
+class="array"  columnalign="center"> <mn>0</mn> </mtd><mtd 
+class="array"  columnalign="center"> <mn>0</mn> </mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"> <mn>0</mn> </mtd><mtd 
+class="array"  columnalign="center"><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mtd><mtd 
+class="array"  columnalign="center"> <mn>0</mn> </mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"> <mn>0</mn> </mtd><mtd 
+class="array"  columnalign="center"> <mn>0</mn> </mtd><mtd 
+class="array"  columnalign="center"><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+></mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                                                           </mrow></mfenced>
+</math>
+<!--l. 1287--><p class="nopar" > where the <!--l. 1288--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math>
+are known as the principal moments of inertia. The axes in this frame are known as the principal axes of inertia (of the
+body). The axis with the highest moment of inertia is the main axis or axis of figure.
+</p><!--l. 1290--><p class="noindent" >The moment of inertia relates the angular momentum to the angular velocity, specifically if
+<!--l. 1290--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math> is the
+<!--l. 1290--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>i</mi></mrow><mrow 
+><mi 
+>t</mi><mi 
+>h</mi></mrow></msup 
+></math> component of angular
+momentum and <!--l. 1290--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>ω</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math>
+similar for angular velocity then
+<!--tex4ht:inline--></p><!--l. 1291--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                               <msub><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>i</mi><mi 
+>j</mi></mrow></msub 
+><msub><mrow 
+><mi 
+>ω</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+>
+</math>
+<!--l. 1291--><p class="nopar" > The kinetic energy of a rigid body is given by
+<!--tex4ht:inline--></p><!--l. 1293--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mi 
+>K</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msub><mrow 
+><mi 
+>ω</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mi 
+>i</mi><mi 
+>j</mi></mrow></msub 
+><msub><mrow 
+><mi 
+>ω</mi></mrow><mrow 
+><mi 
+>j</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mstyle mathvariant="bold"><mi 
+>ω</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>I</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo> <mi 
+>ω</mi>
+</math>
+<!--l. 1293--><p class="nopar" > To describe the rotation of the rigid body we then write down the Lagrangian.
+But what are our coordinates for the system? We need to write down ‘orientational
+coordinates’<span class="footnote-mark"><a 
+href="#fn6x0" id="fn6x0-bk"><sup class="textsuperscript">6</sup></a></span><a 
+ id="x18-18001f6"></a>.
+</p><!--l. 1296--><p class="noindent" >Describing the orientational degrees of freedom is typically done using Euler angles. There are many different conventions, we
+will use the <!--l. 1296--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>ϕ</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>χ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+convention, particularly suited to objects, like a spinning top, with a rotational symmetry. We suppose
+that one end of the body is fixed to the origin. The end of the top is given by the vector (in Cartesian
+components)
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1297--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo class="qopname">cos</mo><!--nolimits--><mi 
+>ϕ</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mo class="qopname">sin</mo><!--nolimits--><mi 
+>ϕ</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 1297--><p class="nopar" > you might recognise the spherical polar coordinate system. The additional coordinate
+<!--l. 1298--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>χ</mi></math>
+describes a further rotation about the main axis of the body as shown in Figure <a 
+href="#x18-1800218">18<!--tex4ht:ref: fig:euler_angles --></a>.
+</p>
+<figure class="figure"> 
+
+                                                                                                       
+                                                                                                       
+<a 
+ id="x18-1800218"></a>
+                                                                                                       
+                                                                                                       
+<div class="center" 
+>
+<!--l. 1301--><p class="noindent" >
+</p><!--l. 1302--><p class="noindent" > <img 
+src="figures/euler_angles-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 18:</span><span  
+class="content">Euler angles for a rigid body.</span></figcaption><!--tex4ht:label?: x18-1800218 -->
+</div>
+                                                                                                       
+                                                                                                       
+</figure>
+<!--l. 1309--><p class="noindent" >The Euler angles can be described algorithmically follows.
+     </p><dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+   1. </dt><dd 
+class="enumerate-enumitem">Start  with  the  body  oriented  so  that  the  principle  axes  of  inertia  are  aligned  with  the  Cartesian  axis
+     <!--l. 1311--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+     so that the principle moments satisfy <!--l. 1311--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">&#x003C;</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">&#x003C;</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+></math>.
+     </dd><dt class="enumerate-enumitem">
+   2. </dt><dd 
+class="enumerate-enumitem">Rotate the body by an angle <!--l. 1312--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>
+     about the <!--l. 1312--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi></math>
+     axis.
+     </dd><dt class="enumerate-enumitem">
+   3. </dt><dd 
+class="enumerate-enumitem">Rotate the body by an angle <!--l. 1313--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ϕ</mi></math>
+     about the <!--l. 1313--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>z</mi></math>
+     axis.
+     </dd><dt class="enumerate-enumitem">
+   4. </dt><dd 
+class="enumerate-enumitem">Rotate the body by an angle <!--l. 1314--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>χ</mi></math>
+     about the new main axis of the body.</dd></dl>
+<!--l. 1317--><p class="noindent" >It is a tricky calculation (that we will not do) to show that the angular velocity of the top is given by
+<!--tex4ht:inline--></p><!--l. 1318--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+ <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><msub><mrow 
+><mi 
+>ω</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><msub><mrow 
+><mi 
+>ω</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><msub><mrow 
+><mi 
+>ω</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+></mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                                                                           </mrow></mfenced> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="("  close=")" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="center"><mo class="qopname">sin</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>ϕ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo class="qopname">sin</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">+</mo><mo class="qopname"> cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>χ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center"><mo class="qopname">cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>ϕ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo class="qopname">sin</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">−</mo><mo class="qopname"> sin</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>χ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mtd>
+</mtr> <mtr><mtd 
+class="array"  columnalign="center">       <mo class="qopname">cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">+</mo> <mover accent="true"><mi 
+>χ</mi><mo>&sdot;</mo></mover>       </mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                           </mrow></mfenced>
+</math>
+<!--l. 1325--><p class="nopar" >
+</p>
+<div class="newtheorem">
+<!--l. 1327--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Precession, nutation and the Lagrangian top. These equations describe the behaviour of gyroscopes.
+The Lagrangian top is rotationally symmetric about the main axis, in the presence of gravity. The rotational
+symmetry means we have have <!--l. 1327--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">&#x003C;</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+></math>.
+One can show that in this case the rotational kinetic energy is
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1328--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                         <mi 
+>K</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mstyle mathvariant="bold"><mi 
+>ω</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>I</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>ω</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo><msup><mrow 
+><mo class="qopname"> sin</mo><!--nolimits--></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><msup><mrow 
+><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mover accent="true"><mi 
+>χ</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">+</mo><mo class="qopname"> cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+>
+</math>
+<!--l. 1328--><p class="nopar" > Now we assume that if the top is vertically aligned, the centre of mass is located at a point <!--l. 1329--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>h</mi></math>
+along the <!--l. 1329--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>z</mi></math>-axis,
+and we suppose that the mass is <!--l. 1329--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>m</mi></math>.
+This tells us that the centre of mass in general is at the point
+<!--tex4ht:inline--></p><!--l. 1330--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                      <mi 
+>h</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo class="qopname">cos</mo><!--nolimits--><mi 
+>ϕ</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mo class="qopname">cos</mo><!--nolimits--><mi 
+>ϕ</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1330--><p class="nopar" > so that the potential energy is (ignoring constant terms)
+<!--tex4ht:inline--></p><!--l. 1332--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><mi 
+>g</mi><mi 
+>h</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1332--><p class="nopar" > We therefore find the Lagrangian
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1334--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                    <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>K</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo><msup><mrow 
+><mo class="qopname"> sin</mo><!--nolimits--></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><msup><mrow 
+><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mover accent="true"><mi 
+>χ</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">+</mo><mo class="qopname"> cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <mi 
+>m</mi><mi 
+>g</mi><mi 
+>h</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi>
+</math>
+<!--l. 1334--><p class="nopar" > Now the Lagrangian has no explicit dependence on <!--l. 1335--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ϕ</mi></math>
+or <!--l. 1335--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>χ</mi></math>,
+so the corresponding momenta are conserved.
+<!--tex4ht:inline--></p><!--l. 1336--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                        <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>ϕ</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msup><mrow 
+><mo class="qopname"> sin</mo><!--nolimits--></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+>
+<mn>3</mn></mrow></msub 
+><msup><mrow 
+><mo class="qopname"> cos</mo><!--nolimits--></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+>
+<mn>3</mn></mrow></msub 
+><mo class="qopname"> cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mover accent="true"><mi 
+>χ</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mi 
+>c</mi><mi 
+>o</mi><mi 
+>n</mi><mi 
+>s</mi><mi 
+>t</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1336--><p class="nopar" >          This              is              the              angular              momentum              about              the
+<!--l. 1337--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>z</mi></math>
+axis.
+<!--tex4ht:inline--></p><!--l. 1338--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                   <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>χ</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>χ</mi><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mover accent="true"><mi 
+>χ</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">+</mo><mo class="qopname"> cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>c</mi><mi 
+>o</mi><mi 
+>n</mi><mi 
+>s</mi><mi 
+>t</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1338--><p class="nopar" >   This    is    the    angular    momentum    about    the    principal    body    axis.    The    equation    for
+<!--l. 1339--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>
+reads
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1340--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                           <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mover 
+accent="true"><mrow 
+><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-op">̈</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mi 
+>g</mi><mi 
+>h</mi><mi 
+>m</mi><mo class="qopname">sin</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+></mrow> 
+     <mrow 
+><mn>2</mn></mrow></mfrac>    <mo class="qopname">sin</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>2</mn><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><msup><mrow 
+><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+>
+<mn>3</mn></mrow></msub 
+><mo class="qopname"> sin</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover><mover accent="true"><mi 
+>χ</mi><mo>&sdot;</mo></mover>
+</math>
+<!--l. 1340--><p class="nopar" >   but    we    can    progress    further    if    instead    we    look    at    conservation    of    total    energy
+<!--l. 1341--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>E</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>K</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>V</mi> </math>
+<!--tex4ht:inline--></p><!--l. 1342--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                         <mi 
+>E</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo><msup><mrow 
+><mo class="qopname"> sin</mo><!--nolimits--></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><msup><mrow 
+><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mover accent="true"><mi 
+>χ</mi><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">+</mo><mo class="qopname"> cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>m</mi><mi 
+>g</mi><mi 
+>h</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi>
+</math>
+<!--l. 1342--><p class="nopar" > substituting our conserved momenta we find
+<!--tex4ht:inline--></p><!--l. 1344--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                           <mi 
+>E</mi> <mo 
+class="MathClass-rel">=</mo>   <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+></mrow></mfrac><msubsup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>χ</mi></mrow><mrow 
+><mn>2</mn></mrow></msubsup 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msup><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>ϕ</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>χ</mi></mrow></msub 
+><mo class="qopname"> cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow> 
+       <mrow 
+><mn>2</mn><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msup><mrow 
+><mo class="qopname"> sin</mo><!--nolimits--></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mi 
+>𝜃</mi></mrow></mfrac>     <mo 
+class="MathClass-bin">+</mo> <mi 
+>m</mi><mi 
+>g</mi><mi 
+>h</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi>
+</math>
+<!--l. 1344--><p class="nopar" > now we define the function
+<!--tex4ht:inline--></p><!--l. 1346--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                  <mi 
+>U</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>ϕ</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>χ</mi></mrow></msub 
+><mo class="qopname"> cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow> 
+       <mrow 
+><mn>2</mn><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msup><mrow 
+><mo class="qopname"> sin</mo><!--nolimits--></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mi 
+>𝜃</mi></mrow></mfrac>     <mo 
+class="MathClass-bin">+</mo> <mi 
+>m</mi><mi 
+>g</mi><mi 
+>h</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi>
+</math>
+<!--l. 1346--><p class="nopar" > and we find
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1348--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                  <mi 
+>E</mi> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+></mrow></mfrac><msubsup><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>χ</mi></mrow><mrow 
+><mn>2</mn></mrow></msubsup 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msup><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>U</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>c</mi><mi 
+>o</mi><mi 
+>n</mi><mi 
+>s</mi><mi 
+>t</mi><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1348--><p class="nopar" > But this looks like the motion of a particle in a one-dimensional potential given by
+<!--l. 1349--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>U</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>, as
+shown in Figure <a 
+href="#x18-1800719">19<!--tex4ht:ref: fig:rigid_potential --></a>. </p><figure class="figure"> 
+<a 
+ id="x18-1800719"></a>
+<div class="center" 
+>
+<!--l. 1351--><p class="noindent" >
+</p><!--l. 1352--><p class="noindent" > <img 
+src="figures/rigid_potential-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 19:</span><span  
+class="content">An                  example                  effective                  potential                  for                  the
+<!--l. 1353--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>
+coordinate for chosen parameters.</span></figcaption><!--tex4ht:label?: x18-1800719 -->
+</div>
+</figure>
+<!--l. 1359--><p class="noindent" >Now we describe the motion of the particle. If <!--l. 1359--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math> is
+constant, then we find a solution given by constant <!--l. 1359--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover></math>
+and <!--l. 1359--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover accent="true"><mi 
+>χ</mi><mo>&sdot;</mo></mover></math>.
+This describes constant precession of the top around the central axis, as shown in Figure <a 
+href="#x18-1800820">20<!--tex4ht:ref: fig:rigid_gallery --></a>(left). Precession requires
+solving
+<!--tex4ht:inline--></p><!--l. 1360--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                  <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>g</mi><mi 
+>h</mi><mi 
+>m</mi> <mo 
+class="MathClass-bin">+</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo class="qopname">cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><msup><mrow 
+><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>I</mi></mrow><mrow 
+>
+<mn>3</mn></mrow></msub 
+><mover accent="true"><mi 
+>ϕ</mi><mo>&sdot;</mo></mover><mover accent="true"><mi 
+>χ</mi><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 1360--><p class="nopar" > If instead <!--l. 1361--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>
+is not constant, then the top will oscillate up and down inside the effective potential
+<!--l. 1361--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>U</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>. This
+motion is called nutation, and is shown in Figure <a 
+href="#x18-1800820">20<!--tex4ht:ref: fig:rigid_gallery --></a>(centre, right).
+</p>
+<figure class="figure"> 
+<a 
+ id="x18-1800820"></a>
+<div class="center" 
+>
+                                                                                                       
+                                                                                                       
+<!--l. 1364--><p class="noindent" >
+</p><!--l. 1365--><p class="noindent" > <img 
+src="figures/rigid_gallery-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 20:</span><span  
+class="content">Left: precession of a top, shown as motion of the end of the top on the surface of a sphere. Centre,
+right: precession and nutation.</span></figcaption><!--tex4ht:label?: x18-1800820 -->
+</div>
+</figure>
+</div>
+                                                                                                       
+                                                                                                       
+<div class="footnotes"><!--l. 1294--><p class="noindent" ><span class="footnote-mark"><a 
+href="#fn6x0-bk" id="fn6x0"><sup class="textsuperscript">6</sup></a></span><span 
+class="cmr-9">Those truly interested the formalism of classical mechanics should read Arnold’s ‘Mathematical Methods of Classical Mechanics’ for a</span>
+<span 
+class="cmr-9">masterful treatment of rigid body rotations. Ultimately one finds what is known as a Lie-Poisson Hamiltonian system associated to the rotation</span>
+<span 
+class="cmr-9">group </span><!--l. 1294--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>S</mi><mi 
+>O</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>3</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmr-9">describing the evolution of the angular velocity in the body frame of reference.</span></p>                                          </div>
+<!--l. 1379--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu14.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse2.html#AM_notessu15.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu16.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

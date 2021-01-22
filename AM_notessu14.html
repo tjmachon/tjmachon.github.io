@@ -1,0 +1,1633 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Noether’s theorem</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 1194--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu13.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse2.html#AM_notessu14.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu15.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">2.5   </span> <a 
+ id="x17-170005"></a>Noether’s theorem</h4>
+<!--l. 1195--><p class="noindent" >The Lagrangian formalism allows us to state one of the most profound results in all of theoretical physics, due to Emmy
+Noether.
+</p>
+<div class="newtheorem">
+<!--l. 1196--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Theorem.</span>  </span><span 
+class="cmti-10x-x-109">Noether’s  theorem  (informal).  For  every  differential  symmetry  of  a  physical  system  there  is  a</span>
+<span 
+class="cmti-10x-x-109">corresponding conservation law.</span>
+</p>
+</div>
+<!--l. 1198--><p class="noindent" >A simple example of a differentiable symmetry is a differentiable family of coordinate transformations on
+<!--l. 1198--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>q</mi></math> that leave the
+action invariant, an example might be a rotation, or a translation. Let’s suppose we have a new family of generalised coordinates
+<!--l. 1198--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>Q</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>𝜖</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>, with the extra parameter
+<!--l. 1198--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜖</mi></math> describing the transformation.
+For example, suppose <!--l. 1198--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>Q</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mo 
+class="MathClass-punc">,</mo><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> is
+given by a rotation of <!--l. 1198--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+<!--tex4ht:inline--></p><!--l. 1199--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                  <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-rel">↦</mo><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo><mo class="qopname"> sin</mo><!--nolimits--><mi 
+>𝜃</mi><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi><mi 
+>y</mi> <mo 
+class="MathClass-bin">+</mo><mo class="qopname"> sin</mo><!--nolimits--><mi 
+>𝜃</mi><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1199--><p class="nopar" > then <!--l. 1200--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜖</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>𝜃</mi></math>. We also
+require that for <!--l. 1200--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜖</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>
+we recover the original coordinates, so
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1201--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <mi 
+>Q</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>q</mi>
+</math>
+<!--l. 1201--><p class="nopar" > Then we have a family of actions depending on <!--l. 1202--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜖</mi></math>
+through <!--l. 1202--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle></math>.
+<!--tex4ht:inline--></p><!--l. 1203--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mi 
+>S</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>Q</mi></mrow><mo 
+class="MathClass-close">]</mo></mrow> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+      </mrow></msubsup 
+><mi 
+>L</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>Q</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mi 
+>d</mi><mi 
+>t</mi>
+</math>
+<!--l. 1203--><p class="nopar" >
+</p>
+<div class="newtheorem">
+<!--l. 1204--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Definition.</span>  </span><span 
+class="cmti-10x-x-109">The                                                                                                   transformation</span>
+<!--l. 1205--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>Q</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>𝜖</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">is       a       differentiable       symmetry       of       a       mechanical       system       with       Lagrangian</span>
+<!--l. 1205--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi></math>
+<span 
+class="cmti-10x-x-109">if                             there                             is                             a                             function</span>
+<!--l. 1205--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>Λ</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">such that</span>
+<!--tex4ht:inline--></p><!--l. 1206--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msub><mrow 
+>
+                           <mfenced separators="" 
+open=""  close="|" ><mrow> <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>𝜖</mi></mrow></mfrac></mrow></mfenced></mrow><mrow 
+><mi 
+>𝜖</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow></msub 
+><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+   </mrow></msubsup 
+><mi 
+>L</mi><mspace width="0.3em" class="thinspace"/><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+</mrow></msubsup 
+> <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac><mi 
+>Λ</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>Λ</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></mfenced></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+      </mrow></msubsup 
+>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 1206--><p class="nopar" > <span 
+class="cmti-10x-x-109">for all choices of endpoints </span><!--l. 1207--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">&#x003C;</mo> <msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+></math><span 
+class="cmti-10x-x-109">.</span>
+</p>
+</div>
+<!--l. 1209--><p class="noindent" >In other words, under the application of the symmetry the action changes by a total derivative. Now let’s look at the
+quantity
+<!--tex4ht:inline--></p><!--l. 1210--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msub><mrow 
+>
+                                            <mfenced separators="" 
+open=""  close="|" ><mrow> <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>𝜖</mi></mrow></mfrac></mrow></mfenced></mrow><mrow 
+><mi 
+>𝜖</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow></msub 
+><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+   </mrow></msubsup 
+><mi 
+>L</mi><mspace width="0.3em" class="thinspace"/><mi 
+>d</mi><mi 
+>t</mi>
+</math>
+<!--l. 1210--><p class="nopar" > applying the derivative yields
+<!--tex4ht:inline--></p><!--l. 1212--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                              <msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+      </mrow></msubsup 
+><msub><mrow 
+> <mfenced separators="" 
+open=""  close="|" ><mrow> <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>𝜖</mi></mrow></mfrac><mi 
+>L</mi></mrow></mfenced></mrow><mrow 
+><mi 
+>𝜖</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫ 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+</mrow></msubsup 
+><munder class="msub"><mrow 
+><mo mathsize="big" 
+> ∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+> <mfenced separators="" 
+open="("  close=")" ><mrow> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac><msub><mrow 
+><mi 
+>g</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo><msub><mrow 
+>  <mfrac><mrow 
+><mi 
+>∂</mi><mn>2</mn><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>g</mi><mo>&sdot;</mo></mover></mrow></mfrac></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfenced> <mi 
+>d</mi><mi 
+>t</mi>
+</math>
+<!--l. 1212--><p class="nopar" > where
+<!--tex4ht:inline--></p><!--l. 1214--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <msub><mrow 
+><mi 
+>g</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+> <mfenced separators="" 
+open=""  close="|" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>Q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+ <mrow 
+><mi 
+>∂</mi><mi 
+>𝜖</mi></mrow></mfrac> </mrow></mfenced></mrow><mrow 
+><mi 
+>𝜖</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><msub><mrow 
+><mover accent="true"><mi 
+>g</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+> <mfenced separators="" 
+open=""  close="|" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mover accent="true"><msub><mrow 
+><mi 
+>Q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+ <mrow 
+><mi 
+>∂</mi><mi 
+>𝜖</mi></mrow></mfrac> </mrow></mfenced></mrow><mrow 
+><mi 
+>𝜖</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow></msub 
+><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1214--><p class="nopar" > Now we know that the Euler-Lagrange equations are satisfied by
+<!--l. 1215--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>q</mi></math>, so we
+use them to substitute for the first term to find
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1216--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msub><mrow 
+>
+                             <mfenced separators="" 
+open=""  close="|" ><mrow> <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>𝜖</mi></mrow></mfrac></mrow></mfenced></mrow><mrow 
+><mi 
+>𝜖</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow></msub 
+><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+   </mrow></msubsup 
+><mi 
+>L</mi><mspace width="0.3em" class="thinspace"/><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+</mrow></msubsup 
+><munder class="msub"><mrow 
+><mo mathsize="big" 
+> ∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+> <mfenced separators="" 
+open="("  close=")" ><mrow> <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac><msub><mrow 
+><mi 
+>g</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac><mover accent="true"><msub><mrow 
+><mi 
+>g</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfenced> <mi 
+>d</mi><mi 
+>t</mi>
+</math>
+<!--l. 1216--><p class="nopar" > but this is a total derivative, so
+<!--tex4ht:inline--></p><!--l. 1218--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msub><mrow 
+>
+                         <mfenced separators="" 
+open=""  close="|" ><mrow> <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>𝜖</mi></mrow></mfrac></mrow></mfenced></mrow><mrow 
+><mi 
+>𝜖</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow></msub 
+><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+   </mrow></msubsup 
+><mi 
+>L</mi><mspace width="0.3em" class="thinspace"/><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+</mrow></msubsup 
+> <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac><munder class="msub"><mrow 
+><mo mathsize="big" 
+>∑</mo>
+   </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><msub><mrow 
+><mi 
+>g</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac></mrow></mfenced> <mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><munder class="msub"><mrow 
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><msub><mrow 
+><mi 
+>g</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac></mrow></mfenced></mrow></mfenced> </mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+      </mrow></msubsup 
+>
+</math>
+<!--l. 1218--><p class="nopar" > Now using the definition of differentiable symmetry we find
+<!--tex4ht:inline--></p><!--l. 1220--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msubsup><mrow 
+>
+                                         <mfenced separators="" 
+open="["  close="]" ><mrow><munder class="msub"><mrow 
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><msub><mrow 
+><mi 
+>g</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac></mrow></mfenced> <mo 
+class="MathClass-bin">−</mo> <mi 
+>Λ</mi></mrow></mfenced></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+   </mrow></msubsup 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 1220--><p class="nopar" > but since <!--l. 1221--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></math>
+and <!--l. 1221--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+></math> were
+arbitrary this must be constant, and we arrive at Noether’s theorem.
+</p>
+<div class="newtheorem">
+<!--l. 1222--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Theorem.</span>  </span><span 
+class="cmti-10x-x-109">Noether’s theorem. For a Lagrangian with differentiable symmetry the quantity</span>
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1223--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <munder class="msub"><mrow 
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><msub><mrow 
+><mi 
+>g</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac></mrow></mfenced> <mo 
+class="MathClass-bin">−</mo> <mi 
+>Λ</mi>
+</math>
+<!--l. 1223--><p class="nopar" > <span 
+class="cmti-10x-x-109">is a constant of the motion.</span>
+</p>
+</div>
+<!--l. 1226--><p class="noindent" >Now we study examples.
+</p>
+<div class="newtheorem">
+<!--l. 1227--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Conservation of momentum for a single particle. Consider motion of a particle of mass <!--l. 1228--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>m</mi></math>
+in <!--l. 1228--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>3</mn></math>
+dimensions so <!--l. 1228--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>q</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+with no potential. Then the Lagrangian is just the kinetic energy.
+<!--tex4ht:inline--></p><!--l. 1229--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>m</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo><msup><mrow 
+> <mover accent="true"><mi 
+>y</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo><msup><mrow 
+> <mover accent="true"><mi 
+>z</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1229--><p class="nopar" > Now consider the coordinate transformation generated along some the constant vector <!--l. 1230--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>e</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn><mo 
+class="MathClass-punc">,</mo><mn>0</mn><mo 
+class="MathClass-punc">,</mo><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+so that
+<!--tex4ht:inline--></p><!--l. 1231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                        <mi 
+>Q</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>q</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>𝜖</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi><msub><mrow 
+><mi 
+>s</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 1231--><p class="nopar" >       Under          this          transformation,          the          Lagrangian          is          invariant          since
+<!--l. 1232--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover accent="true"><mi 
+>Q</mi><mo>&sdot;</mo></mover></math>
+is          invariant.          Since          the          Lagrangian          is          invariant,          the          function
+<!--l. 1232--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>Λ</mi></math>
+must equal zero. Applying Noether’s theorem we find
+<!--tex4ht:inline--></p><!--l. 1233--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                               <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>m</mi><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 1233--><p class="nopar" >                               so                                             that                                             the
+<!--l. 1234--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi></math>
+component   of   momentum   is   conserved.   Applying   the   same   to   procedure   to   translations   in   the
+<!--l. 1234--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi></math>
+and
+<!--l. 1234--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>z</mi></math>
+directions we find that translation symmetry implies momentum conservation.
+</p>
+</div>
+<div class="newtheorem">
+<!--l. 1236--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Conservation of momentum in the two body problem. Consider the general two-body problem, so
+<!--l. 1236--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>q</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+with <!--l. 1236--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+and <!--l. 1236--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+with potential <!--l. 1236--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo 
+class="MathClass-rel">|</mo><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-rel">|</mo></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+Then the Lagrangian is
+<!--tex4ht:inline--></p><!--l. 1237--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                  <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow> 
+  <mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+>  <mfenced separators="" 
+open="|"  close="|" ><mrow><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi><msub><mrow 
+></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow></mfenced> </mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow> 
+  <mrow 
+><mn>2</mn></mrow></mfrac><msup><mrow 
+>  <mfenced separators="" 
+open="|"  close="|" ><mrow><mover accent="true"><mstyle mathvariant="bold"><mi 
+>r</mi><msub><mrow 
+></mstyle><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfenced> </mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mfenced separators="" 
+open="|"  close="|" ><mrow><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>r</mi></mstyle></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfenced></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">.</mo>
+</math>
+                                                                                                       
+                                                                                                       
+<!--l. 1237--><p class="nopar" > Now consider a global translation along <!--l. 1238--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mstyle mathvariant="bold"><mi 
+>e</mi></mstyle></mrow><mrow 
+><mi 
+>x</mi></mrow></msub 
+></math>,
+so that
+<!--tex4ht:inline--></p><!--l. 1239--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                     <mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1239--><p class="nopar" >   this     is     a     symmetry     of     the     system,     since     it     does     not     change     the     value     of
+<!--l. 1240--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> </math>
+or           the           velocities,           and           the           Lagrangian           is           invariant,           so
+<!--l. 1240--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>Λ</mi></math>
+is invariant. Applying Noether’s theorem we find that
+<!--tex4ht:inline--></p><!--l. 1241--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><msub><mrow 
+><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>m</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><msub><mrow 
+><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 1241--><p class="nopar" > which is the total momentum in the <!--l. 1242--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi></math> direction.
+Again we can do the same for translations along <!--l. 1242--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi></math>
+and <!--l. 1242--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>z</mi></math>, and
+we find that </p>
+<div class="center" 
+>
+<!--l. 1243--><p class="noindent" >
+</p>
+<div class="minipage"><div class="center" 
+>
+<!--l. 1244--><p class="noindent" >
+</p><!--l. 1245--><p class="noindent" >Translation symmetry
+<!--l. 1245--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mspace width="3.04076pt" class="tmspace"/><mo 
+class="MathClass-rel">⇒</mo><mspace width="3.04076pt" class="tmspace"/></math>
+total momentum conservation</p></div></div></div>
+</div>
+<div class="newtheorem">
+                                                                                                       
+                                                                                                       
+<!--l. 1250--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Angular momentum conservation. Consider a 2D particle described by polar coordinates <!--l. 1251--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>q</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+with a central potential <!--l. 1251--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+then the Lagrangian is
+<!--tex4ht:inline--></p><!--l. 1252--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                        <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>m</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac>  <mfenced separators="" 
+open="("  close=")" ><mrow><msup><mrow 
+><mover accent="true"><mi 
+>r</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><msup><mrow 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfenced> <mo 
+class="MathClass-bin">−</mo> <mi 
+>V</mi> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1252--><p class="nopar" >    We      define      the      differentiable      symmetry      as      a      rotation,      which      just      increases
+<!--l. 1253--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>𝜃</mi></math>
+by a constant amount.
+<!--tex4ht:inline--></p><!--l. 1254--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>𝜃</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1254--><p class="nopar" > The Lagrangian is invariant under this transformation, so <!--l. 1255--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>Λ</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>.
+Applying Noether’s theorem yields
+<!--tex4ht:inline--></p><!--l. 1256--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>m</mi><msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mover accent="true"><mi 
+>𝜃</mi><mo>&sdot;</mo></mover></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 1256--><p class="nopar" > which is just angular momentum. Higher dimensional examples follow analogously and we have the general
+correspondence </p>
+                                                                                                       
+                                                                                                       
+<div class="center" 
+>
+<!--l. 1258--><p class="noindent" >
+</p>
+<div class="minipage"><div class="center" 
+>
+<!--l. 1259--><p class="noindent" >
+</p><!--l. 1260--><p class="noindent" >Rotational symmety
+<!--l. 1260--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mspace width="3.04076pt" class="tmspace"/><mo 
+class="MathClass-rel">⇒</mo><mspace width="3.04076pt" class="tmspace"/></math>
+angular momentum conservation</p></div></div></div>
+</div>
+<div class="newtheorem">
+<!--l. 1266--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Conservation of the Hamiltonian. Suppose the Lagrangian has no explicit dependence on <!--l. 1266--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi></math>,
+so <!--l. 1266--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>L</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+Then we consider the ‘time translation’ symmetry, so that
+<!--tex4ht:inline--></p><!--l. 1267--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mstyle mathvariant="bold"><mi 
+>Q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>𝜖</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>𝜖</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 1267--><p class="nopar" > Now under application of this symmetry we find
+<!--tex4ht:inline--></p><!--l. 1269--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                         <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>𝜖</mi></mrow></mfrac><msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+  <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+   </mrow></msubsup 
+><mi 
+>L</mi><mspace width="0.3em" class="thinspace"/><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+</mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><munder class="msub"><mrow 
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi></mrow></munder 
+> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+>  <mfrac><mrow 
+><mi 
+>∂</mi><mn>2</mn><mi 
+>L</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mi 
+>∂</mi><mover accent="true"><mi 
+>q</mi><mo>&sdot;</mo></mover></mrow></mfrac></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfenced> <mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>a</mi></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msub 
+>
+      </mrow></msubsup 
+><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mspace width="0.3em" class="thinspace"/><mi 
+>d</mi><mi 
+>t</mi>
+</math>
+<!--l. 1269--><p class="nopar" > so that the function <!--l. 1270--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>Λ</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>L</mi></math>,
+the Lagrangian, hence the time translation is a differentiable symmetry of the system. Now applying Noether’s
+theorem we find
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 1271--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>L</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover></mrow></mfrac> <mo 
+class="MathClass-bin">⋅</mo><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover> <mo 
+class="MathClass-bin">−</mo> <mi 
+>L</mi></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 1271--><p class="nopar" > But recall that this is Beltrami’s identity, and that for a classical system, this quantity is just the total energy. Hence we
+have </p>
+<div class="center" 
+>
+<!--l. 1273--><p class="noindent" >
+</p>
+<div class="minipage"><div class="center" 
+>
+<!--l. 1274--><p class="noindent" >
+</p><!--l. 1275--><p class="noindent" >Time translation symmety
+<!--l. 1275--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mspace width="3.04076pt" class="tmspace"/><mo 
+class="MathClass-rel">⇒</mo><mspace width="3.04076pt" class="tmspace"/></math>
+total energy conservation</p></div></div></div>
+</div>
+                                                                                                       
+                                                                                                       
+<!--l. 1280--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu13.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse2.html#AM_notessu14.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu15.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

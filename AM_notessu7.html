@@ -1,0 +1,822 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>The brachistochrone and general problems in the calculus of variations</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 469--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu6.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse1.html#AM_notessu7.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu8.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">1.7   </span> <a 
+ id="x9-80007"></a>The brachistochrone and general problems in the calculus of variations</h4>
+<!--l. 471--><p class="noindent" >The toolbox we have developed can be used to do more than just derive Newton’s laws. Many problems in physics, engineering,
+maths (in fact science in general) can be phrased as optimisation problems for a functional. That is, we want to find a
+function <!--l. 471--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+that optimises some functional
+<!--tex4ht:inline--></p><!--l. 472--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mi 
+mathvariant="bold-script">ℒ</mi> <mo 
+class="MathClass-rel">=</mo><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--><mspace width="1em" class="nbsp" /><mi 
+>L</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mi 
+>x</mi><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="0.3em" class="thinspace"/><mi 
+>d</mi><mi 
+>t</mi>
+</math>
+<!--l. 472--><p class="nopar" > note that <!--l. 473--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi></math> may
+not be time, and <!--l. 473--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi></math>
+may not be space. The functional might also have more than one dependent variable, as in the previous section with
+<!--l. 473--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi></math> and
+<!--l. 473--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi></math>, or more than one
+independent variable<span class="footnote-mark"><a 
+href="#fn4x0" id="fn4x0-bk"><sup class="textsuperscript">4</sup></a></span><a 
+ id="x9-8001f4"></a>
+<span 
+class="cmti-10x-x-109">e.g</span>. <!--l. 473--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math> and
+<!--l. 473--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>t</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>. In all
+these cases, the optimal solution is found by solving the appropriate Euler-Lagrange equations. Let’s give an example, a
+problem originating with Johann Bernoulli.
+</p>
+<div class="newtheorem">
+<!--l. 474--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>The Brachistochrone. </p>
+<div class="center" 
+>
+<!--l. 475--><p class="noindent" >
+</p>
+                                                                                                       
+                                                                                                       
+<div class="minipage"><!--l. 475--><p class="noindent" >Find       the       form       of       the       curve       joining       two       fixed       points
+<!--l. 475--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>A</mi></math>
+and
+<!--l. 475--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>B</mi></math>
+so that, starting from rest, a frictionless mass will slide down along it, under the influence
+of gravity alone, in the minimum amount of time.</p></div></div>
+<!--l. 477--><p class="noindent" >Without loss of generality we make take <!--l. 477--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>A</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn><mo 
+class="MathClass-punc">,</mo><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+and <!--l. 477--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>B</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><mi 
+>h</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>. We will describe
+the curve as a function <!--l. 477--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+and we have <!--l. 477--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math> and
+<!--l. 477--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>h</mi></math>. For the problem to make
+physical sense, we require <!--l. 477--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">≤</mo> <mn>0</mn></math>,
+otherwise the particle will never reach the end point (why?), this setup is shown in Figure <a 
+href="#x9-80024">4<!--tex4ht:ref: fig:bc --></a>. Now to formulate this
+as a calculus of variations problem, we need to compute the total time taken for the mass to slide from
+<!--l. 477--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>A</mi></math> to
+<!--l. 477--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>B</mi></math>.
+</p>
+<figure class="figure"> 
+<a 
+ id="x9-80024"></a>
+<div class="center" 
+>
+<!--l. 480--><p class="noindent" >
+</p><!--l. 481--><p class="noindent" > <img 
+src="figures/bc-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 4:</span><span  
+class="content">The   brachistochrone   setup,   with   four   possible   paths.   The   goal   is   to   find   the   path,
+out   of   all   possible,   such   that   starting   from   rest,   a   frictionless   mass   will   slide   down   from
+<!--l. 482--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>A</mi></math>
+to <!--l. 482--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>B</mi></math>,
+under the influence of gravity alone, in the minimum amount of time.</span></figcaption><!--tex4ht:label?: x9-80024 -->
+</div>
+</figure>
+<!--l. 487--><p class="noindent" >The total time will be given as
+<!--tex4ht:inline--></p><!--l. 488--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <mi 
+>T</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>A</mi></mrow><mrow 
+><mi 
+>B</mi></mrow></msubsup 
+><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>l</mi></mrow>
+<mrow 
+><mi 
+>v</mi></mrow></mfrac>
+</math>
+<!--l. 488--><p class="nopar" > where <!--l. 489--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>v</mi></math> is the velocity
+of the particle and <!--l. 489--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi><msup><mrow 
+><mi 
+>l</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>d</mi><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>d</mi><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></math>
+is the infinitesimal length. Because the particle remains on the curve
+<!--l. 489--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> at all times,
+we have <!--l. 489--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> and
+                                                                                                       
+                                                                                                       
+<!--l. 489--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>, so assuming
+<!--l. 489--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi><mi 
+>x</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>d</mi><mi 
+>t</mi> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn></math>, we may
+write <!--l. 489--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi><mi 
+>l</mi></math>
+as
+<!--tex4ht:inline--></p><!--l. 490--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mi 
+>d</mi><mi 
+>l</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>d</mi><mi 
+>x</mi><msqrt><mrow><mn>1</mn> <mo 
+class="MathClass-bin">+</mo><msup><mrow 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi> </mrow> </msup 
+>  </mrow></mfenced> </mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt>
+</math>
+<!--l. 490--><p class="nopar" > where <!--l. 491--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>d</mi><mi 
+>y</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>d</mi><mi 
+>x</mi></math>. Now total energy
+is conserved, and when <!--l. 491--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>
+the height is zero, so we may write
+<!--tex4ht:inline--></p><!--l. 492--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mn>2</mn></mrow></mfrac><mi 
+>m</mi><msup><mrow 
+><mi 
+>v</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>m</mi><mi 
+>g</mi><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 492--><p class="nopar" > hence we have
+<!--tex4ht:inline--></p><!--l. 494--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mi 
+>v</mi> <mo 
+class="MathClass-rel">=</mo> <msqrt><mrow><mn>2</mn><mi 
+>g</mi></mrow></msqrt><msqrt><mrow><mo 
+class="MathClass-bin">−</mo><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msqrt>
+</math>
+<!--l. 494--><p class="nopar" > which is well-defined since <!--l. 495--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">≤</mo> <mn>0</mn></math>.
+Now we can write the total time as
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 496--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mi 
+>T</mi> <mo 
+class="MathClass-rel">=</mo>   <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><msqrt><mrow><mn>2</mn><mi 
+>g</mi></mrow></msqrt></mrow></mfrac><msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mn>1</mn></mrow></msubsup 
+><mi 
+>d</mi><mi 
+>x</mi><msqrt><mrow><mfrac><mrow 
+><mn>1</mn> <mo 
+class="MathClass-bin">+</mo><msup><mrow 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi> </mrow> </msup 
+>  </mrow></mfenced> </mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> </mrow>
+     <mrow 
+><mi 
+>y</mi></mrow></mfrac></mrow></msqrt>
+</math>
+<!--l. 496--><p class="nopar" > Then the Euler-Lagrange equations for <!--l. 497--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>T</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow></math>
+give
+<!--tex4ht:inline--></p><!--l. 498--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mfrac><mrow 
+><mn>2</mn><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn></mrow>
+  <mrow 
+><msqrt><mrow><mo 
+class="MathClass-bin">−</mo><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msqrt><msqrt><mrow><mn>1</mn> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi> </mrow> </msup 
+> <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt></mrow></mfrac>  <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 498--><p class="nopar" > now assuming <!--l. 499--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">&#x003C;</mo> <mn>0</mn></math>
+for <!--l. 499--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn></math>, this
+further simplifies to
+<!--tex4ht:inline--></p><!--l. 500--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mn>2</mn><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 500--><p class="nopar" > Now multiply by <!--l. 501--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+></math>
+to find
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 502--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                         <mn>2</mn><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mi 
+>y</mi><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi><mi 
+>′</mi></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>3</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 502--><p class="nopar" > Note that this can be rewritten as
+<!--tex4ht:inline--></p><!--l. 504--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>x</mi></mrow></mfrac><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>y</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>y</mi><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 504--><p class="nopar" > So we find the solution is
+<!--tex4ht:inline--></p><!--l. 506--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <mi 
+>y</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>y</mi><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>c</mi>
+</math>
+<!--l. 506--><p class="nopar" > for some constant <!--l. 507--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>c</mi></math>.
+By separation of variables we find
+<!--tex4ht:inline--></p><!--l. 508--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <msqrt><mrow> <mfrac> <mrow 
+> <mi 
+>y</mi></mrow>
+<mrow 
+><mi 
+>c</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>y</mi></mrow></mfrac></mrow></msqrt><mi 
+>d</mi><mi 
+>y</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>d</mi><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 508--><p class="nopar" > so that
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 510--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi> <mo 
+class="MathClass-bin">+</mo><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--><msqrt><mrow> <mfrac> <mrow 
+> <mi 
+>y</mi></mrow>
+<mrow 
+><mi 
+>c</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>y</mi></mrow></mfrac></mrow></msqrt><mi 
+>d</mi><mi 
+>y</mi>
+</math>
+<!--l. 510--><p class="nopar" > for some constant <!--l. 511--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>a</mi></math>.
+Now substitute <!--l. 511--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>c</mi><msup><mrow 
+><mo class="qopname">sin</mo><!--nolimits--></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo 
+class="MathClass-bin">−</mo><mi 
+>s</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+we find
+<!--tex4ht:inline--></p><!--l. 512--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                 <mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi> <mo 
+class="MathClass-bin">−</mo> <mn>2</mn><mi 
+>c</mi><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--><msup><mrow 
+><mo class="qopname">sin</mo><!--nolimits--></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mi 
+>s</mi><mi 
+>d</mi><mi 
+>s</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>c</mi><mi 
+>s</mi> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>c</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mo class="qopname">sin</mo><!--nolimits--><mn>2</mn><mi 
+>s</mi>
+</math>
+<!--l. 512--><p class="nopar" > Now at <!--l. 513--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>
+(so <!--l. 513--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>s</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>) we
+have <!--l. 513--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>, so
+<!--l. 513--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>a</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>. So our
+final solution is a curve given parameterically by
+<!--tex4ht:inline--></p><!--l. 514--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                     <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>k</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>s</mi> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac><mo class="qopname">sin</mo><!--nolimits--><mn>2</mn><mi 
+>s</mi><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><msup><mrow 
+><mo class="qopname">sin</mo><!--nolimits--></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mi 
+>s</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 514--><p class="nopar" > where <!--l. 515--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>c</mi></math>. This is the brachistochrone
+and, also known as a cycloid<span class="footnote-mark"><a 
+href="#fn5x0" id="fn5x0-bk"><sup class="textsuperscript">5</sup></a></span><a 
+ id="x9-8003f5"></a>.
+Note that it is independent of <!--l. 515--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>g</mi></math>,
+the brachistochrone is a solution for a particle on any planet in the universe. The value of
+<!--l. 515--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi></math> is determined
+by ensuring <!--l. 515--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mi 
+>h</mi></math>,
+when <!--l. 515--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>
+(this is solved numerically). </p><figure class="figure"> 
+<a 
+ id="x9-80045"></a>
+                                                                                                       
+                                                                                                       
+<div class="center" 
+>
+<!--l. 517--><p class="noindent" >
+</p><!--l. 518--><p class="noindent" > <img 
+src="figures/bcs-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 5:</span><span  
+class="content">The brachistochrone solution. The curve is known as a cycloid.</span></figcaption><!--tex4ht:label?: x9-80045 -->
+</div>
+</figure>
+</div>
+                                                                                                       
+                                                                                                       
+<div class="footnotes"><!--l. 473--><p class="noindent" ><span class="footnote-mark"><a 
+href="#fn4x0-bk" id="fn4x0"><sup class="textsuperscript">4</sup></a></span><span 
+class="cmr-9">This is beyond the scope of this course, but is not too difficult to do.</span></p>
+<!--l. 515--><p class="noindent" ><span class="footnote-mark"><a 
+href="#fn5x0-bk" id="fn5x0"><sup class="textsuperscript">5</sup></a></span><span 
+class="cmr-9">This curve is geometrically defined as the curve traced out by a point on a circle which rolls without slipping.</span></p>               </div>
+<!--l. 527--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu6.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse1.html#AM_notessu7.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu8.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

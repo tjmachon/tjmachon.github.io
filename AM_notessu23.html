@@ -1,0 +1,722 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Liouville’s theorem</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 2049--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu22.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse3.html#AM_notessu23.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu24.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">3.6   </span> <a 
+ id="x27-280006"></a>Liouville’s theorem</h4>
+<!--l. 2050--><p class="noindent" >In this section we consider a time-independent Hamiltonian system. We suppose rather than a single realisation of the
+system, we have an ensemble (infinitely many copies) of the system, each at a different point in phase space. The function
+<!--l. 2050--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ρ</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle><mo 
+class="MathClass-punc">,</mo><mi 
+>t</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> describes the density of
+these systems at time <!--l. 2050--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi></math>,
+so that if <!--l. 2050--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>D</mi></math> is a
+region of phase space, the integral
+<!--tex4ht:inline--></p><!--l. 2051--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                           <mi 
+>Q</mi> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>D</mi></mrow></msub 
+><mi 
+>ρ</mi><mspace width="3.04076pt" class="tmspace"/><msup><mrow 
+><mi 
+>d</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msup 
+><mi 
+>q</mi><msup><mrow 
+><mi 
+>d</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msup 
+><mi 
+>p</mi>
+</math>
+<!--l. 2051--><p class="nopar" > describes the total number of systems, <!--l. 2052--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>Q</mi></math>,
+inside the region <!--l. 2052--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>D</mi></math>
+at time <!--l. 2052--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi></math>.
+We can think of this as a ‘fluid’ in phase space, each particle of the fluid is a realisation of the Hamiltonian
+system. The particles move around phase space according to Hamilton’s equations. Now consider our region
+<!--l. 2052--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>D</mi></math>, the
+change in the number of particles will be
+<!--tex4ht:inline--></p><!--l. 2053--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                         <mfrac><mrow 
+><mi 
+>d</mi><mi 
+>Q</mi></mrow>
+ <mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>∂</mi><mi 
+>D</mi></mrow></msub 
+><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>n</mi></mstyle></mrow><mo 
+class="MathClass-op">̂</mo></mover><mspace width="0.3em" class="thinspace"/><mi 
+>d</mi><mi 
+>A</mi>
+</math>
+<!--l. 2053--><p class="nopar" > where <!--l. 2054--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>n</mi></mstyle></mrow><mo 
+class="MathClass-op">̂</mo></mover></math> is the unit
+outward normal to <!--l. 2054--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>D</mi></math>,
+<!--l. 2054--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi><mi 
+>A</mi></math> is the
+                                                                                                       
+                                                                                                       
+<!--l. 2054--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>2</mn><mi 
+>N</mi> <mo 
+class="MathClass-bin">−</mo> <mn>1</mn></math> dimensional ‘hyperarea’
+and <!--l. 2054--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mover accent="true"><mstyle mathvariant="bold"><mi 
+>q</mi></mstyle><mo>&sdot;</mo></mover><mo 
+class="MathClass-punc">,</mo><mover accent="true"><mstyle mathvariant="bold"><mi 
+>p</mi></mstyle><mo>&sdot;</mo></mover></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> is the velocity of
+the ‘systems’ in phase space. Since the systems in our ensemble are neither created nor destroyed over time, the change in the region
+<!--l. 2054--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>D</mi></math> must be equal to the flow
+through the boundary of <!--l. 2054--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>D</mi></math>
+(which we denote <!--l. 2054--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>∂</mi><mi 
+>D</mi></math>).
+The minus sign is because we chose the outward normal. But the change in particles must also be
+<!--tex4ht:inline--></p><!--l. 2055--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mfrac><mrow 
+><mi 
+>d</mi><mi 
+>Q</mi></mrow>
+ <mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>D</mi></mrow></msub 
+><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>ρ</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac><msup><mrow 
+><mi 
+>d</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msup 
+><mi 
+>q</mi><msup><mrow 
+><mi 
+>d</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msup 
+><mi 
+>p</mi>
+</math>
+<!--l. 2055--><p class="nopar" > equating these and using the <!--l. 2056--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>2</mn><mi 
+>N</mi></math>-dimensional
+divergence theorem we find
+<!--tex4ht:inline--></p><!--l. 2057--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                     <mn>0</mn> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>D</mi></mrow></msub 
+><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>ρ</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac><msup><mrow 
+><mi 
+>d</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msup 
+><mi 
+>q</mi><msup><mrow 
+><mi 
+>d</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msup 
+><mi 
+>p</mi> <mo 
+class="MathClass-bin">+</mo><msub><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>∂</mi><mi 
+>D</mi></mrow></msub 
+><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo><mover 
+accent="true"><mrow 
+><mstyle mathvariant="bold"><mi 
+>n</mi></mstyle></mrow><mo 
+class="MathClass-op">̂</mo></mover><mspace width="0.3em" class="thinspace"/><mi 
+>d</mi><mi 
+>A</mi> <mo 
+class="MathClass-rel">=</mo><msub><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>D</mi></mrow></msub 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>ρ</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <mo 
+class="MathClass-op">∇</mo><mo 
+class="MathClass-bin">⋅</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle><mi 
+>ρ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></mfenced><msup><mrow 
+><mi 
+>d</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msup 
+><mi 
+>q</mi><msup><mrow 
+><mi 
+>d</mi></mrow><mrow 
+><mi 
+>N</mi></mrow></msup 
+><mi 
+>p</mi>
+</math>
+<!--l. 2057--><p class="nopar" > where the <!--l. 2058--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>2</mn><mi 
+>N</mi></math>-dimensional
+divergence is given by
+<!--tex4ht:inline--></p><!--l. 2059--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mo 
+class="MathClass-op">∇</mo><mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>w</mi></mstyle> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mn>2</mn><mi 
+>N</mi></mrow></munderover 
+><mfrac><mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>w</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac>
+</math>
+<!--l. 2059--><p class="nopar" > with <!--l. 2060--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math> if
+<!--l. 2060--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>1</mn> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>i</mi> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>N</mi></math> and
+<!--l. 2060--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-bin">−</mo><mi 
+>N</mi></mrow></msub 
+></math> if
+<!--l. 2060--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>N</mi> <mo 
+class="MathClass-rel">&#x003C;</mo> <mi 
+>i</mi> <mo 
+class="MathClass-rel">≤</mo> <mn>2</mn><mi 
+>N</mi></math>. Since the
+                                                                                                       
+                                                                                                       
+region <!--l. 2060--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>D</mi></math> is
+arbitrary we find
+<!--tex4ht:inline--></p><!--l. 2061--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>ρ</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <mo 
+class="MathClass-op">∇</mo><mo 
+class="MathClass-bin">⋅</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle><mi 
+>ρ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 2061--><p class="nopar" > Now we know that <!--l. 2062--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo 
+class="MathClass-op">∇</mo><mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>,
+this is because
+<!--tex4ht:inline--></p><!--l. 2063--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                      <mo 
+class="MathClass-op">∇</mo><mo 
+class="MathClass-bin">⋅</mo><mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+>  <mfrac><mrow 
+><mi 
+>∂</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>d</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+ <mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo>  <mfrac><mrow 
+><mi 
+>∂</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>d</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+ <mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac>  <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+</mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+>  <mfrac><mrow 
+><mi 
+>∂</mi><mn>2</mn><mi 
+>H</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mn>2</mn><mi 
+>H</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 2063--><p class="nopar" > so we may rewrite this equation as
+<!--tex4ht:inline--></p><!--l. 2065--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>ρ</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo><mo 
+class="MathClass-op">∇</mo><mi 
+>ρ</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 2065--><p class="nopar" > Now we may state Liouville’s theorem
+</p>
+<div class="newtheorem">
+<!--l. 2067--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Theorem.</span>  </span>
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 2068--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                                <mfrac><mrow 
+><mi 
+>d</mi><mi 
+>ρ</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 2068--><p class="nopar" >
+</p>
+</div>
+<!--l. 2070--><p class="noindent" >
+</p>
+<div class="proof">
+<!--l. 2071--><p class="noindent" ><span class="head">
+<span 
+class="cmti-10x-x-109">Proof.</span> </span>We have
+<!--tex4ht:inline--></p><!--l. 2072--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                   <mfrac><mrow 
+><mi 
+>d</mi><mi 
+>ρ</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>ρ</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>N</mi></mrow></munderover 
+> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>ρ</mi></mrow>
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>d</mi><msub><mrow 
+><mi 
+>q</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+ <mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>ρ</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow></mfrac> <mfrac><mrow 
+><mi 
+>d</mi><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></mrow> 
+ <mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac>
+</math>
+<!--l. 2072--><p class="nopar" > or
+<!--tex4ht:inline--></p><!--l. 2074--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                          <mfrac><mrow 
+><mi 
+>d</mi><mi 
+>ρ</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>∂</mi><mi 
+>ρ</mi></mrow> 
+<mrow 
+><mi 
+>∂</mi><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <mstyle mathvariant="bold"><mi 
+>v</mi></mstyle> <mo 
+class="MathClass-bin">⋅</mo><mo 
+class="MathClass-op">∇</mo><mi 
+>ρ</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 2074--><p class="nopar" > which vanishes by the above calculation.                                                                                            □
+                                                                                                       
+                                                                                                       
+</p>
+</div>
+<!--l. 2078--><p class="noindent" >Liouville’s theorem has very deep consequences, it states that the flow of a Hamiltonian system
+preserves volume in phase space. This means if we start with a blob of systems in a region of volume
+<!--l. 2078--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> </math>,
+at some time later our systems will be a different blob at a different place, but it will still have volume
+<!--l. 2078--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>V</mi> </math>.
+</p>
+<figure class="figure"> 
+
+                                                                                                       
+                                                                                                       
+<a 
+ id="x27-2800130"></a>
+                                                                                                       
+                                                                                                       
+<div class="center" 
+>
+<!--l. 2082--><p class="noindent" >
+</p><!--l. 2083--><p class="noindent" > <img 
+src="figures/liouville-.svg" alt="PIC"  
+ />
+</p>
+<figcaption class="caption" ><span class="id">Figure 30:</span><span  
+class="content">Liouville’s theorem. A region of phase space is distorted under the Hamiltonian flow, but its volume is
+preserved.</span></figcaption><!--tex4ht:label?: x27-2800130 -->
+</div>
+                                                                                                       
+                                                                                                       
+</figure>
+                                                                                                       
+                                                                                                       
+<!--l. 2094--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu22.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse3.html#AM_notessu23.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu24.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>

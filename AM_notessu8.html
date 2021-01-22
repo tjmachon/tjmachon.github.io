@@ -1,0 +1,883 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Constraints in the calculus of variations</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="AM_notes.css" /> 
+<meta name="src" content="AM_notes.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head><body 
+>
+<!--l. 527--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu7.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse1.html#AM_notessu8.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu9.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+<h4 class="subsectionHead"><span class="titlemark">1.8   </span> <a 
+ id="x10-90008"></a>Constraints in the calculus of variations</h4>
+<a 
+ id="x10-9001r1"></a>
+<h5 class="subsubsectionHead"><span class="titlemark">1.8.1   </span> <a 
+ id="x10-100001"></a>Review: Lagrange multipliers</h5>
+<!--l. 530--><p class="noindent" >Suppose we want to minimise a function <!--l. 530--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+subject to the constraint <!--l. 530--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>g</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>.
+The function <!--l. 530--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>g</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math> can be
+viewed as a curve in the <!--l. 530--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+plane. For example <!--l. 530--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>g</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <mn>1</mn></math>,
+then <!--l. 530--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>g</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math> is a circle.
+The vector field <!--l. 530--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo 
+class="MathClass-op">∇</mo><mi 
+>g</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>2</mn><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mn>2</mn><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+points normal (orthogonal) to this circle.
+</p><!--l. 532--><p class="noindent" >Now suppose we want to maximise <!--l. 532--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> subject to
+this constraint. Imagine sitting on the curve <!--l. 532--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>g</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>,
+and measuring the value of <!--l. 532--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+If we have maximised <!--l. 532--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+<span 
+class="cmti-10x-x-109">on </span>the curve <!--l. 532--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>g</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>, then
+the change in <!--l. 532--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+must be zero if we move a little bit along the curve. Hence the gradient of
+<!--l. 532--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+must be orthogonal to the directions along the curve – hence it must be parallel to the normal of the curve
+<!--l. 532--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>g</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>. But this normal
+is given by <!--l. 532--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo 
+class="MathClass-op">∇</mo><mi 
+>g</mi></math>. So we
+find the condition <!--l. 533--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo 
+class="MathClass-op">∇</mo><mi 
+>f</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>λ</mi><mo 
+class="MathClass-op">∇</mo><mi 
+>g</mi></math>.
+</p><!--l. 535--><p class="noindent" >Solving this equation for <!--l. 535--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> then
+gives us equations in the unknown <!--l. 535--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>λ</mi></math>,
+which we pick to ensure that the constraint is satisfied. This works in any number of dimensions (setting
+<!--l. 535--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo 
+class="MathClass-op">∇</mo><mi 
+>f</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>λ</mi><mo 
+class="MathClass-op">∇</mo><mi 
+>g</mi></math>).
+</p>
+<div class="newtheorem">
+<!--l. 536--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>Maximise <!--l. 537--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>y</mi></math>
+subject to the constraint <!--l. 537--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>g</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">−</mo> <mn>1</mn> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>.
+Using Lagrange multipliers we find
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 538--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                      <mo 
+class="MathClass-op">∇</mo><mi 
+>f</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>λ</mi><mo 
+class="MathClass-op">∇</mo><mi 
+>g</mi><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn><mo 
+class="MathClass-punc">,</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>λ</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>2</mn><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mn>2</mn><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 538--><p class="nopar" >                                               solving                                                                    for
+<!--l. 539--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+gives
+<!--tex4ht:inline--></p><!--l. 540--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>y</mi> <mo 
+class="MathClass-rel">=</mo>  <mfrac><mrow 
+><mn>1</mn></mrow> 
+<mrow 
+><mn>2</mn><mi 
+>λ</mi></mrow></mfrac>
+</math>
+<!--l. 540--><p class="nopar" > but we know that <!--l. 541--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></math>,
+so
+<!--tex4ht:inline--></p><!--l. 542--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mn>2</mn><msup><mrow 
+><mi 
+>λ</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn><mspace width="3.04076pt" class="tmspace"/><mo 
+class="MathClass-rel">⇒</mo><mspace width="3.04076pt" class="tmspace"/><mi 
+>λ</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn><mo 
+class="MathClass-bin">∕</mo><msqrt><mrow><mn>2</mn></mrow></msqrt><mo 
+class="MathClass-punc">.</mo>
+</math>
+<!--l. 542--><p class="nopar" >
+</p>
+</div>
+<!--l. 546--><p class="noindent" >Now we give the analogous problem in the calculus of variations. We have two functionals
+<!--l. 546--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow></math> and
+<!--l. 546--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>G</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow></math>. We would like to
+extremise <!--l. 546--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow></math> subject to
+the constraint that <!--l. 546--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>G</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>C</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>c</mi><mi 
+>o</mi><mi 
+>n</mi><mi 
+>s</mi><mi 
+>t</mi></math>.
+                                                                                                       
+                                                                                                       
+</p><!--l. 548--><p class="noindent" >Suppose <!--l. 548--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math> is a solution, and
+consider a small variation <!--l. 548--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">→</mo> <mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mi 
+>α</mi><mi 
+>a</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mi 
+>β</mi><mi 
+>b</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+parameterised by the two constants <!--l. 548--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>α</mi></math>
+and <!--l. 548--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>β</mi></math>. Then we can
+think about <!--l. 548--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>y</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>α</mi><mi 
+>a</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>β</mi><mi 
+>b</mi></mrow><mo 
+class="MathClass-close">]</mo></mrow></math>
+and <!--l. 548--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>G</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>y</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>α</mi><mi 
+>a</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>β</mi><mi 
+>b</mi></mrow><mo 
+class="MathClass-close">]</mo></mrow></math> as
+functions in the <!--l. 548--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>α</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>β</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+plane. But now this is a 2D constrained optimisation problem as a function of
+<!--l. 548--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>α</mi></math> and
+<!--l. 548--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>β</mi></math>, so we
+must be able to find a Lagrange multiplier such that
+<!--tex4ht:inline--></p><!--l. 549--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><msup><mrow 
+>
+                             </mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><msub><mrow 
+> <mfenced separators="" 
+open=""  close="|" ><mrow> <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>α</mi></mrow></mfrac><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>F</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>λ</mi><mi 
+>G</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></mfenced></mrow><mrow 
+><mi 
+>α</mi><mo 
+class="MathClass-rel">=</mo><mi 
+>β</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><msub><mrow 
+> <mfenced separators="" 
+open=""  close="|" ><mrow> <mfrac><mrow 
+><mi 
+>d</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>β</mi></mrow></mfrac><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>F</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>λ</mi><mi 
+>G</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></mfenced></mrow><mrow 
+><mi 
+>α</mi><mo 
+class="MathClass-rel">=</mo><mi 
+>β</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 549--><p class="nopar" > but this must be true for <span 
+class="cmti-10x-x-109">all </span>pairs of variations <!--l. 550--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>a</mi></math>
+and <!--l. 550--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>b</mi></math>.
+Hence we find the constrained Euler-Lagrange equation
+</p><!--l. 552--><p class="noindent" >
+<!--tex4ht:inline--></p><!--l. 552--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                             <mfrac><mrow 
+><mi 
+>δ</mi><mi 
+>F</mi></mrow>
+<mrow 
+><mi 
+>δ</mi><mi 
+>y</mi></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo> <mi 
+>λ</mi><mfrac><mrow 
+><mi 
+>δ</mi><mi 
+>G</mi></mrow>
+<mrow 
+><mi 
+>δ</mi><mi 
+>y</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</math>
+<!--l. 552--><p class="nopar" > and again <!--l. 553--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>λ</mi></math> is found by
+enforcing the constraint <!--l. 553--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>G</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">]</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>C</mi></math>.
+</p>
+<div class="newtheorem">
+<!--l. 555--><p class="noindent" ><span class="head">
+<span 
+class="cmbx-10x-x-109">Example.</span>  </span>The Catenary. Find the shape of an inextensible rope of constant density and length <!--l. 555--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi></math>,
+acted on by gravity, hung between two points <!--l. 555--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>A</mi></math>
+and <!--l. 555--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>B</mi></math>
+                                                                                                       
+                                                                                                       
+(which we can take to be at the same height), so <!--l. 555--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>A</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn><mo 
+class="MathClass-punc">,</mo><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>,
+<!--l. 555--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>B</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>b</mi><mo 
+class="MathClass-punc">,</mo><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+</p><!--l. 557--><p class="noindent" >We describe our rope as a function <!--l. 557--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>.
+The total energy of the rope, which we want to minimise, is purely potential, and is given by the height integrated
+over the entire rope:
+<!--tex4ht:inline--></p><!--l. 558--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                            <mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>ρ</mi><mi 
+>g</mi><msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>L</mi></mrow></msubsup 
+><mi 
+>y</mi><mi 
+>d</mi><mi 
+>l</mi><mo 
+class="MathClass-punc">,</mo>
+</math>
+<!--l. 558--><p class="nopar" > where <!--l. 559--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi><mi 
+>l</mi> <mo 
+class="MathClass-rel">=</mo> <msqrt><mrow><mi 
+>d</mi><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>d</mi><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt></math>.
+Assuming <!--l. 559--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi><mi 
+>x</mi> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn></math>
+along the rope we can rewrite this as
+<!--tex4ht:inline--></p><!--l. 560--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mi 
+>V</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>ρ</mi><mi 
+>g</mi><msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mi 
+>y</mi><msqrt><mrow><mn>1</mn> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi> </mrow> </msup 
+> </mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt><mi 
+>d</mi><mi 
+>x</mi>
+</math>
+<!--l. 560--><p class="nopar" > The constraint is that the rope must have total length <!--l. 561--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi></math>,
+so that
+<!--tex4ht:inline--></p><!--l. 562--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                     <mi 
+>L</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>L</mi></mrow></msubsup 
+><mi 
+>d</mi><mi 
+>l</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><msqrt><mrow><mn>1</mn> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi> </mrow> </msup 
+> </mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt><mi 
+>d</mi><mi 
+>x</mi>
+</math>
+<!--l. 562--><p class="nopar" > Hence our variational problem requires we extremise the functional
+                                                                                                       
+                                                                                                       
+<!--tex4ht:inline--></p><!--l. 564--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>ρ</mi><mi 
+>g</mi><mi 
+>y</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>λ</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><msqrt><mrow><mn>1</mn> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi> </mrow> </msup 
+> </mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt><mi 
+>d</mi><mi 
+>x</mi>
+</math>
+<!--l. 564--><p class="nopar" > This has no explicit <!--l. 565--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi></math>
+dependence, so the Beltrami identity applies and we find (assuming <!--l. 565--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>ρ</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>g</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></math>)
+<!--tex4ht:inline--></p><!--l. 566--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                              <mfrac><mrow 
+><mi 
+>ρ</mi><mi 
+>g</mi><mi 
+>y</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>λ</mi></mrow>
+<mrow 
+><msqrt><mrow><mn>1</mn> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mi 
+>′</mi> </mrow> </msup 
+> </mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mi 
+>c</mi>
+</math>
+<!--l. 566--><p class="nopar" >                                                                                                    for
+<!--l. 567--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>c</mi></math>
+constant. This can be solved to give
+<!--tex4ht:inline--></p><!--l. 568--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+                                       <mi 
+>y</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>λ</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>c</mi><mo class="qopname">cosh</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-bin">∕</mo><mi 
+>c</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>d</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</math>
+<!--l. 568--><p class="nopar" > for <!--l. 569--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi></math> a second constant.
+All three constants <!--l. 569--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>λ</mi></math>,
+<!--l. 569--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>c</mi></math> and
+<!--l. 569--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>d</mi></math>
+may be varied to find a solution that fits the boundary conditions. All hanging ropes, chains, etc. thus
+have the form of a cosh curve (called a ‘catenary’, from the latin for chain); the chains of a suspension
+bridge also have this form if the mass of the road beneath a suspension bridge can be effectively ignored.
+</p><figure class="figure"> 
+<a 
+ id="x10-100016"></a>
+<div class="center" 
+>
+<!--l. 571--><p class="noindent" >
+</p><!--l. 572--><p class="noindent" > <img 
+src="figures/bridge-.svg" alt="PIC"  
+ />
+                                                                                                       
+                                                                                                       
+</p>
+<figcaption class="caption" ><span class="id">Figure 6:</span><span  
+class="content">The shape of the Clifton suspension bridge is approximately a catenary.</span></figcaption><!--tex4ht:label?: x10-100016 -->
+</div>
+</figure>
+</div>
+                                                                                                       
+                                                                                                       
+<!--l. 579--><div class="crosslinks"><p class="noindent"><a 
+href="AM_notessu7.html" ><img 
+src="figures/prev.png" alt="PIC"  
+ /></a><a 
+href="AM_notesse1.html#AM_notessu8.html" ><img 
+src="figures/up.png" alt="PIC"  
+ /></a><a 
+href="AM_notessu9.html" ><img 
+src="figures/next.png" alt="PIC"  
+ /></a></p></div>
+ 
+</body> 
+</html>
